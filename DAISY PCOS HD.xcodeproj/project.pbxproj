@@ -12,6 +12,10 @@
 		CFF2BB3E2231CEC300D40324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF2BB3C2231CEC300D40324 /* Main.storyboard */; };
 		CFF2BB402231CEC400D40324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF2BB3F2231CEC400D40324 /* Assets.xcassets */; };
 		CFF2BB432231CEC400D40324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF2BB412231CEC400D40324 /* LaunchScreen.storyboard */; };
+		CFF2BB542231D51000D40324 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2BB532231D51000D40324 /* LogInViewController.swift */; };
+		CFF2BB562231D52000D40324 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2BB552231D52000D40324 /* RegisterViewController.swift */; };
+		CFF2BB582231D52A00D40324 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2BB572231D52A00D40324 /* QuizViewController.swift */; };
+		CFF2BB5D2231DA1900D40324 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2BB5C2231DA1900D40324 /* FinishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		CFF2BB3F2231CEC400D40324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFF2BB422231CEC400D40324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFF2BB442231CEC400D40324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF2BB532231D51000D40324 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		CFF2BB552231D52000D40324 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CFF2BB572231D52A00D40324 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		CFF2BB5C2231DA1900D40324 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		CFF2BB372231CEC300D40324 /* DAISY PCOS HD */ = {
 			isa = PBXGroup;
 			children = (
-				CFF2BB382231CEC300D40324 /* AppDelegate.swift */,
-				CFF2BB3A2231CEC300D40324 /* ViewController.swift */,
-				CFF2BB3C2231CEC300D40324 /* Main.storyboard */,
+				CFF2BB4E2231D48600D40324 /* Model */,
+				CFF2BB4F2231D49900D40324 /* View */,
+				CFF2BB512231D4A500D40324 /* Controller */,
 				CFF2BB3F2231CEC400D40324 /* Assets.xcassets */,
-				CFF2BB412231CEC400D40324 /* LaunchScreen.storyboard */,
 				CFF2BB442231CEC400D40324 /* Info.plist */,
 			);
 			path = "DAISY PCOS HD";
+			sourceTree = "<group>";
+		};
+		CFF2BB4E2231D48600D40324 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CFF2BB4F2231D49900D40324 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFF2BB412231CEC400D40324 /* LaunchScreen.storyboard */,
+				CFF2BB3C2231CEC300D40324 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFF2BB512231D4A500D40324 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFF2BB382231CEC300D40324 /* AppDelegate.swift */,
+				CFF2BB3A2231CEC300D40324 /* ViewController.swift */,
+				CFF2BB552231D52000D40324 /* RegisterViewController.swift */,
+				CFF2BB532231D51000D40324 /* LogInViewController.swift */,
+				CFF2BB572231D52A00D40324 /* QuizViewController.swift */,
+				CFF2BB5C2231DA1900D40324 /* FinishViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF2BB3B2231CEC300D40324 /* ViewController.swift in Sources */,
+				CFF2BB582231D52A00D40324 /* QuizViewController.swift in Sources */,
 				CFF2BB392231CEC300D40324 /* AppDelegate.swift in Sources */,
+				CFF2BB542231D51000D40324 /* LogInViewController.swift in Sources */,
+				CFF2BB562231D52000D40324 /* RegisterViewController.swift in Sources */,
+				CFF2BB5D2231DA1900D40324 /* FinishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brucedongxian.DAISY-PCOS-HD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -310,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brucedongxian.DAISY-PCOS-HD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
