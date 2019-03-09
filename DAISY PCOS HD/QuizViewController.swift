@@ -9,6 +9,12 @@
 import UIKit
 
 class QuizViewController: UIViewController {
+    
+    let allQuestions = HADSQuestionBank()
+    var pickedAnswer : Int = 0
+    var questionNumber : Int = 0
+    var depressionScore : Int = 0
+    var anxietyScore : Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,22 +22,21 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    
     @IBAction func submitPressed(_ sender: Any) {
         
         self.performSegue(withIdentifier: "goToFinish", sender: self)
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToFinish" {
+            
+            let desitinationVC = segue.destination as! FinishViewController
+            
+            desitinationVC.depressionScoreHADS = String(depressionScore)
+            desitinationVC.anxietyScoreHADS = String(anxietyScore)
+            
+        }
     }
     
     

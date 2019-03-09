@@ -9,23 +9,21 @@
 import UIKit
 
 class FinishViewController: UIViewController {
+    
+    var depressionScoreHADS : String?
+    var anxietyScoreHADS : String?
+    
+    @IBOutlet weak var depressionScoreLabel: UILabel!
+    @IBOutlet weak var anxietyScoreLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        depressionScoreLabel.text = "You depression score is " + depressionScoreHADS! + "."
+        anxietyScoreLabel.text = "You anxiety score is " + anxietyScoreHADS! + "."
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     
     @IBAction func closePressed(_ sender: Any) {
