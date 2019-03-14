@@ -84,12 +84,20 @@
                     <connections>
                         <outlet property="emailTextField" destination="Ukm-OD-c1f" id="ks8-81-etm"/>
                         <outlet property="passwordTextField" destination="v98-Lf-PI1" id="NIS-0b-igw"/>
-                        <segue destination="BCu-Id-uJc" kind="show" identifier="goToQuiz" id="2pF-DI-njI"/>
+                        <segue destination="Qro-UX-jsU" kind="show" identifier="goToPartA" id="bwm-Ml-2Vd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vtq-Ep-bPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2331.6546762589928" y="-322.1105527638191"/>
+        </scene>
+        <!--PartA-->
+        <scene sceneID="pnT-F9-OF6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PartA" id="Qro-UX-jsU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vtr-9L-AuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3166" y="-79"/>
         </scene>
         <!--Register-->
         <scene sceneID="NB6-Uf-ze2">
@@ -129,102 +137,12 @@
                     <connections>
                         <outlet property="emailTextField" destination="Ytw-zG-Xcj" id="Xx3-RS-Ngr"/>
                         <outlet property="passwordTextField" destination="sQj-7h-eHr" id="miE-eW-B4Q"/>
-                        <segue destination="BCu-Id-uJc" kind="show" identifier="goToQuiz" id="g0w-Ph-MHd"/>
+                        <segue destination="Qro-UX-jsU" kind="show" identifier="goToPartA" id="DAO-3V-fyQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UsE-XP-JkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2333.812949640288" y="354.77386934673365"/>
-        </scene>
-        <!--Quiz-->
-        <scene sceneID="77D-YH-F4b">
-            <objects>
-                <viewController id="BCu-Id-uJc" userLabel="Quiz" customClass="QuizViewController" customModule="DAISY_PCOS_HD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="K1R-6l-dA4">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6c-LP-6ec">
-                                <rect key="frame" x="393" y="951" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="submitPressed:" destination="BCu-Id-uJc" eventType="touchUpInside" id="iYl-2z-XSf"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0BF-wQ-JcN">
-                                <rect key="frame" x="103" y="292" width="630" height="610"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Qustion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKd-CG-Uhq">
-                                <rect key="frame" x="387" y="188" width="60" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="bNa-pT-0Rm"/>
-                    </view>
-                    <connections>
-                        <segue destination="SJD-DM-J1y" kind="show" identifier="goToFinish" id="BcK-od-nRs"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LVt-Gz-nYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3172.6618705035971" y="94.9748743718593"/>
-        </scene>
-        <!--Thank You-->
-        <scene sceneID="DSq-fu-pIZ">
-            <objects>
-                <viewController id="SJD-DM-J1y" userLabel="Thank You" customClass="FinishViewController" customModule="DAISY_PCOS_HD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vai-7V-Llq">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKp-ba-XWw">
-                                <rect key="frame" x="398" y="641" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="closePressed:" destination="SJD-DM-J1y" eventType="touchUpInside" id="lMJ-nI-saf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3r-Eq-y5k">
-                                <rect key="frame" x="267" y="488" width="300" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for taking this quiz." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu3-KH-GHW">
-                                <rect key="frame" x="302" y="334" width="230" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiF-3e-xEU">
-                                <rect key="frame" x="267" y="517" width="300" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ZeG-h7-QAI"/>
-                    </view>
-                    <connections>
-                        <outlet property="anxietyScoreLabel" destination="jiF-3e-xEU" id="zlr-ev-GOa"/>
-                        <outlet property="depressionScoreLabel" destination="p3r-Eq-y5k" id="mOm-wo-cBN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oh5-Lf-VJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3975.5395683453239" y="94.9748743718593"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P4T-ia-LwM">
@@ -242,10 +160,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dac-TJ-ufG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="571.94244604316555" y="94.9748743718593"/>
+            <point key="canvasLocation" x="442" y="95"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="g0w-Ph-MHd"/>
+        <segue reference="bwm-Ml-2Vd"/>
     </inferredMetricsTieBreakers>
 </document>
