@@ -19,6 +19,7 @@ class FinishViewController: UIViewController {
     
     
     @IBAction func closePressed(_ sender: Any) {
+        
         navigationController?.popToRootViewController(animated: true)
         
     }

@@ -14,6 +14,9 @@
 		CF3DF8C6223A16CD00D4476A /* HADSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DF8C5223A16CD00D4476A /* HADSViewController.swift */; };
 		CF3DF8C9223A174900D4476A /* PartBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DF8C8223A174900D4476A /* PartBViewController.swift */; };
 		CF3DF8CC223A184F00D4476A /* PartAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DF8CB223A184F00D4476A /* PartAViewController.swift */; };
+		CF57FF40223F1157000042C0 /* HADSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF57FF3E223F1157000042C0 /* HADSTableViewCell.swift */; };
+		CF57FF41223F1157000042C0 /* HADSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF57FF3F223F1157000042C0 /* HADSTableViewCell.xib */; };
+		CF7E51E2223DA50E0041DB90 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7E51E0223DA50D0041DB90 /* DLRadioButton.m */; };
 		CFF2BB392231CEC300D40324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2BB382231CEC300D40324 /* AppDelegate.swift */; };
 		CFF2BB3E2231CEC300D40324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF2BB3C2231CEC300D40324 /* Main.storyboard */; };
 		CFF2BB402231CEC400D40324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF2BB3F2231CEC400D40324 /* Assets.xcassets */; };
@@ -32,6 +35,11 @@
 		CF3DF8C5223A16CD00D4476A /* HADSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADSViewController.swift; sourceTree = "<group>"; };
 		CF3DF8C8223A174900D4476A /* PartBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartBViewController.swift; sourceTree = "<group>"; };
 		CF3DF8CB223A184F00D4476A /* PartAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartAViewController.swift; sourceTree = "<group>"; };
+		CF57FF3E223F1157000042C0 /* HADSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADSTableViewCell.swift; sourceTree = "<group>"; };
+		CF57FF3F223F1157000042C0 /* HADSTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HADSTableViewCell.xib; sourceTree = "<group>"; };
+		CF7E51DF223DA50D0041DB90 /* DAISY PCOS HD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DAISY PCOS HD-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF7E51E0223DA50D0041DB90 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
+		CF7E51E1223DA50E0041DB90 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
 		CFF2BB352231CEC300D40324 /* DAISY PCOS HD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DAISY PCOS HD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF2BB382231CEC300D40324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF2BB3D2231CEC300D40324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,8 +66,8 @@
 		CF3DF8C4223A169700D4476A /* PartB */ = {
 			isa = PBXGroup;
 			children = (
-				CF3DF8C5223A16CD00D4476A /* HADSViewController.swift */,
 				CF3DF8C8223A174900D4476A /* PartBViewController.swift */,
+				CF3DF8C5223A16CD00D4476A /* HADSViewController.swift */,
 				CFF2BB5C2231DA1900D40324 /* FinishViewController.swift */,
 			);
 			name = PartB;
@@ -68,8 +76,7 @@
 		CF3DF8C7223A16E400D4476A /* PartB */ = {
 			isa = PBXGroup;
 			children = (
-				CF3932FF2232306000552A56 /* HADSQuestion.swift */,
-				CF3933012232307100552A56 /* HADSQuestionBank.swift */,
+				CF57FF3D223F09C9000042C0 /* HADS */,
 			);
 			name = PartB;
 			sourceTree = "<group>";
@@ -80,6 +87,28 @@
 				CF3DF8CB223A184F00D4476A /* PartAViewController.swift */,
 			);
 			name = PartA;
+			sourceTree = "<group>";
+		};
+		CF57FF3D223F09C9000042C0 /* HADS */ = {
+			isa = PBXGroup;
+			children = (
+				CF3932FF2232306000552A56 /* HADSQuestion.swift */,
+				CF3933012232307100552A56 /* HADSQuestionBank.swift */,
+				CF57FF3E223F1157000042C0 /* HADSTableViewCell.swift */,
+				CF57FF3F223F1157000042C0 /* HADSTableViewCell.xib */,
+			);
+			name = HADS;
+			sourceTree = "<group>";
+		};
+		CF7E51DE223DA49D0041DB90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF7E51E1223DA50E0041DB90 /* DLRadioButton.h */,
+				CF7E51E0223DA50D0041DB90 /* DLRadioButton.m */,
+				CF7E51DF223DA50D0041DB90 /* DAISY PCOS HD-Bridging-Header.h */,
+				CFF2BB442231CEC400D40324 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		CFF2BB2C2231CEC300D40324 = {
@@ -104,8 +133,6 @@
 				CFF2BB4E2231D48600D40324 /* Model */,
 				CFF2BB4F2231D49900D40324 /* View */,
 				CFF2BB512231D4A500D40324 /* Controller */,
-				CFF2BB3F2231CEC400D40324 /* Assets.xcassets */,
-				CFF2BB442231CEC400D40324 /* Info.plist */,
 			);
 			path = "DAISY PCOS HD";
 			sourceTree = "<group>";
@@ -125,6 +152,7 @@
 				CFF2BB3C2231CEC300D40324 /* Main.storyboard */,
 				CF3DF8C0223A11AC00D4476A /* PartA.storyboard */,
 				CF3DF8C2223A12C500D4476A /* PartB.storyboard */,
+				CFF2BB3F2231CEC400D40324 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,12 +160,13 @@
 		CFF2BB512231D4A500D40324 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CF3DF8CA223A182200D4476A /* PartA */,
-				CF3DF8C4223A169700D4476A /* PartB */,
 				CFF2BB382231CEC300D40324 /* AppDelegate.swift */,
 				CFF2BB5E2231E6FD00D40324 /* WelcomeViewController.swift */,
 				CFF2BB552231D52000D40324 /* RegisterViewController.swift */,
 				CFF2BB532231D51000D40324 /* LogInViewController.swift */,
+				CF3DF8CA223A182200D4476A /* PartA */,
+				CF3DF8C4223A169700D4476A /* PartB */,
+				CF7E51DE223DA49D0041DB90 /* Supporting Files */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -174,6 +203,7 @@
 				TargetAttributes = {
 					CFF2BB342231CEC300D40324 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -201,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF2BB432231CEC400D40324 /* LaunchScreen.storyboard in Resources */,
+				CF57FF41223F1157000042C0 /* HADSTableViewCell.xib in Resources */,
 				CFF2BB402231CEC400D40324 /* Assets.xcassets in Resources */,
 				CFF2BB3E2231CEC300D40324 /* Main.storyboard in Resources */,
 				CF3DF8C1223A11AC00D4476A /* PartA.storyboard in Resources */,
@@ -220,9 +251,11 @@
 				CFF2BB542231D51000D40324 /* LogInViewController.swift in Sources */,
 				CFF2BB5F2231E6FD00D40324 /* WelcomeViewController.swift in Sources */,
 				CFF2BB562231D52000D40324 /* RegisterViewController.swift in Sources */,
+				CF57FF40223F1157000042C0 /* HADSTableViewCell.swift in Sources */,
 				CF3933022232307100552A56 /* HADSQuestionBank.swift in Sources */,
 				CFF2BB5D2231DA1900D40324 /* FinishViewController.swift in Sources */,
 				CF3DF8CC223A184F00D4476A /* PartAViewController.swift in Sources */,
+				CF7E51E2223DA50E0041DB90 /* DLRadioButton.m in Sources */,
 				CF3DF8C6223A16CD00D4476A /* HADSViewController.swift in Sources */,
 				CF3933002232306000552A56 /* HADSQuestion.swift in Sources */,
 			);
@@ -370,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3VQW8KK3V;
 				INFOPLIST_FILE = "DAISY PCOS HD/Info.plist";
@@ -379,6 +413,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brucedongxian.DAISY-PCOS-HD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DAISY PCOS HD/DAISY PCOS HD-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -388,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3VQW8KK3V;
 				INFOPLIST_FILE = "DAISY PCOS HD/Info.plist";
@@ -397,6 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brucedongxian.DAISY-PCOS-HD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DAISY PCOS HD/DAISY PCOS HD-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

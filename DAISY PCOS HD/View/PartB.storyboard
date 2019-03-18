@@ -74,15 +74,93 @@
             <objects>
                 <viewController id="4Co-zg-f4s" customClass="HADSViewController" customModule="DAISY_PCOS_HD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nLa-fB-Jep">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="4194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P80-gO-43o">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="50"/>
+                                <items>
+                                    <navigationItem title="HADS" id="Nof-ML-CzO"/>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gjn-gs-9cb">
+                                <rect key="frame" x="0.0" y="50" width="834" height="4144"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuT-Nj-CyZ" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="4144"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital Anxiety and Depression Scale (HADS)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1F-wB-8ym">
+                                                <rect key="frame" x="195" y="20" width="444" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3i-dx-qLT">
+                                                <rect key="frame" x="71.5" y="67" width="691.5" height="41"/>
+                                                <string key="text">Tick the box beside the reply that is closest to how you have been feeling in the past week.
+Don’t take too long over you replies: your immediate is best.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yle-PT-E0C">
+                                                <rect key="frame" x="0.0" y="108" width="834" height="3920"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="3920" id="iCx-DC-cH1"/>
+                                                </constraints>
+                                            </tableView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEX-gy-x6N">
+                                                <rect key="frame" x="392.5" y="4071" width="49" height="30"/>
+                                                <state key="normal" title="Submit"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Yle-PT-E0C" firstAttribute="top" secondItem="V3i-dx-qLT" secondAttribute="bottom" id="5YH-8L-45a"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yle-PT-E0C" secondAttribute="trailing" id="KIl-J9-hBT"/>
+                                            <constraint firstItem="HEX-gy-x6N" firstAttribute="centerX" secondItem="JuT-Nj-CyZ" secondAttribute="centerX" id="NNr-4F-fYm"/>
+                                            <constraint firstItem="x1F-wB-8ym" firstAttribute="top" secondItem="JuT-Nj-CyZ" secondAttribute="top" constant="20" id="PI7-yK-LtZ"/>
+                                            <constraint firstItem="V3i-dx-qLT" firstAttribute="top" secondItem="x1F-wB-8ym" secondAttribute="bottom" constant="20" id="Sqi-8i-dhJ"/>
+                                            <constraint firstItem="Yle-PT-E0C" firstAttribute="leading" secondItem="JuT-Nj-CyZ" secondAttribute="leading" id="UOl-sK-rqC"/>
+                                            <constraint firstItem="x1F-wB-8ym" firstAttribute="centerX" secondItem="JuT-Nj-CyZ" secondAttribute="centerX" id="YnU-1L-c1S"/>
+                                            <constraint firstAttribute="bottom" secondItem="HEX-gy-x6N" secondAttribute="bottom" constant="43" id="kJP-Pm-5si"/>
+                                            <constraint firstItem="HEX-gy-x6N" firstAttribute="top" secondItem="Yle-PT-E0C" secondAttribute="bottom" constant="43" id="lpV-8r-dYU"/>
+                                            <constraint firstItem="V3i-dx-qLT" firstAttribute="centerX" secondItem="JuT-Nj-CyZ" secondAttribute="centerX" id="mde-Xm-zvJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="JuT-Nj-CyZ" secondAttribute="bottom" id="5a3-1W-DLB"/>
+                                    <constraint firstItem="JuT-Nj-CyZ" firstAttribute="height" secondItem="Gjn-gs-9cb" secondAttribute="height" priority="250" id="Fes-fY-bSZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="JuT-Nj-CyZ" secondAttribute="trailing" id="HON-nQ-NLn"/>
+                                    <constraint firstItem="JuT-Nj-CyZ" firstAttribute="top" secondItem="Gjn-gs-9cb" secondAttribute="top" id="W9A-hl-TxM"/>
+                                    <constraint firstItem="JuT-Nj-CyZ" firstAttribute="leading" secondItem="Gjn-gs-9cb" secondAttribute="leading" id="no2-JC-qt6"/>
+                                    <constraint firstItem="JuT-Nj-CyZ" firstAttribute="width" secondItem="Gjn-gs-9cb" secondAttribute="width" id="oV8-qE-w73"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gjn-gs-9cb" firstAttribute="trailing" secondItem="g8s-13-Fy8" secondAttribute="trailing" id="1uR-a8-lAw"/>
+                            <constraint firstItem="P80-gO-43o" firstAttribute="top" secondItem="nLa-fB-Jep" secondAttribute="top" id="4Xq-hm-WyB"/>
+                            <constraint firstItem="Gjn-gs-9cb" firstAttribute="leading" secondItem="g8s-13-Fy8" secondAttribute="leading" id="B12-2h-400"/>
+                            <constraint firstAttribute="bottom" secondItem="Gjn-gs-9cb" secondAttribute="bottom" id="Dvn-aU-0e6"/>
+                            <constraint firstItem="Gjn-gs-9cb" firstAttribute="top" secondItem="P80-gO-43o" secondAttribute="bottom" id="GFR-69-BJi"/>
+                            <constraint firstItem="P80-gO-43o" firstAttribute="trailing" secondItem="g8s-13-Fy8" secondAttribute="trailing" id="L7Y-Ef-2hw"/>
+                            <constraint firstItem="P80-gO-43o" firstAttribute="leading" secondItem="g8s-13-Fy8" secondAttribute="leading" id="mws-ku-B7R"/>
+                            <constraint firstItem="Gjn-gs-9cb" firstAttribute="top" secondItem="P80-gO-43o" secondAttribute="bottom" id="r19-Xo-lAw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="g8s-13-Fy8"/>
                     </view>
+                    <size key="freeformSize" width="834" height="4194"/>
+                    <connections>
+                        <outlet property="questionTable" destination="Yle-PT-E0C" id="1xZ-Zi-rNd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PxH-rj-J3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="620"/>
+            <point key="canvasLocation" x="-422" y="1656"/>
         </scene>
         <!--Finish View Controller-->
         <scene sceneID="uba-Ny-TW2">
