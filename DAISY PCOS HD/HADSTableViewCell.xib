@@ -19,6 +19,44 @@
                 <rect key="frame" x="0.0" y="0.0" width="834" height="279.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqI-ch-3hI">
+                        <rect key="frame" x="80" y="30" width="754" height="19"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHX-Uw-XkE" customClass="DLRadioButton">
+                        <rect key="frame" x="80" y="69" width="150" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="A8s-qb-axz"/>
+                            <constraint firstAttribute="height" constant="30" id="lyl-a7-un6"/>
+                        </constraints>
+                        <state key="normal" title="A">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.21176470589999999" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                <color key="value" red="0.21176470589999999" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="otherButtons" destination="hE6-oz-a8u" id="aU1-0O-cgE"/>
+                            <outletCollection property="otherButtons" destination="X3M-i8-WQ1" id="maV-C0-kH0"/>
+                            <outletCollection property="otherButtons" destination="LQY-1b-utq" id="Cpm-Rx-rBs"/>
+                        </connections>
+                    </button>
                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE6-oz-a8u" customClass="DLRadioButton">
                         <rect key="frame" x="80" y="119" width="150" height="30"/>
                         <constraints>
@@ -99,44 +137,6 @@
                                 <color key="value" red="0.21176470589999999" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
-                    </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqI-ch-3hI">
-                        <rect key="frame" x="80" y="30" width="754" height="19"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHX-Uw-XkE" customClass="DLRadioButton">
-                        <rect key="frame" x="80" y="69" width="150" height="30"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="150" id="A8s-qb-axz"/>
-                            <constraint firstAttribute="height" constant="30" id="lyl-a7-un6"/>
-                        </constraints>
-                        <state key="normal" title="A">
-                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </state>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                <real key="value" value="25"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                <real key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                <real key="value" value="12"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
-                                <color key="value" red="0.21176470589999999" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
-                                <color key="value" red="0.21176470589999999" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                        <connections>
-                            <outletCollection property="otherButtons" destination="hE6-oz-a8u" id="aU1-0O-cgE"/>
-                            <outletCollection property="otherButtons" destination="X3M-i8-WQ1" id="maV-C0-kH0"/>
-                            <outletCollection property="otherButtons" destination="LQY-1b-utq" id="Cpm-Rx-rBs"/>
-                        </connections>
                     </button>
                 </subviews>
                 <constraints>

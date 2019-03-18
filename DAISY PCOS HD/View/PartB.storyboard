@@ -87,32 +87,35 @@
                                 <rect key="frame" x="0.0" y="50" width="834" height="4144"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuT-Nj-CyZ" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="834" height="4144"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="4146"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital Anxiety and Depression Scale (HADS)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1F-wB-8ym">
-                                                <rect key="frame" x="195" y="20" width="444" height="27"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <rect key="frame" x="175.5" y="20" width="483" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3i-dx-qLT">
-                                                <rect key="frame" x="71.5" y="67" width="691.5" height="41"/>
+                                                <rect key="frame" x="71.5" y="69" width="691.5" height="41"/>
                                                 <string key="text">Tick the box beside the reply that is closest to how you have been feeling in the past week.
 Don’t take too long over you replies: your immediate is best.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yle-PT-E0C">
-                                                <rect key="frame" x="0.0" y="108" width="834" height="3920"/>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yle-PT-E0C">
+                                                <rect key="frame" x="0.0" y="110" width="834" height="3920"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="3920" id="iCx-DC-cH1"/>
                                                 </constraints>
                                             </tableView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEX-gy-x6N">
-                                                <rect key="frame" x="392.5" y="4071" width="49" height="30"/>
+                                                <rect key="frame" x="392.5" y="4073" width="49" height="30"/>
                                                 <state key="normal" title="Submit"/>
+                                                <connections>
+                                                    <action selector="submitPressed:" destination="4Co-zg-f4s" eventType="touchUpInside" id="xFd-Ok-NDM"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
