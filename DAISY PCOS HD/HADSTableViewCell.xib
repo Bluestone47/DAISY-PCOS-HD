@@ -26,9 +26,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHX-Uw-XkE" customClass="DLRadioButton">
-                        <rect key="frame" x="80" y="69" width="150" height="30"/>
+                        <rect key="frame" x="80" y="69" width="400" height="30"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="150" id="A8s-qb-axz"/>
+                            <constraint firstAttribute="width" constant="400" id="A8s-qb-axz"/>
                             <constraint firstAttribute="height" constant="30" id="lyl-a7-un6"/>
                         </constraints>
                         <state key="normal" title="A">
@@ -58,10 +58,10 @@
                         </connections>
                     </button>
                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE6-oz-a8u" customClass="DLRadioButton">
-                        <rect key="frame" x="80" y="119" width="150" height="30"/>
+                        <rect key="frame" x="80" y="119" width="400" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="Dfz-dV-Ctu"/>
-                            <constraint firstAttribute="width" constant="150" id="EIC-ek-qbn"/>
+                            <constraint firstAttribute="width" constant="400" id="EIC-ek-qbn"/>
                         </constraints>
                         <state key="normal" title="B">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,10 +85,10 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3M-i8-WQ1" customClass="DLRadioButton">
-                        <rect key="frame" x="80" y="169" width="150" height="30"/>
+                        <rect key="frame" x="80" y="169" width="400" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="4I4-i5-jFa"/>
-                            <constraint firstAttribute="width" constant="150" id="kSF-Zw-dDI"/>
+                            <constraint firstAttribute="width" constant="400" id="kSF-Zw-dDI"/>
                         </constraints>
                         <state key="normal" title="C">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -112,9 +112,9 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQY-1b-utq" customClass="DLRadioButton">
-                        <rect key="frame" x="80" y="219" width="150" height="30"/>
+                        <rect key="frame" x="80" y="219" width="400" height="30"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="150" id="lG7-pm-te0"/>
+                            <constraint firstAttribute="width" constant="400" id="lG7-pm-te0"/>
                             <constraint firstAttribute="height" constant="30" id="wHG-y2-gbl"/>
                         </constraints>
                         <state key="normal" title="D">

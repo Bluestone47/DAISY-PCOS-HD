@@ -8,10 +8,11 @@
 
 import UIKit
 
-class PartBViewController: UIViewController {
+class PartBViewController: UIViewController, CanReceiveHADS {
     
-    var depressionScoreHADS : String?
-    var anxietyScoreHADS : String?
+    // var depressionScoreHADS : String?
+    // var anxietyScoreHADS : String?
+    @IBOutlet weak var hadsButton: UIButton!
     
     @IBOutlet weak var HADSScoreLabel: UILabel!
     
@@ -24,7 +25,18 @@ class PartBViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        if segue.identifier == "goToHADS" {
+            
+            let hadsVC = segue.destination as! HADSViewController
+            
+            hadsVC.delegate = self
+            
+        }
+        
     }
+    
+    //MARK: - Taking HADS Test
+    /***************************************************************/
     
     @IBAction func hadsPressed(_ sender: Any) {
         
@@ -32,11 +44,21 @@ class PartBViewController: UIViewController {
         
     }
     
+    func dataReceived(depressionScore: Int, anxietyScore: Int) {
+        
+        // hadsButton.isEnabled = false
+        HADSScoreLabel.text = "Your depression score is \(depressionScore).\nYour anxiety score is \(anxietyScore)."
+    }
+    
+    
     func updateHADS(){
         
-        HADSScoreLabel.text = "You depression score is " + depressionScoreHADS! + "\nYou anxiety score is " + anxietyScoreHADS! + "."
+        // HADSScoreLabel.text = "You depression score is " + depressionScoreHADS! + "\nYou anxiety score is " + anxietyScoreHADS! + "."
     
     }
+    
+    //MARK: - Finish PartB
+    /***************************************************************/
     
     @IBAction func nextPressed(_ sender: Any) {
         

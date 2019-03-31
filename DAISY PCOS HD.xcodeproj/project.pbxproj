@@ -17,6 +17,9 @@
 		CF57FF40223F1157000042C0 /* HADSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF57FF3E223F1157000042C0 /* HADSTableViewCell.swift */; };
 		CF57FF41223F1157000042C0 /* HADSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF57FF3F223F1157000042C0 /* HADSTableViewCell.xib */; };
 		CF7E51E2223DA50E0041DB90 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7E51E0223DA50D0041DB90 /* DLRadioButton.m */; };
+		CF9F922122505F8700916E18 /* HADSPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F922022505F8700916E18 /* HADSPost.swift */; };
+		CF9F9226225061A800916E18 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F9225225061A800916E18 /* UserInfo.swift */; };
+		CF9F922822506A7C00916E18 /* QuizResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F922722506A7C00916E18 /* QuizResult.swift */; };
 		CFF2BB392231CEC300D40324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2BB382231CEC300D40324 /* AppDelegate.swift */; };
 		CFF2BB3E2231CEC300D40324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF2BB3C2231CEC300D40324 /* Main.storyboard */; };
 		CFF2BB402231CEC400D40324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF2BB3F2231CEC400D40324 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 		CF7E51DF223DA50D0041DB90 /* DAISY PCOS HD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DAISY PCOS HD-Bridging-Header.h"; sourceTree = "<group>"; };
 		CF7E51E0223DA50D0041DB90 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		CF7E51E1223DA50E0041DB90 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		CF9F922022505F8700916E18 /* HADSPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADSPost.swift; sourceTree = "<group>"; };
+		CF9F9225225061A800916E18 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		CF9F922722506A7C00916E18 /* QuizResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResult.swift; sourceTree = "<group>"; };
 		CFF2BB352231CEC300D40324 /* DAISY PCOS HD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DAISY PCOS HD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF2BB382231CEC300D40324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF2BB3D2231CEC300D40324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,12 +109,21 @@
 		CF7E51DE223DA49D0041DB90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF9F921F22505E8900916E18 /* Networking */,
 				CF7E51E1223DA50E0041DB90 /* DLRadioButton.h */,
 				CF7E51E0223DA50D0041DB90 /* DLRadioButton.m */,
 				CF7E51DF223DA50D0041DB90 /* DAISY PCOS HD-Bridging-Header.h */,
 				CFF2BB442231CEC400D40324 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF9F921F22505E8900916E18 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CF9F922022505F8700916E18 /* HADSPost.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		CFF2BB2C2231CEC300D40324 = {
@@ -141,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				CF3DF8C7223A16E400D4476A /* PartB */,
+				CF9F922722506A7C00916E18 /* QuizResult.swift */,
+				CF9F9225225061A800916E18 /* UserInfo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -246,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9F922122505F8700916E18 /* HADSPost.swift in Sources */,
 				CFF2BB392231CEC300D40324 /* AppDelegate.swift in Sources */,
 				CF3DF8C9223A174900D4476A /* PartBViewController.swift in Sources */,
 				CFF2BB542231D51000D40324 /* LogInViewController.swift in Sources */,
@@ -256,7 +274,9 @@
 				CFF2BB5D2231DA1900D40324 /* FinishViewController.swift in Sources */,
 				CF3DF8CC223A184F00D4476A /* PartAViewController.swift in Sources */,
 				CF7E51E2223DA50E0041DB90 /* DLRadioButton.m in Sources */,
+				CF9F922822506A7C00916E18 /* QuizResult.swift in Sources */,
 				CF3DF8C6223A16CD00D4476A /* HADSViewController.swift in Sources */,
+				CF9F9226225061A800916E18 /* UserInfo.swift in Sources */,
 				CF3933002232306000552A56 /* HADSQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
