@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="is1-Zy-mNG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="is1-Zy-mNG">
     <device id="ipad11_0rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,11 +33,29 @@
                                     <action selector="nextPressed:" destination="is1-Zy-mNG" eventType="touchUpInside" id="ZLP-kc-8wR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybT-Kr-oo4" userLabel="Type1Button">
+                                <rect key="frame" x="129" y="460" width="120" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Type1"/>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhU-1d-dFa" userLabel="Type2Button">
+                                <rect key="frame" x="257" y="460" width="120" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Type2"/>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfL-6S-Ahx" userLabel="Type3Button">
+                                <rect key="frame" x="385" y="460" width="120" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Type3"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Vq-dn-J4z"/>
                     </view>
                     <connections>
+                        <outlet property="type1Button" destination="ybT-Kr-oo4" id="7He-Zg-3mu"/>
+                        <outlet property="type2Button" destination="dhU-1d-dFa" id="0i4-dH-PNc"/>
+                        <outlet property="type3Button" destination="GfL-6S-Ahx" id="PFY-Ec-8JE"/>
                         <segue destination="cRP-aL-ESl" kind="show" identifier="goToPartB" id="nYn-lz-krF"/>
                     </connections>
                 </viewController>
@@ -54,4 +72,9 @@
             <point key="canvasLocation" x="545" y="55"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Type1" width="62" height="99"/>
+        <image name="Type2" width="59.5" height="99"/>
+        <image name="Type3" width="59.5" height="98.5"/>
+    </resources>
 </document>

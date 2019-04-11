@@ -46,7 +46,7 @@ class PartBViewController: UIViewController, CanReceiveHADS {
     
     func dataReceived(depressionScore: Int, anxietyScore: Int) {
         
-        // hadsButton.isEnabled = false
+        hadsButton.isEnabled = false
         HADSScoreLabel.text = "Your depression score is \(depressionScore).\nYour anxiety score is \(anxietyScore)."
     }
     

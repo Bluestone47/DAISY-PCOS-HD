@@ -22,7 +22,7 @@ class FinishViewController: UIViewController {
         
         HADSPost().hadsSubmit()
         
-        // navigationController?.popToRootViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
         
     }
     

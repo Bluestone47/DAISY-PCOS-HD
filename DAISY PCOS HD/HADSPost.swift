@@ -6,6 +6,7 @@
 //  Copyright © 2019 XIAN DONG. All rights reserved.
 //
 
+//
 // Note: MySQL8.0 doesn't support [caching_sha2_password]
 
 import Foundation
@@ -13,7 +14,8 @@ import Foundation
 class HADSPost {
     
     //URL to our web service
-    let URL_SAVE_TEAM = "http://127.0.0.1/DaisyDbService/quizService/api/hadsPost.php"
+    // let URL_SAVE_TEAM = "http://127.0.0.1/DaisyDbService/operation/hadsPost.php"
+    let URL_SAVE_TEAM = "http://192.168.0.4/DaisyDbService/operation/hadsPost.php"
     
     func hadsSubmit(){
         

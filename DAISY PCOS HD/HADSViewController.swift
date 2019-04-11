@@ -8,7 +8,14 @@
 
 import UIKit
 
+// protocal for score data back to PartB
+protocol CanReceiveHADS {
+    func dataReceived(depressionScore : Int, anxietyScore : Int)
+}
+
 class HADSViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var delegate : CanReceiveHADS?
     
     let questionArray = HADSQuestionBank().list
     var selectedAnswer = [Int]()
@@ -62,7 +69,7 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func submitPressed(_ sender: Any) {
         
-        // print((sender as! UIButton).tag)
+        var isCompleted : Bool = true
         
         // Check which buttons are selected for each question
         for n in 0...questionArray.count-1 {
@@ -74,19 +81,59 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
             else if (cell.optionC.isSelected) { selectedAnswer.append(2) }
             else if (cell.optionD.isSelected) { selectedAnswer.append(3) }
             else {
-                // WARNING: MUST FINISH ALL QUESTIONS BEFORE SUBMIT
+                isCompleted = false
             }
             
         }
         
-        // Print the answer in the console
-        for n in 0...questionArray.count-1 {
-            print("Question\(n+1): \(selectedAnswer[n])")
+        if (isCompleted) {
+            
+            
+            // Calculate the score
+            calculateScore()
+            
+            // save the result in dictionary
+            saveResult()
+            
+            // Print the answer in the console
+            // print(selectedAnswer)
+            // print(depressionScore)
+            // print(anxietyScore)
+            
+            // Send score back to PartB View
+            delegate?.dataReceived(depressionScore: depressionScore, anxietyScore: anxietyScore)
+            // self.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
+            
+        } else {
+            // WARNING: MUST FINISH ALL QUESTIONS BEFORE SUBMIT
         }
         
-        // Return to PartB
-        // performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
         
+    }
+    
+    func calculateScore() {
+        
+        for n in 0...questionArray.count-1 {
+            if questionArray[n].whatFor == "D" {
+                depressionScore += (3-selectedAnswer[n])
+            }
+            else if questionArray[n].whatFor == "A" {
+                anxietyScore += (3-selectedAnswer[n])
+            }
+        }
+        
+    }
+    
+    func saveResult(){
+        var hadsResult = [String: String]()
+        hadsResult["ensat_id"] = "1"
+        hadsResult["center_id"] = "GBBI"
+        for n in 0...questionArray.count-1 {
+            hadsResult["qhads_\(n+1)"] = questionArray[n].answer[selectedAnswer[n]].replacingOccurrences(of:"\\", with: "")
+        }
+        QuizResult.shared().result["hads"] = hadsResult
+        print(QuizResult.shared().result)
     }
     
     
