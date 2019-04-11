@@ -20,6 +20,7 @@
 		CF9F922122505F8700916E18 /* HADSPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F922022505F8700916E18 /* HADSPost.swift */; };
 		CF9F9226225061A800916E18 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F9225225061A800916E18 /* UserInfo.swift */; };
 		CF9F922822506A7C00916E18 /* QuizResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F922722506A7C00916E18 /* QuizResult.swift */; };
+		CFA31AF4225F553100B56373 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA31AF3225F553100B56373 /* DesignableView.swift */; };
 		CFF2BB392231CEC300D40324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2BB382231CEC300D40324 /* AppDelegate.swift */; };
 		CFF2BB3E2231CEC300D40324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF2BB3C2231CEC300D40324 /* Main.storyboard */; };
 		CFF2BB402231CEC400D40324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF2BB3F2231CEC400D40324 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		CF9F922022505F8700916E18 /* HADSPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADSPost.swift; sourceTree = "<group>"; };
 		CF9F9225225061A800916E18 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CF9F922722506A7C00916E18 /* QuizResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResult.swift; sourceTree = "<group>"; };
+		CFA31AF3225F553100B56373 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		CFF2BB352231CEC300D40324 /* DAISY PCOS HD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DAISY PCOS HD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF2BB382231CEC300D40324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF2BB3D2231CEC300D40324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,24 @@
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		CFA31AF1225F54A600B56373 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CFA31AF3225F553100B56373 /* DesignableView.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		CFA31AF2225F54B300B56373 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CFF2BB5E2231E6FD00D40324 /* WelcomeViewController.swift */,
+				CFF2BB552231D52000D40324 /* RegisterViewController.swift */,
+				CFF2BB532231D51000D40324 /* LogInViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		CFF2BB2C2231CEC300D40324 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +175,7 @@
 		CFF2BB4E2231D48600D40324 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CFA31AF1225F54A600B56373 /* Main */,
 				CF3DF8C7223A16E400D4476A /* PartB */,
 				CF9F922722506A7C00916E18 /* QuizResult.swift */,
 				CF9F9225225061A800916E18 /* UserInfo.swift */,
@@ -178,9 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				CFF2BB382231CEC300D40324 /* AppDelegate.swift */,
-				CFF2BB5E2231E6FD00D40324 /* WelcomeViewController.swift */,
-				CFF2BB552231D52000D40324 /* RegisterViewController.swift */,
-				CFF2BB532231D51000D40324 /* LogInViewController.swift */,
+				CFA31AF2225F54B300B56373 /* Main */,
 				CF3DF8CA223A182200D4476A /* PartA */,
 				CF3DF8C4223A169700D4476A /* PartB */,
 				CF7E51DE223DA49D0041DB90 /* Supporting Files */,
@@ -271,6 +290,7 @@
 				CFF2BB562231D52000D40324 /* RegisterViewController.swift in Sources */,
 				CF57FF40223F1157000042C0 /* HADSTableViewCell.swift in Sources */,
 				CF3933022232307100552A56 /* HADSQuestionBank.swift in Sources */,
+				CFA31AF4225F553100B56373 /* DesignableView.swift in Sources */,
 				CFF2BB5D2231DA1900D40324 /* FinishViewController.swift in Sources */,
 				CF3DF8CC223A184F00D4476A /* PartAViewController.swift in Sources */,
 				CF7E51E2223DA50E0041DB90 /* DLRadioButton.m in Sources */,

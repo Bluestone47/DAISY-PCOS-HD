@@ -20,7 +20,20 @@ class LogInViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
+    }
 
+    @IBAction func dismissModal(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
     @IBAction func logInPressed(_ sender: Any) {
         
         self.performSegue(withIdentifier: "goToPartA", sender: self)

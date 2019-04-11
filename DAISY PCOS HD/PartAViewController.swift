@@ -35,7 +35,8 @@ class PartAViewController: UIViewController {
     func loadHairButtons(){
         
         for button in hairButtons {
-            button.setImage(UIImage(named: "Type\(button.tag)") as UIImage?, for: .normal)
+            button.setImage(nil, for: .normal)
+            button.setBackgroundImage(UIImage(named: "Type\(button.tag)") as UIImage?, for: .normal)
             button.addTarget(self, action: #selector(self.changeImageButton(_:)), for:.touchUpInside)
             self.view.addSubview(button)
         }
@@ -46,11 +47,11 @@ class PartAViewController: UIViewController {
         for button in hairButtons {
             if button.tag == sender.tag {
                 button.isSelected = true
-                button.setImage(UIImage(named: "Type\(button.tag) - Checked") as UIImage?, for: .normal)
+                button.setBackgroundImage(UIImage(named: "Type\(button.tag) - Checked") as UIImage?, for: .normal)
             }
             else if button.tag != sender.tag {
                 button.isSelected = false
-                button.setImage(UIImage(named: "Type\(button.tag)") as UIImage?, for: .normal)
+                button.setBackgroundImage(UIImage(named: "Type\(button.tag)") as UIImage?, for: .normal)
             }
         }
         
