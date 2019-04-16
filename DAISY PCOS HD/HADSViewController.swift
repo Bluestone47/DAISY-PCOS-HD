@@ -94,11 +94,7 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             // save the result in dictionary
             saveResult()
-            
-            // Print the answer in the console
-            // print(selectedAnswer)
-            // print(depressionScore)
-            // print(anxietyScore)
+            QuizResult.shared().hadsFinished = true
             
             // Send score back to PartB View
             delegate?.dataReceived(depressionScore: depressionScore, anxietyScore: anxietyScore)
