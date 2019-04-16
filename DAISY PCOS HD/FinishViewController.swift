@@ -20,9 +20,14 @@ class FinishViewController: UIViewController {
     
     @IBAction func closePressed(_ sender: Any) {
         
-        HADSPost().hadsSubmit()
+        // Only submit HADS if the user have finished it
+        if  QuizResult.shared().hadsFinished == true {
+            HADSPost().hadsSubmit()
+        }
         
-        navigationController?.popToRootViewController(animated: true)
+        // Go back to the home screen of the application
+        // navigationController?.popToRootViewController(animated: true)
+        performSegue(withIdentifier: "goToMain", sender: self)
         
     }
     

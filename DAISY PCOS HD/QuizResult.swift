@@ -19,6 +19,9 @@ class QuizResult{
     // var result = Dictionary<String, Any>()
     var result = [String: Any]()
     
+    // HADS is an optional questionaire
+    var hadsFinished = false
+    
     private init() {
         result = [
             "id": "",
@@ -41,6 +44,7 @@ class QuizResult{
                 "qhads_14": ""
             ]
         ]
+        hadsFinished = false
     }
     
     // access the singleton object by QuizResult.shared()

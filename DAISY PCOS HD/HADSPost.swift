@@ -13,9 +13,9 @@ import Foundation
 
 class HADSPost {
     
-    //URL to our web service
-    // let URL_SAVE_TEAM = "http://127.0.0.1/DaisyDbService/operation/hadsPost.php"
-    let URL_SAVE_TEAM = "http://192.168.0.4/DaisyDbService/operation/hadsPost.php"
+    //URL to web service
+    let URL_SAVE_TEAM = "http://127.0.0.1/DaisyDbService/operation/hadsPost.php"
+    // let URL_SAVE_TEAM = "http://192.168.0.4/DaisyDbService/operation/hadsPost.php"
     
     func hadsSubmit(){
         
