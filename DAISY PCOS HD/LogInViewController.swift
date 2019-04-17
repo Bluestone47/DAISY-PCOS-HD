@@ -36,8 +36,12 @@ class LogInViewController: UIViewController {
     
     @IBAction func logInPressed(_ sender: Any) {
         
-        self.performSegue(withIdentifier: "goToPartA", sender: self)
-        
+        if isValidEmail(testStr: emailTextField.text!) {
+            
+        }
+        else {
+            self.performSegue(withIdentifier: "goToPartA", sender: self)
+        }
     }
     
     

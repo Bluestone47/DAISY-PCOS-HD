@@ -19,21 +19,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eiw-VR-1dH">
-                                <rect key="frame" x="377" y="977" width="86" height="41"/>
+                                <rect key="frame" x="374" y="885" width="86" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <segue destination="M4O-09-qT0" kind="show" identifier="goToRegister" id="V68-8V-uRE"/>
+                                    <segue destination="M4O-09-qT0" kind="presentation" identifier="goToRegister" id="V68-8V-uRE"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MON-Ap-AXL">
-                                <rect key="frame" x="297" y="204" width="240" height="128"/>
+                                <rect key="frame" x="297" y="404" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.7853545368" green="0.53684380450000002" blue="0.28466099810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1St-gO-HdP">
-                                <rect key="frame" x="388" y="883" width="64" height="41"/>
+                                <rect key="frame" x="385" y="824" width="64" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Log In"/>
@@ -41,6 +41,164 @@
                                     <segue destination="JyL-hJ-EfL" kind="presentation" identifier="goToLogIn" id="Cle-L0-8jO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbr-l1-JAH">
+                                <rect key="frame" x="167" y="130" width="500" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="D">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="issecting ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="A">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="ndrogen excess and metabolic dysfunction                           – an ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="I">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="ntegrated ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="SY">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="stems approach to ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="P">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="oly">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="C">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="ystic ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="O">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="vary ">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="S">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="yndrome">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNZ-6m-37t">
+                                <rect key="frame" x="267" y="288" width="300" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="DAISY-PCOS">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -62,18 +220,16 @@
                             <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhF-4R-v3x" userLabel="DismissModal">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhF-4R-v3x" userLabel="DismissModal">
                                     <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Button"/>
                                     <connections>
                                         <action selector="dismissModal:" destination="JyL-hJ-EfL" eventType="touchUpInside" id="pT5-c9-ATm"/>
                                     </connections>
                                 </button>
-                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P1x-NV-t5Z" customClass="DesignableView" customModule="DAISY_PCOS_HD" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1x-NV-t5Z" customClass="DesignableView" customModule="DAISY_PCOS_HD" customModuleProvider="target">
                                     <rect key="frame" x="237" y="472" width="360" height="250"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="syM-XF-c1S" userLabel="Email TextField">
                                             <rect key="frame" x="80" y="47" width="200" height="30"/>
@@ -98,7 +254,11 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.84349885658564305" green="0.84349885658564305" blue="0.84349885658564305" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="Ns9-GS-Xwy"/>
+                                        <constraint firstAttribute="width" constant="360" id="eN1-ac-OTN"/>
+                                    </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                             <real key="value" value="40"/>
@@ -107,6 +267,14 @@
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="FhF-4R-v3x" firstAttribute="leading" secondItem="MZU-0g-ob3" secondAttribute="leading" id="6VI-CV-EAA"/>
+                                <constraint firstItem="P1x-NV-t5Z" firstAttribute="centerY" secondItem="MZU-0g-ob3" secondAttribute="centerY" id="DU2-ub-B2e"/>
+                                <constraint firstAttribute="bottom" secondItem="FhF-4R-v3x" secondAttribute="bottom" id="I2A-1f-fLE"/>
+                                <constraint firstItem="P1x-NV-t5Z" firstAttribute="centerX" secondItem="MZU-0g-ob3" secondAttribute="centerX" id="W4D-8F-BRS"/>
+                                <constraint firstItem="FhF-4R-v3x" firstAttribute="top" secondItem="MZU-0g-ob3" secondAttribute="top" id="l0w-M4-VGi"/>
+                                <constraint firstAttribute="trailing" secondItem="FhF-4R-v3x" secondAttribute="trailing" id="yII-7c-Veh"/>
+                            </constraints>
                         </view>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <blurEffect style="light"/>
@@ -133,41 +301,102 @@
         <!--Register-->
         <scene sceneID="NB6-Uf-ze2">
             <objects>
-                <viewController id="M4O-09-qT0" userLabel="Register" customClass="RegisterViewController" customModule="DAISY_PCOS_HD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a0x-JZ-gN5">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="M4O-09-qT0" userLabel="Register" customClass="RegisterViewController" customModule="DAISY_PCOS_HD" customModuleProvider="target" sceneMemberID="viewController">
+                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="KDg-Dd-Uq0">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJi-Jx-8qg">
-                                <rect key="frame" x="389" y="493" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Register"/>
-                                <connections>
-                                    <action selector="registerPressed:" destination="M4O-09-qT0" eventType="touchUpInside" id="0EH-3Q-Luq"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ytw-zG-Xcj" userLabel="Email TextField">
-                                <rect key="frame" x="369" y="302" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQj-7h-eHr" userLabel="Password TextField">
-                                <rect key="frame" x="369" y="395" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="HU8-N3-0dz"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ykm-kY-67e">
+                            <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-y0-jC8" userLabel="DismissModal">
+                                    <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="dismissModal:" destination="JyL-hJ-EfL" eventType="touchUpInside" id="oSN-Ft-4bm"/>
+                                        <action selector="dismissModal:" destination="M4O-09-qT0" eventType="touchUpInside" id="tmD-PN-NyY"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lfv-It-LGp" customClass="DesignableView" customModule="DAISY_PCOS_HD" customModuleProvider="target">
+                                    <rect key="frame" x="237" y="347" width="360" height="500"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3pn-6J-wAe" userLabel="Email TextField">
+                                            <rect key="frame" x="80" y="97" width="200" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jo-P0-Tnb" userLabel="Password TextField">
+                                            <rect key="frame" x="80" y="146" width="200" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KOA-df-wAN" userLabel="Password2 TextField">
+                                            <rect key="frame" x="80" y="199" width="200" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlO-6U-FFU" userLabel="Center TextField">
+                                            <rect key="frame" x="80" y="251" width="200" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fk-lA-FnE" userLabel="Birthday TextField">
+                                            <rect key="frame" x="80" y="289" width="200" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gba-jV-cqa">
+                                            <rect key="frame" x="152" y="415" width="57" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Register"/>
+                                            <connections>
+                                                <action selector="logInPressed:" destination="JyL-hJ-EfL" eventType="touchUpInside" id="P7Y-yR-Bg9"/>
+                                                <action selector="registerPressed:" destination="M4O-09-qT0" eventType="touchUpInside" id="FEN-yH-dJz"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="40"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ue4-s0-K7q">
+                                    <rect key="frame" x="0.0" y="855" width="834" height="160"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </pickerView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="jhI-y0-jC8" firstAttribute="leading" secondItem="Ykm-kY-67e" secondAttribute="leading" id="8US-Vg-ff0"/>
+                                <constraint firstAttribute="trailing" secondItem="jhI-y0-jC8" secondAttribute="trailing" id="J8P-tp-mmT"/>
+                                <constraint firstAttribute="bottom" secondItem="jhI-y0-jC8" secondAttribute="bottom" id="M6o-Gi-g9b"/>
+                                <constraint firstItem="jhI-y0-jC8" firstAttribute="top" secondItem="Ykm-kY-67e" secondAttribute="top" id="khR-8t-jZp"/>
+                            </constraints>
+                        </view>
+                        <blurEffect style="light"/>
+                    </visualEffectView>
                     <navigationItem key="navigationItem" title="Register" id="seN-Yu-fuy"/>
                     <connections>
-                        <outlet property="emailTextField" destination="Ytw-zG-Xcj" id="Xx3-RS-Ngr"/>
-                        <outlet property="passwordTextField" destination="sQj-7h-eHr" id="miE-eW-B4Q"/>
+                        <outlet property="birthdayTextField" destination="9fk-lA-FnE" id="FwW-f8-fDM"/>
+                        <outlet property="centerPicker" destination="ue4-s0-K7q" id="Rgc-cF-Dwc"/>
+                        <outlet property="centerTextField" destination="dlO-6U-FFU" id="b7U-y1-IEw"/>
+                        <outlet property="confirmPasswordTextField" destination="KOA-df-wAN" id="NBI-h5-WGT"/>
+                        <outlet property="emailTextField" destination="3pn-6J-wAe" id="vVS-T9-Q4e"/>
+                        <outlet property="passwordTextField" destination="0jo-P0-Tnb" id="3Km-oR-Y9M"/>
                         <segue destination="Qro-UX-jsU" kind="show" identifier="goToPartA" id="DAO-3V-fyQ"/>
                     </connections>
                 </viewController>
@@ -177,6 +406,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bwm-Ml-2Vd"/>
+        <segue reference="DAO-3V-fyQ"/>
     </inferredMetricsTieBreakers>
 </document>
