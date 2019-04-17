@@ -36,7 +36,7 @@ class LogInViewController: UIViewController {
     
     @IBAction func logInPressed(_ sender: Any) {
         
-        if isValidEmail(testStr: emailTextField.text!) {
+        if isValidEmail(testStr: emailTextField.text!) == false {
             
         }
         else {
