@@ -253,6 +253,13 @@
                                                 <action selector="logInPressed:" destination="JyL-hJ-EfL" eventType="touchUpInside" id="49Y-JD-fUX"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2S-w2-dwW" userLabel="Error Label">
+                                            <rect key="frame" x="80" y="138" width="200" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
@@ -282,6 +289,7 @@
                     <navigationItem key="navigationItem" title="Log In" id="amG-H7-9Q1" userLabel="Log In"/>
                     <connections>
                         <outlet property="emailTextField" destination="syM-XF-c1S" id="XdY-LI-IUB"/>
+                        <outlet property="errorLabel" destination="t2S-w2-dwW" id="fD0-oW-kOg"/>
                         <outlet property="passwordTextField" destination="f6l-D7-MvP" id="ieO-us-yxc"/>
                         <segue destination="Qro-UX-jsU" kind="show" identifier="goToPartA" id="bwm-Ml-2Vd"/>
                     </connections>
@@ -406,6 +414,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DAO-3V-fyQ"/>
+        <segue reference="bwm-Ml-2Vd"/>
     </inferredMetricsTieBreakers>
 </document>

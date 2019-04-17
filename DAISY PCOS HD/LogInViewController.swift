@@ -12,6 +12,7 @@ class LogInViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     
     
 
@@ -19,6 +20,7 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        errorLabel.text = nil
     }
     
     func isValidEmail(testStr:String) -> Bool {
@@ -37,7 +39,7 @@ class LogInViewController: UIViewController {
     @IBAction func logInPressed(_ sender: Any) {
         
         if isValidEmail(testStr: emailTextField.text!) == false {
-            
+            errorLabel.text = "Email"
         }
         else {
             self.performSegue(withIdentifier: "goToPartA", sender: self)
