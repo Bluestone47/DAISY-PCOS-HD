@@ -11,7 +11,7 @@ import Foundation
 class GetIPAddress {
     
     // Return IP address according to the Run Environment
-    func getIPAddress() -> String {
+    static func getIPAddress() -> String {
         
         var address: String = ""
         

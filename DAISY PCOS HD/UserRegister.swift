@@ -10,10 +10,10 @@ import Foundation
 
 class UserRegister {
 
-    func signup(){
+    static func signup(registerInfo: [String: String] ){
         
         // URL to web service
-        let URL_SAVE_TEAM = "http://\(GetIPAddress().getIPAddress())/DaisyDbService/operation/signup.php"
+        let URL_SAVE_TEAM = "http://\(GetIPAddress.getIPAddress())/DaisyDbService/operation/signup.php"
         
         //created NSURL
         let requestURL = NSURL(string: URL_SAVE_TEAM)
@@ -24,15 +24,13 @@ class UserRegister {
         //setting the method to post
         request.httpMethod = "POST"
         
-        //getting values from text fields
-        let hadsResult = QuizResult.shared().result["hads"]
-        
         //creating the post parameter by concatenating the keys and values from QuizResult
-        let postParameters = try? JSONSerialization.data(withJSONObject: hadsResult!)
+        let postParameters = try? JSONSerialization.data(withJSONObject: registerInfo)
         print(postParameters!)
         
         //adding the parameters to request body
         request.httpBody = postParameters
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         //creating a task to send the post request
         let task = URLSession.shared.dataTask(with: request as URLRequest){
@@ -46,7 +44,9 @@ class UserRegister {
             //parsing the response
             do {
                 // Here is an example of return massage
+                // {"status":false,"message":"email already exists!"}
                 // {"status":true,"message":"Successfully Signup!","user_id":"1","email":"Bruce","center_id":"GBBI"}
+                
                 //converting resonse to NSDictionary
                 let myJSON =  try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
                 

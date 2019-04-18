@@ -13,10 +13,10 @@ import Foundation
 
 class HADSPost {
     
-    func hadsSubmit(){
+    static func hadsSubmit(){
         
         // URL to web service
-        let URL_SAVE_TEAM = "http://\(GetIPAddress().getIPAddress())/DaisyDbService/operation/hadsPost.php"
+        let URL_SAVE_TEAM = "http://\(GetIPAddress.getIPAddress())/DaisyDbService/operation/hadsPost.php"
         
         //created NSURL
         let requestURL = NSURL(string: URL_SAVE_TEAM)
