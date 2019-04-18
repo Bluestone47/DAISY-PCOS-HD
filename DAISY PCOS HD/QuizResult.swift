@@ -23,8 +23,8 @@ class QuizResult{
     var hadsFinished = false
     
     private init() {
+        hadsFinished = false
         result = [
-            "id": "",
             "hads": [
                 "ensat_id": "",
                 "center_id": "",
@@ -44,7 +44,6 @@ class QuizResult{
                 "qhads_14": ""
             ]
         ]
-        hadsFinished = false
     }
     
     // access the singleton object by QuizResult.shared()

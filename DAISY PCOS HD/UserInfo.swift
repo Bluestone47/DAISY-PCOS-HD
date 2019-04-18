@@ -10,16 +10,34 @@ import Foundation
 
 class UserInfo{
     
-    let email: String
-    let id: Int
-    let center: String
-    let centerID: String
+    // create a singleton result object
+    private static var sharedUserInfo: UserInfo = {
+        let userInfo = UserInfo()
+        return userInfo
+    }()
     
-    init(email: String, id: Int, center: String) {
+    var email: String
+    var id: String
+    var center: String
+    var patientID: String
+    
+    private init() {
+        email = ""
+        id = ""
+        center = ""
+        patientID = ""
+    }
+    
+    init(email: String, id: String, center: String) {
         self.email = email
         self.id = id
         self.center = center
-        self.centerID = String(format: "\(center)-%04d", id)
+        self.patientID = String(format: "\(center)-%04d", Int(id)!)
+    }
+    
+    // access the singleton object by QuizResult.shared()
+    class func shared() -> UserInfo {
+        return sharedUserInfo
     }
     
 }

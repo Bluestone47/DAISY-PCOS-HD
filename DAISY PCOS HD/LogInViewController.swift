@@ -38,12 +38,13 @@ class LogInViewController: UIViewController {
     
     @IBAction func logInPressed(_ sender: Any) {
         
-        if isValidEmail(testStr: emailTextField.text!) == false {
-            errorLabel.text = "Email"
-        }
-        else {
+        UserLogin().login(email: emailTextField.text!, password: passwordTextField.text!)
+//        if isValidEmail(testStr: emailTextField.text!) == false {
+//            errorLabel.text = "Email"
+//        }
+//        else {
             self.performSegue(withIdentifier: "goToPartA", sender: self)
-        }
+//        }
     }
     
     
