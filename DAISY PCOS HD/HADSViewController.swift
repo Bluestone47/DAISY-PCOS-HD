@@ -123,8 +123,8 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func saveResult(){
         var hadsResult = [String: String]()
-        hadsResult["ensat_id"] = "1"
-        hadsResult["center_id"] = "GBBI"
+        hadsResult["ensat_id"] = UserInfo.shared().id
+        hadsResult["center_id"] = UserInfo.shared().center
         for n in 0...questionArray.count-1 {
             hadsResult["qhads_\(n+1)"] = questionArray[n].answer[selectedAnswer[n]].replacingOccurrences(of:"\\", with: "")
         }

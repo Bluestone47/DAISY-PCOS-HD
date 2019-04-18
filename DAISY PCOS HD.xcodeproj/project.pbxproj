@@ -17,6 +17,7 @@
 		CF57FF40223F1157000042C0 /* HADSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF57FF3E223F1157000042C0 /* HADSTableViewCell.swift */; };
 		CF57FF41223F1157000042C0 /* HADSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF57FF3F223F1157000042C0 /* HADSTableViewCell.xib */; };
 		CF7E51E2223DA50E0041DB90 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7E51E0223DA50D0041DB90 /* DLRadioButton.m */; };
+		CF9985BA226717DD00D0CC87 /* GetIPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9985B9226717DD00D0CC87 /* GetIPAddress.swift */; };
 		CF9F922122505F8700916E18 /* HADSPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F922022505F8700916E18 /* HADSPost.swift */; };
 		CF9F9226225061A800916E18 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F9225225061A800916E18 /* UserInfo.swift */; };
 		CF9F922822506A7C00916E18 /* QuizResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F922722506A7C00916E18 /* QuizResult.swift */; };
@@ -46,6 +47,7 @@
 		CF7E51DF223DA50D0041DB90 /* DAISY PCOS HD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DAISY PCOS HD-Bridging-Header.h"; sourceTree = "<group>"; };
 		CF7E51E0223DA50D0041DB90 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		CF7E51E1223DA50E0041DB90 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		CF9985B9226717DD00D0CC87 /* GetIPAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIPAddress.swift; sourceTree = "<group>"; };
 		CF9F922022505F8700916E18 /* HADSPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADSPost.swift; sourceTree = "<group>"; };
 		CF9F9225225061A800916E18 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CF9F922722506A7C00916E18 /* QuizResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResult.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				CF9F922022505F8700916E18 /* HADSPost.swift */,
 				CFA31AF5225F62CE00B56373 /* UserLogin.swift */,
 				CFA31AF7225F62DB00B56373 /* UserRegister.swift */,
+				CF9985B9226717DD00D0CC87 /* GetIPAddress.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				CFF2BB5D2231DA1900D40324 /* FinishViewController.swift in Sources */,
 				CF3DF8CC223A184F00D4476A /* PartAViewController.swift in Sources */,
 				CF7E51E2223DA50E0041DB90 /* DLRadioButton.m in Sources */,
+				CF9985BA226717DD00D0CC87 /* GetIPAddress.swift in Sources */,
 				CF9F922822506A7C00916E18 /* QuizResult.swift in Sources */,
 				CF3DF8C6223A16CD00D4476A /* HADSViewController.swift in Sources */,
 				CFA31AF6225F62CE00B56373 /* UserLogin.swift in Sources */,

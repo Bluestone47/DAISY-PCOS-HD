@@ -13,11 +13,10 @@ import Foundation
 
 class HADSPost {
     
-    //URL to web service
-    let URL_SAVE_TEAM = "http://127.0.0.1/DaisyDbService/operation/hadsPost.php"
-    // let URL_SAVE_TEAM = "http://192.168.0.4/DaisyDbService/operation/hadsPost.php"
-    
     func hadsSubmit(){
+        
+        // URL to web service
+        let URL_SAVE_TEAM = "http://\(GetIPAddress().getIPAddress())/DaisyDbService/operation/hadsPost.php"
         
         //created NSURL
         let requestURL = NSURL(string: URL_SAVE_TEAM)
@@ -28,7 +27,7 @@ class HADSPost {
         //setting the method to post
         request.httpMethod = "POST"
         
-        //getting values from text fields
+        //getting values from results
         let hadsResult = QuizResult.shared().result["hads"]
         
         //creating the post parameter by concatenating the keys and values from QuizResult
@@ -37,6 +36,7 @@ class HADSPost {
         
         //adding the parameters to request body
         request.httpBody = postParameters
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         //creating a task to send the post request
         let task = URLSession.shared.dataTask(with: request as URLRequest){
