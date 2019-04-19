@@ -32,7 +32,6 @@ class HADSPost {
         
         //creating the post parameter by concatenating the keys and values from QuizResult
         let postParameters = try? JSONSerialization.data(withJSONObject: hadsResult!)
-        print(postParameters!)
         
         //adding the parameters to request body
         request.httpBody = postParameters
