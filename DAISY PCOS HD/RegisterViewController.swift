@@ -52,6 +52,7 @@ class RegisterViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var centerTextField: UITextField!
     @IBOutlet weak var birthdayTextField: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     
     @IBOutlet weak var centerPicker: UIPickerView!
     
@@ -148,12 +149,53 @@ class RegisterViewController: UIViewController, UIPickerViewDataSource, UIPicker
         
     }
     
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
+    }
+    
     @IBAction func registerPressed(_ sender: Any) {
         
-        self.performSegue(withIdentifier: "goToPartA", sender: self)
+        // Getting value from input
+        let info: [String: String] = [
+            "email": emailTextField.text!,
+            "password": passwordTextField.text!,
+            "center_id": centerTextField.text!,
+            "dob": birthdayTextField.text!
+        ]
+        
+//        if isValidEmail(testStr: emailTextField.text!) == false {
+//            errorLabel.text = "Email"
+//        }
+//        else {
+            // Login to acquire user info
+            print(info)
+            UserRegister.signup(registerInfo: info)
+            self.performSegue(withIdentifier: "goToPartA", sender: self)
+            // Wait 0.5 second for the communication to finish
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                if UserInfoObject.auth == true {
+                    self.performSegue(withIdentifier: "goToPartA", sender: self)
+                }
+                else {
+                    // self.showAlert(title: "Error", message: "Email already exists.")
+                }
+            }
+//        }
         
     }
     
+    func showAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
     
     
 }

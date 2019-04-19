@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--PartA View Controller-->
+        <!--PART A-->
         <scene sceneID="DQ6-J8-YaS">
             <objects>
                 <viewController id="is1-Zy-mNG" customClass="PartAViewController" customModule="DAISY_PCOS_HD" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Vq-dn-J4z"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gyX-TP-6rG"/>
+                    <navigationItem key="navigationItem" title="PART A" id="gyX-TP-6rG"/>
                     <connections>
                         <outlet property="centerIDLabel" destination="WyA-QP-aNP" id="yEb-iI-8vu"/>
                         <outlet property="type1Button" destination="ybT-Kr-oo4" id="7He-Zg-3mu"/>

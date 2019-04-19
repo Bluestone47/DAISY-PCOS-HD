@@ -22,7 +22,7 @@ class PartAViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        centerIDLabel.text = "Welcome \(UserInfo.shared().email)"
+        centerIDLabel.text = "Welcome \(UserInfoObject.shared().userInfo.patientID)"
         
         loadHairButtons()
         

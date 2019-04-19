@@ -24,9 +24,11 @@ class UserRegister {
         //setting the method to post
         request.httpMethod = "POST"
         
-        //creating the post parameter by concatenating the keys and values from QuizResult
-        let postParameters = try? JSONSerialization.data(withJSONObject: registerInfo)
-        print(postParameters!)
+        var info = registerInfo
+        info["dob"] = convertDateFormater(info["dob"]!)
+        print(info)
+        //creating the post parameter by concatenating the keys and values from UserInfo
+        let postParameters = try? JSONSerialization.data(withJSONObject: info)
         
         //adding the parameters to request body
         request.httpBody = postParameters
@@ -53,6 +55,15 @@ class UserRegister {
                 //parsing the json
                 if let parseJSON = myJSON {
                     
+                    if parseJSON["status"] as! Bool == true {
+                        // Assign user information
+                        let newUser = UserInfo(email: parseJSON["email"] as! String, id: parseJSON["user_id"] as! String, center: parseJSON["center_id"] as! String)
+                        
+                        UserInfoObject.shared().userInfo = newUser
+                        
+                        UserInfoObject.auth = true
+                    }
+                    
                     //creating a string
                     var msg : String!
                     
@@ -70,6 +81,18 @@ class UserRegister {
         }
         //executing the task
         task.resume()
+        
+    }
+    
+    static func convertDateFormater(_ date: String) -> String {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        
+        let date = dateFormatter.date(from: date)
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        return  dateFormatter.string(from: date!)
         
     }
     

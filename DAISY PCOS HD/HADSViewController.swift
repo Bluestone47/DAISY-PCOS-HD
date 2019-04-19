@@ -82,6 +82,14 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
             else if (cell.optionD.isSelected) { selectedAnswer.append(3) }
             else {
                 isCompleted = false
+                
+                // Show alert
+                let alert = UIAlertController(title: "Incomplete", message: "Please complete all questions before proceed.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+                self.present(alert, animated: true, completion: nil)
+                
             }
             
         }
@@ -123,8 +131,8 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func saveResult(){
         var hadsResult = [String: String]()
-        hadsResult["ensat_id"] = UserInfo.shared().id
-        hadsResult["center_id"] = UserInfo.shared().center
+        hadsResult["ensat_id"] = UserInfoObject.shared().userInfo.id
+        hadsResult["center_id"] = UserInfoObject.shared().userInfo.center
         for n in 0...questionArray.count-1 {
             hadsResult["qhads_\(n+1)"] = questionArray[n].answer[selectedAnswer[n]].replacingOccurrences(of:"\\", with: "")
         }
