@@ -40,18 +40,18 @@ class LogInViewController: UIViewController {
 //            errorLabel.text = "Email"
 //        }
 //        else {
-            // Login to acquire user info
-            UserLogin.login(email: emailTextField.text!, password: passwordTextField.text!)
-
-            // Wait 0.5 second for the communication to finish
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                if UserInfoObject.auth == true {
+//            // Login to acquire user info
+//            UserLogin.login(email: emailTextField.text!, password: passwordTextField.text!)
+//
+//            // Wait 0.5 second for the communication to finish
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                if UserInfoObject.auth == true {
                     self.performSegue(withIdentifier: "goToPartA", sender: self)
-                }
-                else {
-
-                }
-            }
+//                }
+//                else {
+//
+//                }
+//            }
 //        }
     }
 

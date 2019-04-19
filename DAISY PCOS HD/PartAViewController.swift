@@ -13,6 +13,13 @@ class PartAViewController: UIViewController {
     
     @IBOutlet weak var centerIDLabel: UILabel!
     
+    @IBOutlet weak var hairOptionView: UIView!
+    
+    @IBOutlet weak var hairYesButton: DLRadioButton!
+    @IBOutlet weak var hairNoButton: DLRadioButton!
+    
+    @IBOutlet weak var hairTypeView: UIView!
+    
     @IBOutlet weak var type1Button: UIButton!
     @IBOutlet weak var type2Button: UIButton!
     @IBOutlet weak var type3Button: UIButton!
@@ -24,8 +31,22 @@ class PartAViewController: UIViewController {
         
         centerIDLabel.text = "Welcome \(UserInfoObject.shared().userInfo.patientID)"
         
+        hairOptionView.isHidden = true
+        // hairTypeView.isHidden = true
         loadHairButtons()
         
+    }
+    
+    @IBAction func hairYesPressed(_ sender: Any) {
+        hairNoButton.isSelected = false
+        hairOptionView.isHidden = false
+        // hairTypeView.isHidden = false
+    }
+    
+    @IBAction func hairNoPressed(_ sender: Any) {
+        hairYesButton.isSelected = false
+        hairOptionView.isHidden = true
+        // hairTypeView.isHidden = true
     }
     
     func loadHairButtons(){
@@ -34,7 +55,8 @@ class PartAViewController: UIViewController {
             button.setImage(nil, for: .normal)
             button.setBackgroundImage(UIImage(named: "Type\(button.tag)") as UIImage?, for: .normal)
             button.addTarget(self, action: #selector(self.changeImageButton(_:)), for:.touchUpInside)
-            self.view.addSubview(button)
+            // self.view.addSubview(button)
+            hairTypeView.addSubview(button)
         }
     }
     

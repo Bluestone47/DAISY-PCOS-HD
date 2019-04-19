@@ -170,19 +170,19 @@ class RegisterViewController: UIViewController, UIPickerViewDataSource, UIPicker
 //            errorLabel.text = "Email"
 //        }
 //        else {
-            // Login to acquire user info
-            print(info)
-            UserRegister.signup(registerInfo: info)
-            self.performSegue(withIdentifier: "goToPartA", sender: self)
-            // Wait 0.5 second for the communication to finish
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                if UserInfoObject.auth == true {
+//            // Login to acquire user info
+//            print(info)
+//            UserRegister.signup(registerInfo: info)
+//            self.performSegue(withIdentifier: "goToPartA", sender: self)
+//            // Wait 0.5 second for the communication to finish
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                if UserInfoObject.auth == true {
                     self.performSegue(withIdentifier: "goToPartA", sender: self)
-                }
-                else {
-                    // self.showAlert(title: "Error", message: "Email already exists.")
-                }
-            }
+//                }
+//                else {
+//                    // self.showAlert(title: "Error", message: "Email already exists.")
+//                }
+//            }
 //        }
         
     }
