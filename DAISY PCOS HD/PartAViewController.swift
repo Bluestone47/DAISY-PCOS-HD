@@ -13,13 +13,11 @@ class PartAViewController: UIViewController {
     
     @IBOutlet weak var centerIDLabel: UILabel!
     
-    @IBOutlet weak var hairOptionView: UIView!
-    
+    @IBOutlet weak var bodyHairLabel: UILabel!
     @IBOutlet weak var hairYesButton: DLRadioButton!
     @IBOutlet weak var hairNoButton: DLRadioButton!
-    
+    @IBOutlet weak var hairOptionView: UIView!
     @IBOutlet weak var hairTypeView: UIView!
-    
     @IBOutlet weak var type1Button: UIButton!
     @IBOutlet weak var type2Button: UIButton!
     @IBOutlet weak var type3Button: UIButton!
@@ -29,24 +27,28 @@ class PartAViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        centerIDLabel.text = "Welcome \(UserInfoObject.shared().userInfo.patientID)"
+        loadLabels()
         
-        hairOptionView.isHidden = true
-        // hairTypeView.isHidden = true
+        // hairOptionView.isHidden = true
         loadHairButtons()
+        
+    }
+    
+    func loadLabels() {
+        
+        centerIDLabel.text = "Welcome \(UserInfoObject.shared().userInfo.patientID)"
+        bodyHairLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         
     }
     
     @IBAction func hairYesPressed(_ sender: Any) {
         hairNoButton.isSelected = false
         hairOptionView.isHidden = false
-        // hairTypeView.isHidden = false
     }
     
     @IBAction func hairNoPressed(_ sender: Any) {
         hairYesButton.isSelected = false
         hairOptionView.isHidden = true
-        // hairTypeView.isHidden = true
     }
     
     func loadHairButtons(){
