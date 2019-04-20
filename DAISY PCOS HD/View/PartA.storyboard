@@ -24,20 +24,431 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Apb-YL-0WV" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is Part A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEU-86-3In">
-                                                <rect key="frame" x="50" y="26" width="101" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clinical Questionnaire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEU-86-3In">
+                                                <rect key="frame" x="50" y="26" width="166" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyA-QP-aNP">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyA-QP-aNP">
                                                 <rect key="frame" x="50" y="55" width="200" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pjl-wq-9Co" userLabel="Ethnic Origin View">
+                                                <rect key="frame" x="50" y="124" width="734" height="391"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ethnic origin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4c-Al-Li7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lUm-DH-8sr">
+                                                        <rect key="frame" x="34" y="48" width="660" height="306"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="VZV-MU-OOd" userLabel="Left Stack View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="330" height="306"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyL-6R-VZV" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
+                                                                        <state key="normal" title="White - British">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <outletCollection property="otherButtons" destination="lSt-ns-3gW" id="KtQ-GM-qGL"/>
+                                                                            <outletCollection property="otherButtons" destination="6G1-gi-lj5" id="lOo-jA-flC"/>
+                                                                            <outletCollection property="otherButtons" destination="Dhc-oQ-N2M" id="rp2-GW-uaA"/>
+                                                                            <outletCollection property="otherButtons" destination="Jak-RD-oS6" id="aFe-Yp-pzb"/>
+                                                                            <outletCollection property="otherButtons" destination="tol-Ld-YI7" id="9jO-xV-xDA"/>
+                                                                            <outletCollection property="otherButtons" destination="XQP-9Z-Vtl" id="Zvj-i8-fTq"/>
+                                                                            <outletCollection property="otherButtons" destination="zIz-LN-fkY" id="Ckl-0o-JSl"/>
+                                                                            <outletCollection property="otherButtons" destination="oVq-xp-M46" id="K2X-JF-Ce1"/>
+                                                                            <outletCollection property="otherButtons" destination="2a0-7k-GDU" id="aPp-mz-KYK"/>
+                                                                            <outletCollection property="otherButtons" destination="n0Z-w6-Ncn" id="Vjj-Fv-7mD"/>
+                                                                            <outletCollection property="otherButtons" destination="FkY-rb-m1b" id="MO2-bK-TAV"/>
+                                                                            <outletCollection property="otherButtons" destination="8Wd-Lr-aUT" id="rGf-Ux-BoD"/>
+                                                                            <outletCollection property="otherButtons" destination="oxx-Kv-xpr" id="eku-jK-v84"/>
+                                                                            <outletCollection property="otherButtons" destination="J8s-rf-Lcz" id="ExH-RW-xgN"/>
+                                                                            <outletCollection property="otherButtons" destination="nef-xq-TZB" id="xRk-Am-ubs"/>
+                                                                            <outletCollection property="otherButtons" destination="nul-ds-MBj" id="5a3-kA-Yjy"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSt-ns-3gW" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="34" width="330" height="34"/>
+                                                                        <state key="normal" title="White - Irish">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6G1-gi-lj5" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="68" width="330" height="34"/>
+                                                                        <state key="normal" title="Other white background">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhc-oQ-N2M" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="102" width="330" height="34"/>
+                                                                        <state key="normal" title="Asian or Asian British-Indian">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jak-RD-oS6" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="136" width="330" height="34"/>
+                                                                        <state key="normal" title="Asian or Asian British-Pakistani">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tol-Ld-YI7" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="170" width="330" height="34"/>
+                                                                        <state key="normal" title="Asian or Asian British-Bangladeshi">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQP-9Z-Vtl" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="204" width="330" height="34"/>
+                                                                        <state key="normal" title="Chinese">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIz-LN-fkY" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="238" width="330" height="34"/>
+                                                                        <state key="normal" title="Other Asian Background">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVq-xp-M46" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="272" width="330" height="34"/>
+                                                                        <state key="normal" title="Prefer not to say">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="oVq-xp-M46" secondAttribute="trailing" id="0Ew-XT-qtG"/>
+                                                                    <constraint firstItem="Dhc-oQ-N2M" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="leading" id="1Ow-vp-WSo"/>
+                                                                    <constraint firstItem="Jak-RD-oS6" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="leading" id="1af-SJ-SKJ"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="zIz-LN-fkY" secondAttribute="trailing" id="35s-id-NoD"/>
+                                                                    <constraint firstItem="zIz-LN-fkY" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="leading" id="6dQ-wg-wtJ"/>
+                                                                    <constraint firstItem="6G1-gi-lj5" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="leading" id="87S-wg-Xco"/>
+                                                                    <constraint firstAttribute="width" constant="330" id="8kv-ic-gqG"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="tol-Ld-YI7" secondAttribute="trailing" id="A0q-BG-1Z7"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="6G1-gi-lj5" secondAttribute="trailing" id="CMe-cQ-o5M"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Dhc-oQ-N2M" secondAttribute="trailing" id="IPa-7a-DOC"/>
+                                                                    <constraint firstItem="oVq-xp-M46" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="leading" id="cEA-Vy-aDF"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Jak-RD-oS6" secondAttribute="trailing" id="jnu-DL-PHu"/>
+                                                                    <constraint firstItem="tol-Ld-YI7" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="leading" id="m4T-tO-yGm"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="CyL-6R-VZV" secondAttribute="trailing" id="qDS-Op-Nat"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="XQP-9Z-Vtl" secondAttribute="trailing" id="rua-Nt-nIG"/>
+                                                                    <constraint firstItem="CyL-6R-VZV" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="leading" id="shY-1I-GKV"/>
+                                                                    <constraint firstItem="XQP-9Z-Vtl" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="leading" id="vqu-No-UAU"/>
+                                                                    <constraint firstItem="lSt-ns-3gW" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="leading" id="wdV-Zo-Mss"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="lSt-ns-3gW" secondAttribute="trailing" id="xsP-2r-ccX"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZdG-yd-Thj" userLabel="Right Stack View">
+                                                                <rect key="frame" x="330" y="0.0" width="330" height="306"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a0-7k-GDU" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
+                                                                        <state key="normal" title="Black or Black British-Carribean">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0Z-w6-Ncn" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="34" width="330" height="34"/>
+                                                                        <state key="normal" title="Black or Black British-African">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkY-rb-m1b" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="68" width="330" height="34"/>
+                                                                        <state key="normal" title="Other Black background">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wd-Lr-aUT" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="102" width="330" height="34"/>
+                                                                        <state key="normal" title="Mixed – White and Black Carribean">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxx-Kv-xpr" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="136" width="330" height="34"/>
+                                                                        <state key="normal" title="White and Black-African">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8s-rf-Lcz" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="170" width="330" height="34"/>
+                                                                        <state key="normal" title="Other Mixed Background">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nef-xq-TZB" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="204" width="330" height="34"/>
+                                                                        <state key="normal" title="Other Ethnic background">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nul-ds-MBj" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="238" width="330" height="34"/>
+                                                                        <state key="normal" title="Not Known">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3f-pj-zbm" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="272" width="330" height="34"/>
+                                                                        <state key="normal" title="PlaceHolder"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
+                                                                                <real key="value" value="12"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="J8s-rf-Lcz" secondAttribute="trailing" id="0oV-9M-pwo"/>
+                                                                    <constraint firstItem="nul-ds-MBj" firstAttribute="leading" secondItem="ZdG-yd-Thj" secondAttribute="leading" id="7Jk-vH-LB0"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="2a0-7k-GDU" secondAttribute="trailing" id="9K8-cS-pu2"/>
+                                                                    <constraint firstAttribute="width" constant="330" id="9Ra-8G-GnU"/>
+                                                                    <constraint firstItem="J8s-rf-Lcz" firstAttribute="leading" secondItem="ZdG-yd-Thj" secondAttribute="leading" id="Aga-jn-VMf"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="n0Z-w6-Ncn" secondAttribute="trailing" id="BLk-qn-Yfu"/>
+                                                                    <constraint firstItem="oxx-Kv-xpr" firstAttribute="leading" secondItem="ZdG-yd-Thj" secondAttribute="leading" id="BTc-n9-YeW"/>
+                                                                    <constraint firstItem="FkY-rb-m1b" firstAttribute="leading" secondItem="ZdG-yd-Thj" secondAttribute="leading" id="DHw-XM-e0o"/>
+                                                                    <constraint firstItem="8Wd-Lr-aUT" firstAttribute="leading" secondItem="ZdG-yd-Thj" secondAttribute="leading" id="Fgx-Bs-AQd"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="nef-xq-TZB" secondAttribute="trailing" id="KZA-cB-1nV"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="8Wd-Lr-aUT" secondAttribute="trailing" id="LQu-Pt-ybj"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="oxx-Kv-xpr" secondAttribute="trailing" id="MDS-Up-k41"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="nul-ds-MBj" secondAttribute="trailing" id="MTE-kA-XMM"/>
+                                                                    <constraint firstItem="n0Z-w6-Ncn" firstAttribute="leading" secondItem="ZdG-yd-Thj" secondAttribute="leading" id="aRk-MN-aHH"/>
+                                                                    <constraint firstItem="2a0-7k-GDU" firstAttribute="leading" secondItem="ZdG-yd-Thj" secondAttribute="leading" id="ddd-rM-YbC"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="FkY-rb-m1b" secondAttribute="trailing" id="jTX-QM-6A5"/>
+                                                                    <constraint firstItem="D3f-pj-zbm" firstAttribute="leading" secondItem="ZdG-yd-Thj" secondAttribute="leading" id="rdB-Qv-uLe"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="D3f-pj-zbm" secondAttribute="trailing" id="tjT-7G-Bg2"/>
+                                                                    <constraint firstItem="nef-xq-TZB" firstAttribute="leading" secondItem="ZdG-yd-Thj" secondAttribute="leading" id="wxZ-bD-axf"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ZdG-yd-Thj" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="trailing" id="1rZ-09-cib"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ZdG-yd-Thj" secondAttribute="bottom" id="6ev-My-ghe"/>
+                                                            <constraint firstItem="VZV-MU-OOd" firstAttribute="leading" secondItem="lUm-DH-8sr" secondAttribute="leading" id="Oi4-lu-mgs"/>
+                                                            <constraint firstItem="VZV-MU-OOd" firstAttribute="top" secondItem="lUm-DH-8sr" secondAttribute="top" id="W7e-rT-3gT"/>
+                                                            <constraint firstAttribute="width" constant="660" id="euX-tU-pOO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZdG-yd-Thj" secondAttribute="trailing" id="ia8-7g-S6V"/>
+                                                            <constraint firstItem="ZdG-yd-Thj" firstAttribute="top" secondItem="lUm-DH-8sr" secondAttribute="top" id="jCf-Vc-qnR"/>
+                                                            <constraint firstItem="ZdG-yd-Thj" firstAttribute="leading" secondItem="VZV-MU-OOd" secondAttribute="trailing" id="kak-0P-ert"/>
+                                                            <constraint firstAttribute="bottom" secondItem="VZV-MU-OOd" secondAttribute="bottom" id="qxq-wY-P1L"/>
+                                                            <constraint firstAttribute="height" constant="306" id="vvw-ZH-xug"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWM-oL-3iy" userLabel="Hair Base View">
                                                 <rect key="frame" x="51" y="540" width="734" height="130"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -160,37 +571,14 @@
                                                 <color key="backgroundColor" red="0.8766615257" green="1" blue="0.75478587490000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aK-lR-b8S">
-                                                <rect key="frame" x="394" y="989" width="32" height="30"/>
+                                                <rect key="frame" x="391" y="988" width="38" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Next"/>
                                                 <connections>
                                                     <action selector="nextPressed:" destination="is1-Zy-mNG" eventType="touchUpInside" id="ZLP-kc-8wR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-VG-d2O">
-                                                <rect key="frame" x="497" y="26" width="46" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pjl-wq-9Co" userLabel="Ethnic Origin View">
-                                                <rect key="frame" x="50" y="124" width="734" height="391"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ethnic origin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4c-Al-Li7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wd-Lr-aUT">
-                                                        <rect key="frame" x="8" y="48" width="46" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Button"/>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -222,6 +610,7 @@
                     <connections>
                         <outlet property="bodyHairLabel" destination="W9H-aY-pZ6" id="D1g-7R-giL"/>
                         <outlet property="centerIDLabel" destination="WyA-QP-aNP" id="yEb-iI-8vu"/>
+                        <outlet property="ethnicButton" destination="CyL-6R-VZV" id="KHG-Z5-knj"/>
                         <outlet property="hairNoButton" destination="kxe-uR-Cte" id="yFw-bl-cPr"/>
                         <outlet property="hairOptionView" destination="iud-z6-RsS" id="Ksx-1w-VQd"/>
                         <outlet property="hairTypeView" destination="V7H-T2-xVh" id="UlY-nq-3tl"/>

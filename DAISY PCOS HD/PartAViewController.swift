@@ -13,6 +13,8 @@ class PartAViewController: UIViewController {
     
     @IBOutlet weak var centerIDLabel: UILabel!
     
+    @IBOutlet weak var ethnicButton: DLRadioButton!
+    
     @IBOutlet weak var bodyHairLabel: UILabel!
     @IBOutlet weak var hairYesButton: DLRadioButton!
     @IBOutlet weak var hairNoButton: DLRadioButton!
@@ -77,7 +79,15 @@ class PartAViewController: UIViewController {
         
     }
     
+    func gatherAnswers() {
+        
+        print(print(String(format: "%@ is selected.\n", ethnicButton.selected()!.titleLabel!.text!)))
+        
+    }
+    
     @IBAction func nextPressed(_ sender: Any) {
+        
+        gatherAnswers()
         
         performSegue(withIdentifier: "goToPartB", sender: self)
     }
