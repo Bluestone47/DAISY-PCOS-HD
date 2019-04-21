@@ -32,7 +32,7 @@ class PartAViewController: UIViewController {
         
         loadLabels()
         
-        // hairOptionView.isHidden = true
+        hairOptionView.isHidden = true
         loadHairButtons()
         
     }
