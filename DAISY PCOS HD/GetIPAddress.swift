@@ -32,7 +32,7 @@ class GetIPAddress {
     }
     
     // Return IP address of WiFi interface (en0) as a String, or `nil`
-    func getWiFiAddress() -> String? {
+    static func getWiFiAddress() -> String? {
         var address : String?
         
         // Get list of all interfaces on the local machine:
