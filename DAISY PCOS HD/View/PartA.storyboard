@@ -39,7 +39,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pjl-wq-9Co" userLabel="Ethnic Origin View">
-                                                <rect key="frame" x="50" y="124" width="734" height="391"/>
+                                                <rect key="frame" x="50" y="124" width="734" height="380"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ethnic origin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4c-Al-Li7">
@@ -611,6 +611,7 @@
                         <outlet property="bodyHairLabel" destination="W9H-aY-pZ6" id="D1g-7R-giL"/>
                         <outlet property="centerIDLabel" destination="WyA-QP-aNP" id="yEb-iI-8vu"/>
                         <outlet property="ethnicButton" destination="CyL-6R-VZV" id="KHG-Z5-knj"/>
+                        <outlet property="ethnicLabel" destination="p4c-Al-Li7" id="TKL-Te-8fy"/>
                         <outlet property="hairNoButton" destination="kxe-uR-Cte" id="yFw-bl-cPr"/>
                         <outlet property="hairOptionView" destination="iud-z6-RsS" id="Ksx-1w-VQd"/>
                         <outlet property="hairTypeView" destination="V7H-T2-xVh" id="UlY-nq-3tl"/>

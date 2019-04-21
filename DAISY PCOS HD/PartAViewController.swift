@@ -13,6 +13,7 @@ class PartAViewController: UIViewController {
     
     @IBOutlet weak var centerIDLabel: UILabel!
     
+    @IBOutlet weak var ethnicLabel: UILabel!
     @IBOutlet weak var ethnicButton: DLRadioButton!
     
     @IBOutlet weak var bodyHairLabel: UILabel!
@@ -38,7 +39,8 @@ class PartAViewController: UIViewController {
     
     func loadLabels() {
         
-        centerIDLabel.text = "Welcome \(UserInfoObject.shared().userInfo.patientID)"
+        centerIDLabel.text = "Welcome Patient \(UserInfoObject.shared().userInfo.patientID)"
+        ethnicLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         bodyHairLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         
     }

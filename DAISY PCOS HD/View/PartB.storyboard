@@ -19,39 +19,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPO-rH-HkV">
-                                <rect key="frame" x="0.0" y="74" width="834" height="1120"/>
+                                <rect key="frame" x="0.0" y="24" width="834" height="1150"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCE-JV-ma3" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is Part B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrz-1K-f2s">
-                                                <rect key="frame" x="89" y="29" width="101" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOu-28-KIB">
-                                                <rect key="frame" x="397" y="998" width="41" height="36"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Next"/>
-                                                <connections>
-                                                    <action selector="nextPressed:" destination="hVe-1h-hpo" eventType="touchUpInside" id="gr4-AE-iAs"/>
-                                                </connections>
-                                            </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kR5-on-OGT" userLabel="Quiz Stack View">
-                                                <rect key="frame" x="87" y="136" width="660" height="824.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kR5-on-OGT" userLabel="Quiz Stack View">
+                                                <rect key="frame" x="87" y="84" width="660" height="912"/>
                                                 <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdn-TK-1eZ" userLabel="Berlin Head View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="660" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We would like you to complete a short questionnaire on your sleep:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="370-DO-goP" userLabel="Berlin Head Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="660" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" red="0.93547368049621582" green="0.77160385864155068" blue="0.69188065577204749" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="Jw3-SZ-eHm"/>
+                                                            <constraint firstAttribute="width" constant="660" id="cjW-hh-8yK"/>
+                                                        </constraints>
+                                                    </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPc-xf-KKX" userLabel="Berlin View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="660" height="312.5"/>
+                                                        <rect key="frame" x="0.0" y="30" width="660" height="312.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berlin questionnaire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vn1-2i-wrS">
-                                                                <rect key="frame" x="0.0" y="0.0" width="444" height="24"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="660" height="24"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="444" id="chd-qJ-Ovb"/>
-                                                                    <constraint firstAttribute="height" constant="24" id="smW-Ps-QqI"/>
+                                                                    <constraint firstAttribute="width" constant="660" id="chd-qJ-Ovb"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
@@ -63,11 +63,11 @@
                                                                     <constraint firstAttribute="height" constant="204" id="KeK-2K-qmq"/>
                                                                     <constraint firstAttribute="width" constant="660" id="V9b-t9-LtY"/>
                                                                 </constraints>
-                                                                <mutableString key="text">The BQ incorporates questions about 
+                                                                <string key="text">The BQ incorporates questions about 
 •	snoring (category 1)
 •	daytime somnolence (category 2)
 •	hypertension and BMI (category 3).
-The overall BQ score is determined from the responses to the three categories: scores from the first and second categories are positive if the responses indicated frequent symptoms (&gt;3–4 times/week), whereas the score from the third category was positive if there was a history of hypertension or a BMI &gt;30 kg/m2. Patients are scored as being at high-risk for OSA if they had a positive score on two or more categories, while those who did not were scored as being at low-risk.</mutableString>
+The overall BQ score is determined from the responses to the three categories: scores from the first and second categories are positive if the responses indicated frequent symptoms (&gt;3–4 times/week), whereas the score from the third category was positive if there was a history of hypertension or a BMI &gt;30 kg/m2. Patients are scored as being at high-risk for OSA if they had a positive score on two or more categories, while those who did not were scored as being at low-risk.</string>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -77,8 +77,8 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <state key="normal" title="Take the test"/>
                                                             </button>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete HADS to check your score." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az5-G9-Hkb">
-                                                                <rect key="frame" x="0.0" y="277" width="284.5" height="20.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete Belrin to check your score." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az5-G9-Hkb">
+                                                                <rect key="frame" x="0.0" y="277" width="282" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -101,13 +101,31 @@ The overall BQ score is determined from the responses to the three categories: s
                                                             <constraint firstItem="vn1-2i-wrS" firstAttribute="top" secondItem="lPc-xf-KKX" secondAttribute="top" id="v7f-JG-1V1"/>
                                                         </constraints>
                                                     </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EfP-yH-0nV" userLabel="Hads Head View">
+                                                        <rect key="frame" x="0.0" y="342.5" width="660" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We would like you to complete a short questionnaire on your mood:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9T-Ed-rEb" userLabel="Hads Head Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="660" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" red="0.8766615257" green="1" blue="0.75478587490000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="DOA-cO-o49"/>
+                                                            <constraint firstAttribute="width" constant="660" id="YTc-Uz-Mkg"/>
+                                                        </constraints>
+                                                    </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0XY-aQ-BjO" userLabel="HADS View">
-                                                        <rect key="frame" x="0.0" y="312.5" width="660" height="240"/>
+                                                        <rect key="frame" x="0.0" y="372.5" width="660" height="240"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Hospital Anxiety and Depression Scale (HADS)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iL3-p7-LVN">
-                                                                <rect key="frame" x="0.0" y="0.0" width="444" height="24"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="660" height="24"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="444" id="IvW-31-ojQ"/>
+                                                                    <constraint firstAttribute="width" constant="660" id="IvW-31-ojQ"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
@@ -124,6 +142,14 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-AP-KyL">
+                                                                <rect key="frame" x="280.5" y="141" width="99" height="33"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <state key="normal" title="Take the test"/>
+                                                                <connections>
+                                                                    <action selector="hadsPressed:" destination="hVe-1h-hpo" eventType="touchUpInside" id="UUQ-jo-bji"/>
+                                                                </connections>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete HADS to check your score." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqk-0t-UlN">
                                                                 <rect key="frame" x="0.0" y="180" width="500" height="45"/>
                                                                 <constraints>
@@ -134,14 +160,6 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-AP-KyL">
-                                                                <rect key="frame" x="280.5" y="141" width="99" height="33"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <state key="normal" title="Take the test"/>
-                                                                <connections>
-                                                                    <action selector="hadsPressed:" destination="hVe-1h-hpo" eventType="touchUpInside" id="UUQ-jo-bji"/>
-                                                                </connections>
-                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -159,13 +177,31 @@ The overall BQ score is determined from the responses to the three categories: s
                                                             <constraint firstItem="iL3-p7-LVN" firstAttribute="leading" secondItem="0XY-aQ-BjO" secondAttribute="leading" id="zc3-PJ-HLY"/>
                                                         </constraints>
                                                     </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRn-cb-KbU" userLabel="Ess Head View">
+                                                        <rect key="frame" x="0.0" y="612.5" width="660" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We would like you to complete a short questionnaire on regarding sleepiness:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbw-If-hmA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="660" height="25"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="660" id="MLE-Yn-xyo"/>
+                                                            <constraint firstAttribute="height" constant="30" id="kSc-hk-P5f"/>
+                                                        </constraints>
+                                                    </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBj-EX-NHI" userLabel="ESS View">
-                                                        <rect key="frame" x="0.0" y="552.5" width="660" height="272"/>
+                                                        <rect key="frame" x="0.0" y="642.5" width="660" height="269.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Epworth Sleepiness Scale (ESS)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ax-Id-TyJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="278" height="24"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="660" height="24"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="278" id="Aw1-PD-iu7"/>
+                                                                    <constraint firstAttribute="width" constant="660" id="Aw1-PD-iu7"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
@@ -177,13 +213,13 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                     <constraint firstAttribute="height" constant="172" id="E2I-FH-yDa"/>
                                                                     <constraint firstAttribute="width" constant="660" id="dm1-y7-MHA"/>
                                                                 </constraints>
-                                                                <mutableString key="text">The ESS is a self-administered questionnaire with 8 questions. Respondents are asked to rate, on a 4-point scale (0-3), their usual chances of dozing off or falling asleep while engaged in eight different activities. Most people engage in those activities at least occasionally, although not necessarily every day. The ESS score (the sum of 8 item scores, 0-3) can range from 0 to 24. The higher the ESS score, the higher that person’s average sleep propensity in daily life (ASP), or their ‘daytime sleepiness’. The questionnaire takes no more than 2 or 3 minutes to answer. It is available in many different languages.</mutableString>
+                                                                <string key="text">The ESS is a self-administered questionnaire with 8 questions. Respondents are asked to rate, on a 4-point scale (0-3), their usual chances of dozing off or falling asleep while engaged in eight different activities. Most people engage in those activities at least occasionally, although not necessarily every day. The ESS score (the sum of 8 item scores, 0-3) can range from 0 to 24. The higher the ESS score, the higher that person’s average sleep propensity in daily life (ASP), or their ‘daytime sleepiness’. The questionnaire takes no more than 2 or 3 minutes to answer. It is available in many different languages.</string>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete HADS to check your score." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaf-hg-cgN">
-                                                                <rect key="frame" x="0.0" y="236.5" width="465" height="20.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete ESS to check your score." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaf-hg-cgN">
+                                                                <rect key="frame" x="0.0" y="234" width="465" height="20.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="465" id="hmr-K3-g0L"/>
                                                                 </constraints>
@@ -192,7 +228,7 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXS-J3-ljL">
-                                                                <rect key="frame" x="280.5" y="201" width="99" height="35.5"/>
+                                                                <rect key="frame" x="280.5" y="201" width="99" height="33"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <state key="normal" title="Take the test"/>
                                                             </button>
@@ -213,45 +249,83 @@ The overall BQ score is determined from the responses to the three categories: s
                                                         </constraints>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="XBj-EX-NHI" firstAttribute="top" secondItem="bRn-cb-KbU" secondAttribute="bottom" id="JOv-pA-XXA"/>
+                                                    <constraint firstAttribute="width" constant="660" id="NiG-Lg-o5k"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tdn-TK-1eZ" secondAttribute="trailing" id="OID-2H-gps"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EfP-yH-0nV" secondAttribute="trailing" id="Q56-YZ-AmR"/>
+                                                    <constraint firstItem="EfP-yH-0nV" firstAttribute="top" secondItem="lPc-xf-KKX" secondAttribute="bottom" id="Xc7-Sk-GjU"/>
+                                                    <constraint firstItem="0XY-aQ-BjO" firstAttribute="top" secondItem="EfP-yH-0nV" secondAttribute="bottom" id="bku-nP-hTs"/>
+                                                    <constraint firstItem="lPc-xf-KKX" firstAttribute="top" secondItem="tdn-TK-1eZ" secondAttribute="bottom" id="d9V-0a-drK"/>
+                                                    <constraint firstItem="tdn-TK-1eZ" firstAttribute="top" secondItem="kR5-on-OGT" secondAttribute="top" id="gGt-7p-3Rk"/>
+                                                    <constraint firstItem="EfP-yH-0nV" firstAttribute="leading" secondItem="kR5-on-OGT" secondAttribute="leading" id="gk2-i9-kKi"/>
+                                                    <constraint firstItem="tdn-TK-1eZ" firstAttribute="leading" secondItem="kR5-on-OGT" secondAttribute="leading" id="mgf-px-8cv"/>
+                                                    <constraint firstItem="bRn-cb-KbU" firstAttribute="top" secondItem="0XY-aQ-BjO" secondAttribute="bottom" id="wek-TG-4xR"/>
+                                                    <constraint firstItem="bRn-cb-KbU" firstAttribute="leading" secondItem="kR5-on-OGT" secondAttribute="leading" id="xuC-R9-Iz0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bRn-cb-KbU" secondAttribute="trailing" id="zbQ-aP-AAI"/>
+                                                </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="370-DO-goP">
-                                                <rect key="frame" x="89" y="80" width="300" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOu-28-KIB">
+                                                <rect key="frame" x="387" y="1016" width="60" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="pv8-VI-qe3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Next"/>
+                                                <connections>
+                                                    <action selector="nextPressed:" destination="hVe-1h-hpo" eventType="touchUpInside" id="gr4-AE-iAs"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standardised Questionnaires" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrz-1K-f2s">
+                                                <rect key="frame" x="217" y="25" width="400" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="400" id="d3Q-Hm-BYB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="wrz-1K-f2s" firstAttribute="centerX" secondItem="pCE-JV-ma3" secondAttribute="centerX" id="8ct-C1-PlW"/>
                                             <constraint firstAttribute="height" constant="1120" id="CfU-Sx-ClN"/>
+                                            <constraint firstItem="kR5-on-OGT" firstAttribute="centerX" secondItem="pCE-JV-ma3" secondAttribute="centerX" id="KIE-lc-1wC"/>
+                                            <constraint firstItem="wrz-1K-f2s" firstAttribute="top" secondItem="pCE-JV-ma3" secondAttribute="top" constant="25" id="ORe-4U-fZt"/>
+                                            <constraint firstItem="uOu-28-KIB" firstAttribute="top" secondItem="kR5-on-OGT" secondAttribute="bottom" constant="20" id="Os3-46-aai"/>
+                                            <constraint firstItem="kR5-on-OGT" firstAttribute="top" secondItem="wrz-1K-f2s" secondAttribute="bottom" constant="30" id="Wko-lp-DZh"/>
+                                            <constraint firstAttribute="bottom" secondItem="uOu-28-KIB" secondAttribute="bottom" constant="68" id="roa-kz-6cL"/>
                                             <constraint firstAttribute="width" constant="834" id="xv9-5U-go3"/>
+                                            <constraint firstItem="uOu-28-KIB" firstAttribute="centerX" secondItem="pCE-JV-ma3" secondAttribute="centerX" id="yA8-W0-Hlp"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="pCE-JV-ma3" firstAttribute="centerX" secondItem="MPO-rH-HkV" secondAttribute="centerX" id="7WW-tQ-UYS"/>
                                     <constraint firstAttribute="trailing" secondItem="pCE-JV-ma3" secondAttribute="trailing" id="KoF-dn-AOS"/>
-                                    <constraint firstAttribute="height" constant="1120" id="SB1-Db-CF2"/>
                                     <constraint firstAttribute="bottom" secondItem="pCE-JV-ma3" secondAttribute="bottom" id="VJP-gW-Tup"/>
                                     <constraint firstItem="pCE-JV-ma3" firstAttribute="leading" secondItem="MPO-rH-HkV" secondAttribute="leading" id="XMH-MJ-d1O"/>
-                                    <constraint firstAttribute="width" constant="834" id="gCN-CM-Yho"/>
                                     <constraint firstItem="pCE-JV-ma3" firstAttribute="top" secondItem="MPO-rH-HkV" secondAttribute="top" id="z3i-eL-U5l"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="MPO-rH-HkV" firstAttribute="bottom" secondItem="tcd-TP-r0D" secondAttribute="bottom" id="BYM-Vp-dWb"/>
                             <constraint firstItem="MPO-rH-HkV" firstAttribute="leading" secondItem="tcd-TP-r0D" secondAttribute="leading" id="Z4P-Ik-1jK"/>
-                            <constraint firstItem="MPO-rH-HkV" firstAttribute="top" secondItem="tcd-TP-r0D" secondAttribute="top" constant="50" id="bAL-Dc-tve"/>
+                            <constraint firstItem="MPO-rH-HkV" firstAttribute="top" secondItem="tcd-TP-r0D" secondAttribute="top" id="bAL-Dc-tve"/>
                             <constraint firstItem="MPO-rH-HkV" firstAttribute="trailing" secondItem="tcd-TP-r0D" secondAttribute="trailing" id="lFI-0l-QE7"/>
-                            <constraint firstAttribute="bottom" secondItem="MPO-rH-HkV" secondAttribute="bottom" id="pwB-VI-IzD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tcd-TP-r0D"/>
                     </view>
                     <navigationItem key="navigationItem" title="PART B" id="vIt-0E-llH"/>
                     <connections>
                         <outlet property="HADSScoreLabel" destination="Wqk-0t-UlN" id="Wcq-Sj-Zxg"/>
+                        <outlet property="berlinLabel" destination="vn1-2i-wrS" id="FpL-Rb-BUh"/>
+                        <outlet property="essLabel" destination="0ax-Id-TyJ" id="xzZ-cq-GM9"/>
                         <outlet property="hadsButton" destination="yN3-AP-KyL" id="03P-ej-pkb"/>
+                        <outlet property="hadsLabel" destination="iL3-p7-LVN" id="MKs-60-KnC"/>
+                        <outlet property="partBLabel" destination="wrz-1K-f2s" id="PPZ-FV-x7m"/>
                         <segue destination="4Co-zg-f4s" kind="show" identifier="goToHADS" id="3RF-gH-h8U"/>
                         <segue destination="GGp-v5-nQR" kind="show" identifier="goToFinish" id="w1W-6c-i4r"/>
                     </connections>
