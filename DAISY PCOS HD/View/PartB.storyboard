@@ -18,45 +18,234 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is Part B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrz-1K-f2s">
-                                <rect key="frame" x="137" y="168" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-AP-KyL">
-                                <rect key="frame" x="137" y="597" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="HADS"/>
-                                <connections>
-                                    <action selector="hadsPressed:" destination="hVe-1h-hpo" eventType="touchUpInside" id="UUQ-jo-bji"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOu-28-KIB">
-                                <rect key="frame" x="401" y="996" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="nextPressed:" destination="hVe-1h-hpo" eventType="touchUpInside" id="gr4-AE-iAs"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="370-DO-goP">
-                                <rect key="frame" x="137" y="250" width="300" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Complete HADS to check your score." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqk-0t-UlN">
-                                <rect key="frame" x="137" y="635" width="465" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPO-rH-HkV">
+                                <rect key="frame" x="0.0" y="74" width="834" height="1120"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCE-JV-ma3" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="1120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is Part B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrz-1K-f2s">
+                                                <rect key="frame" x="89" y="29" width="101" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOu-28-KIB">
+                                                <rect key="frame" x="397" y="998" width="41" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Next"/>
+                                                <connections>
+                                                    <action selector="nextPressed:" destination="hVe-1h-hpo" eventType="touchUpInside" id="gr4-AE-iAs"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kR5-on-OGT" userLabel="Quiz Stack View">
+                                                <rect key="frame" x="87" y="136" width="660" height="824.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPc-xf-KKX" userLabel="Berlin View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="660" height="312.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berlin questionnaire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vn1-2i-wrS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="444" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="444" id="chd-qJ-Ovb"/>
+                                                                    <constraint firstAttribute="height" constant="24" id="smW-Ps-QqI"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1s-9o-Iu9">
+                                                                <rect key="frame" x="0.0" y="32" width="660" height="204"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="204" id="KeK-2K-qmq"/>
+                                                                    <constraint firstAttribute="width" constant="660" id="V9b-t9-LtY"/>
+                                                                </constraints>
+                                                                <mutableString key="text">The BQ incorporates questions about 
+•	snoring (category 1)
+•	daytime somnolence (category 2)
+•	hypertension and BMI (category 3).
+The overall BQ score is determined from the responses to the three categories: scores from the first and second categories are positive if the responses indicated frequent symptoms (&gt;3–4 times/week), whereas the score from the third category was positive if there was a history of hypertension or a BMI &gt;30 kg/m2. Patients are scored as being at high-risk for OSA if they had a positive score on two or more categories, while those who did not were scored as being at low-risk.</mutableString>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzG-BF-spl">
+                                                                <rect key="frame" x="280.5" y="244" width="99" height="33"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <state key="normal" title="Take the test"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete HADS to check your score." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az5-G9-Hkb">
+                                                                <rect key="frame" x="0.0" y="277" width="284.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Az5-G9-Hkb" firstAttribute="top" secondItem="ZzG-BF-spl" secondAttribute="bottom" id="Cd4-Ax-nme"/>
+                                                            <constraint firstAttribute="width" constant="660" id="Iaw-IY-ONe"/>
+                                                            <constraint firstAttribute="height" constant="312.5" id="Nl9-wb-VXK"/>
+                                                            <constraint firstItem="ZzG-BF-spl" firstAttribute="top" secondItem="l1s-9o-Iu9" secondAttribute="bottom" constant="8" id="Sxe-yH-GuH"/>
+                                                            <constraint firstItem="vn1-2i-wrS" firstAttribute="leading" secondItem="lPc-xf-KKX" secondAttribute="leading" id="WLn-Xj-lwD"/>
+                                                            <constraint firstItem="Az5-G9-Hkb" firstAttribute="leading" secondItem="lPc-xf-KKX" secondAttribute="leading" id="XUp-dN-fI8"/>
+                                                            <constraint firstItem="ZzG-BF-spl" firstAttribute="centerX" secondItem="lPc-xf-KKX" secondAttribute="centerX" id="a5r-Fh-tDs"/>
+                                                            <constraint firstItem="l1s-9o-Iu9" firstAttribute="leading" secondItem="lPc-xf-KKX" secondAttribute="leading" id="adY-bB-w9T"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Az5-G9-Hkb" secondAttribute="bottom" constant="15" id="cKy-BW-MH1"/>
+                                                            <constraint firstItem="Az5-G9-Hkb" firstAttribute="top" secondItem="ZzG-BF-spl" secondAttribute="bottom" id="d7L-sw-ZGa"/>
+                                                            <constraint firstAttribute="trailing" secondItem="l1s-9o-Iu9" secondAttribute="trailing" id="dmT-dc-pKL"/>
+                                                            <constraint firstItem="l1s-9o-Iu9" firstAttribute="top" secondItem="vn1-2i-wrS" secondAttribute="bottom" constant="8" id="mgY-Do-3oU"/>
+                                                            <constraint firstItem="vn1-2i-wrS" firstAttribute="top" secondItem="lPc-xf-KKX" secondAttribute="top" id="v7f-JG-1V1"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0XY-aQ-BjO" userLabel="HADS View">
+                                                        <rect key="frame" x="0.0" y="312.5" width="660" height="240"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Hospital Anxiety and Depression Scale (HADS)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iL3-p7-LVN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="444" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="444" id="IvW-31-ojQ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5G-bj-L7o">
+                                                                <rect key="frame" x="0.0" y="29" width="660" height="112"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="660" id="0MC-bH-Tez"/>
+                                                                    <constraint firstAttribute="height" constant="112" id="tx8-jc-qLH"/>
+                                                                </constraints>
+                                                                <string key="text">The HADS is a fourteen item scale that generates ordinal data. Seven of the items relate to anxiety and seven relate to depression. Each item on the questionnaire is scored from 0-3 and this means that a person can score between 0 and 21 for either anxiety or depression. The HADS uses a scale and therefore the data returned from the HADS is ordinal.</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete HADS to check your score." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqk-0t-UlN">
+                                                                <rect key="frame" x="0.0" y="180" width="500" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="0uf-NW-1t8"/>
+                                                                    <constraint firstAttribute="width" constant="500" id="3aF-tp-ok4"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-AP-KyL">
+                                                                <rect key="frame" x="280.5" y="141" width="99" height="33"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <state key="normal" title="Take the test"/>
+                                                                <connections>
+                                                                    <action selector="hadsPressed:" destination="hVe-1h-hpo" eventType="touchUpInside" id="UUQ-jo-bji"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="z5G-bj-L7o" secondAttribute="trailing" id="24T-0K-Dn3"/>
+                                                            <constraint firstAttribute="width" constant="660" id="9Ct-pM-9rm"/>
+                                                            <constraint firstItem="iL3-p7-LVN" firstAttribute="top" secondItem="0XY-aQ-BjO" secondAttribute="top" id="DRM-0p-CLL"/>
+                                                            <constraint firstItem="z5G-bj-L7o" firstAttribute="leading" secondItem="0XY-aQ-BjO" secondAttribute="leading" id="L2b-uP-kI9"/>
+                                                            <constraint firstItem="z5G-bj-L7o" firstAttribute="top" secondItem="iL3-p7-LVN" secondAttribute="bottom" constant="5" id="adJ-4c-AiH"/>
+                                                            <constraint firstItem="Wqk-0t-UlN" firstAttribute="leading" secondItem="0XY-aQ-BjO" secondAttribute="leading" id="bXr-xb-cGM"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Wqk-0t-UlN" secondAttribute="bottom" constant="15" id="fIt-6H-1u6"/>
+                                                            <constraint firstItem="Wqk-0t-UlN" firstAttribute="top" secondItem="yN3-AP-KyL" secondAttribute="bottom" constant="6" id="fp9-F7-0h1"/>
+                                                            <constraint firstItem="yN3-AP-KyL" firstAttribute="top" secondItem="z5G-bj-L7o" secondAttribute="bottom" id="vU3-Yk-0mx"/>
+                                                            <constraint firstItem="yN3-AP-KyL" firstAttribute="centerX" secondItem="0XY-aQ-BjO" secondAttribute="centerX" id="vfs-41-o82"/>
+                                                            <constraint firstAttribute="height" constant="240" id="y0F-St-7wU"/>
+                                                            <constraint firstItem="iL3-p7-LVN" firstAttribute="leading" secondItem="0XY-aQ-BjO" secondAttribute="leading" id="zc3-PJ-HLY"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBj-EX-NHI" userLabel="ESS View">
+                                                        <rect key="frame" x="0.0" y="552.5" width="660" height="272"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Epworth Sleepiness Scale (ESS)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ax-Id-TyJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="278" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="278" id="Aw1-PD-iu7"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iej-e3-0K0">
+                                                                <rect key="frame" x="0.0" y="29" width="660" height="172"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="172" id="E2I-FH-yDa"/>
+                                                                    <constraint firstAttribute="width" constant="660" id="dm1-y7-MHA"/>
+                                                                </constraints>
+                                                                <mutableString key="text">The ESS is a self-administered questionnaire with 8 questions. Respondents are asked to rate, on a 4-point scale (0-3), their usual chances of dozing off or falling asleep while engaged in eight different activities. Most people engage in those activities at least occasionally, although not necessarily every day. The ESS score (the sum of 8 item scores, 0-3) can range from 0 to 24. The higher the ESS score, the higher that person’s average sleep propensity in daily life (ASP), or their ‘daytime sleepiness’. The questionnaire takes no more than 2 or 3 minutes to answer. It is available in many different languages.</mutableString>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete HADS to check your score." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaf-hg-cgN">
+                                                                <rect key="frame" x="0.0" y="236.5" width="465" height="20.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="465" id="hmr-K3-g0L"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXS-J3-ljL">
+                                                                <rect key="frame" x="280.5" y="201" width="99" height="35.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <state key="normal" title="Take the test"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="iej-e3-0K0" firstAttribute="leading" secondItem="XBj-EX-NHI" secondAttribute="leading" id="01b-kD-trS"/>
+                                                            <constraint firstAttribute="bottom" secondItem="uaf-hg-cgN" secondAttribute="bottom" constant="15" id="3Su-Bx-olm"/>
+                                                            <constraint firstItem="0ax-Id-TyJ" firstAttribute="leading" secondItem="XBj-EX-NHI" secondAttribute="leading" id="BeM-tz-m6W"/>
+                                                            <constraint firstItem="0ax-Id-TyJ" firstAttribute="top" secondItem="XBj-EX-NHI" secondAttribute="top" id="QWN-rc-JBa"/>
+                                                            <constraint firstItem="OXS-J3-ljL" firstAttribute="top" secondItem="iej-e3-0K0" secondAttribute="bottom" id="Qfs-kR-Fbm"/>
+                                                            <constraint firstItem="uaf-hg-cgN" firstAttribute="top" secondItem="OXS-J3-ljL" secondAttribute="bottom" id="ZB5-zn-Wpx"/>
+                                                            <constraint firstItem="iej-e3-0K0" firstAttribute="leading" secondItem="XBj-EX-NHI" secondAttribute="leading" id="it5-iO-mKo"/>
+                                                            <constraint firstAttribute="trailing" secondItem="iej-e3-0K0" secondAttribute="trailing" id="kF8-xW-V51"/>
+                                                            <constraint firstItem="iej-e3-0K0" firstAttribute="top" secondItem="0ax-Id-TyJ" secondAttribute="bottom" constant="5" id="mgg-nQ-111"/>
+                                                            <constraint firstItem="OXS-J3-ljL" firstAttribute="centerX" secondItem="XBj-EX-NHI" secondAttribute="centerX" id="nq4-FJ-5Yw"/>
+                                                            <constraint firstItem="uaf-hg-cgN" firstAttribute="leading" secondItem="XBj-EX-NHI" secondAttribute="leading" id="wub-Jd-KYb"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="370-DO-goP">
+                                                <rect key="frame" x="89" y="80" width="300" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1120" id="CfU-Sx-ClN"/>
+                                            <constraint firstAttribute="width" constant="834" id="xv9-5U-go3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pCE-JV-ma3" secondAttribute="trailing" id="KoF-dn-AOS"/>
+                                    <constraint firstAttribute="height" constant="1120" id="SB1-Db-CF2"/>
+                                    <constraint firstAttribute="bottom" secondItem="pCE-JV-ma3" secondAttribute="bottom" id="VJP-gW-Tup"/>
+                                    <constraint firstItem="pCE-JV-ma3" firstAttribute="leading" secondItem="MPO-rH-HkV" secondAttribute="leading" id="XMH-MJ-d1O"/>
+                                    <constraint firstAttribute="width" constant="834" id="gCN-CM-Yho"/>
+                                    <constraint firstItem="pCE-JV-ma3" firstAttribute="top" secondItem="MPO-rH-HkV" secondAttribute="top" id="z3i-eL-U5l"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MPO-rH-HkV" firstAttribute="leading" secondItem="tcd-TP-r0D" secondAttribute="leading" id="Z4P-Ik-1jK"/>
+                            <constraint firstItem="MPO-rH-HkV" firstAttribute="top" secondItem="tcd-TP-r0D" secondAttribute="top" constant="50" id="bAL-Dc-tve"/>
+                            <constraint firstItem="MPO-rH-HkV" firstAttribute="trailing" secondItem="tcd-TP-r0D" secondAttribute="trailing" id="lFI-0l-QE7"/>
+                            <constraint firstAttribute="bottom" secondItem="MPO-rH-HkV" secondAttribute="bottom" id="pwB-VI-IzD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tcd-TP-r0D"/>
                     </view>
                     <navigationItem key="navigationItem" title="PART B" id="vIt-0E-llH"/>
@@ -89,7 +278,7 @@
                                 <rect key="frame" x="0.0" y="50" width="834" height="4144"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuT-Nj-CyZ" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="834" height="4146"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="4152"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital Anxiety and Depression Scale (HADS)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1F-wB-8ym">
                                                 <rect key="frame" x="175.5" y="20" width="483" height="29"/>
@@ -113,7 +302,8 @@ Don’t take too long over you replies: your immediate is best.</string>
                                                 </constraints>
                                             </tableView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEX-gy-x6N">
-                                                <rect key="frame" x="392.5" y="4073" width="49" height="30"/>
+                                                <rect key="frame" x="386" y="4073" width="62" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Submit"/>
                                                 <connections>
                                                     <action selector="submitPressed:" destination="4Co-zg-f4s" eventType="touchUpInside" id="xFd-Ok-NDM"/>

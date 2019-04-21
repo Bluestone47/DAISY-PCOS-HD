@@ -571,9 +571,9 @@
                                                 <color key="backgroundColor" red="0.8766615257" green="1" blue="0.75478587490000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aK-lR-b8S">
-                                                <rect key="frame" x="391" y="988" width="38" height="34"/>
+                                                <rect key="frame" x="390" y="988" width="41" height="36"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Next"/>
                                                 <connections>
                                                     <action selector="nextPressed:" destination="is1-Zy-mNG" eventType="touchUpInside" id="ZLP-kc-8wR"/>

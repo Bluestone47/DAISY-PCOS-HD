@@ -81,7 +81,7 @@ class PartAViewController: UIViewController {
     
     func gatherAnswers() {
         
-        print(print(String(format: "%@ is selected.\n", ethnicButton.selected()!.titleLabel!.text!)))
+        // print(print(String(format: "%@ is selected.\n", ethnicButton.selected()!.titleLabel!.text!)))
         
     }
     
