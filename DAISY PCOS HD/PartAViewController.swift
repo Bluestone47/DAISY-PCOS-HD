@@ -15,7 +15,7 @@ extension String  {
     }
 }
 
-class PartAViewController: UIViewController {
+class PartAViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var centerIDLabel: UILabel!
@@ -43,6 +43,9 @@ class PartAViewController: UIViewController {
         
         loadLabels()
         
+        hairAge.smartInsertDeleteType = UITextSmartInsertDeleteType.no
+        hairAge.delegate = self
+        
         hairOptionView.isHidden = true
         loadHairButtons()
         
@@ -64,6 +67,18 @@ class PartAViewController: UIViewController {
     @IBAction func hairNoPressed(_ sender: Any) {
         hairYesButton.isSelected = false
         hairOptionView.isHidden = true
+    }
+    
+    
+    // set the max length for age textField as 2
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let textFieldText = textField.text,
+            let rangeOfTextToReplace = Range(range, in: textFieldText) else {
+                return false
+        }
+        let substringToReplace = textFieldText[rangeOfTextToReplace]
+        let count = textFieldText.count - substringToReplace.count + string.count
+        return count <= 2
     }
     
     func loadHairButtons(){
