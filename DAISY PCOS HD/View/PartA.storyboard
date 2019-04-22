@@ -51,7 +51,7 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ethnic origin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4c-Al-Li7">
                                                                 <rect key="frame" x="0.0" y="0.0" width="734" height="24"/>
-                                                                <color key="backgroundColor" red="0.93547368050000002" green="0.77160385860000003" blue="0.69188065580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -580,7 +580,7 @@
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body hair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9H-aY-pZ6">
                                                                 <rect key="frame" x="0.0" y="8" width="734" height="20.5"/>
-                                                                <color key="backgroundColor" red="0.93547368050000002" green="0.77160385860000003" blue="0.69188065580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
