@@ -8,6 +8,13 @@
 
 import UIKit
 
+// Check if a string numbers
+extension String  {
+    var isNumber: Bool {
+        return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
+    }
+}
+
 class PartAViewController: UIViewController {
     
     
@@ -20,10 +27,14 @@ class PartAViewController: UIViewController {
     @IBOutlet weak var hairYesButton: DLRadioButton!
     @IBOutlet weak var hairNoButton: DLRadioButton!
     @IBOutlet weak var hairOptionView: UIView!
+    @IBOutlet weak var hairAge: UITextField!
     @IBOutlet weak var hairTypeView: UIView!
     @IBOutlet weak var type1Button: UIButton!
     @IBOutlet weak var type2Button: UIButton!
     @IBOutlet weak var type3Button: UIButton!
+    
+    // temp answers
+    var temp = [String:String]()
     
     lazy var hairButtons : [UIButton] = [type1Button, type2Button, type3Button]
     
@@ -70,6 +81,7 @@ class PartAViewController: UIViewController {
         
         for button in hairButtons {
             if button.tag == sender.tag {
+                temp["hair_type"] = "Type\(button.tag)"
                 button.isSelected = true
                 button.setBackgroundImage(UIImage(named: "Type\(button.tag) - Checked") as UIImage?, for: .normal)
             }
@@ -81,17 +93,61 @@ class PartAViewController: UIViewController {
         
     }
     
-    func gatherAnswers() {
+    func gatherAnswers() -> Bool {
         
+        // Get ethnic answer
         // print(print(String(format: "%@ is selected.\n", ethnicButton.selected()!.titleLabel!.text!)))
+        temp["ethnic"] = ethnicButton.selected()?.titleLabel!.text
+        
+        // Check ethnic answer
+        if temp["ethnic"] == nil {
+            return false
+        }
+        // Check hair loss answer
+        if hairYesButton.isSelected == false && hairNoButton.isSelected == false {
+            return false
+        }
+        
+        // Get hair answer
+        if hairYesButton.isSelected == true {
+            temp["loss_hair"] = "Yes"
+            temp["start_age"] = hairAge.text
+            
+            // Check hair loss age
+            if temp["start_age"] == nil || temp["start_age"]?.isNumber == false || temp["hair_type"] == nil {
+                return false
+            }
+        }
+        else {
+            temp["loss_hair"] = "No"
+        }
+        
+        QuizResult.shared().result["part_a"] = temp
+        
+        return true
         
     }
     
     @IBAction func nextPressed(_ sender: Any) {
         
-        gatherAnswers()
+        if gatherAnswers() == true {
+            print(QuizResult.shared().result["part_a"]!)
+            performSegue(withIdentifier: "goToPartB", sender: self)
+        }
+        else {
+            showAlert(title: "Incomplete", message: "Please complete all questions before proceed.")
+        }
         
-        performSegue(withIdentifier: "goToPartB", sender: self)
+    }
+    
+    func showAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
 }

@@ -808,6 +808,7 @@
                         <outlet property="centerIDLabel" destination="WyA-QP-aNP" id="yEb-iI-8vu"/>
                         <outlet property="ethnicButton" destination="CyL-6R-VZV" id="KHG-Z5-knj"/>
                         <outlet property="ethnicLabel" destination="p4c-Al-Li7" id="TKL-Te-8fy"/>
+                        <outlet property="hairAge" destination="eua-d1-jDH" id="6za-R6-r5A"/>
                         <outlet property="hairNoButton" destination="kxe-uR-Cte" id="yFw-bl-cPr"/>
                         <outlet property="hairOptionView" destination="iud-z6-RsS" id="Ksx-1w-VQd"/>
                         <outlet property="hairTypeView" destination="V7H-T2-xVh" id="UlY-nq-3tl"/>

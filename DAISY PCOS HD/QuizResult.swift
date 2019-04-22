@@ -25,6 +25,12 @@ class QuizResult{
     private init() {
         hadsFinished = false
         result = [
+            "part_a": [
+                "ethnic": "",
+                "loss_hair": "",
+                "start_age": "",
+                "hair_type": "",
+            ],
             "hads": [
                 "ensat_id": "",
                 "center_id": "",

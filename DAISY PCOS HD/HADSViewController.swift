@@ -82,14 +82,7 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
             else if (cell.optionD.isSelected) { selectedAnswer.append(3) }
             else {
                 isCompleted = false
-                
-                // Show alert
-                let alert = UIAlertController(title: "Incomplete", message: "Please complete all questions before proceed.", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                    NSLog("The \"OK\" alert occured.")
-                }))
-                self.present(alert, animated: true, completion: nil)
-                
+                showAlert(title: "Incomplete", message: "Please complete all questions before proceed.")
             }
             
         }
@@ -113,6 +106,16 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
             // WARNING: MUST FINISH ALL QUESTIONS BEFORE SUBMIT
         }
         
+        
+    }
+    
+    func showAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(alert, animated: true, completion: nil)
         
     }
     

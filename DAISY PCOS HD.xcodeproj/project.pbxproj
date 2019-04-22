@@ -131,10 +131,10 @@
 		CF9F921F22505E8900916E18 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CF9985B9226717DD00D0CC87 /* GetIPAddress.swift */,
 				CF9F922022505F8700916E18 /* HADSPost.swift */,
 				CFA31AF5225F62CE00B56373 /* UserLogin.swift */,
 				CFA31AF7225F62DB00B56373 /* UserRegister.swift */,
-				CF9985B9226717DD00D0CC87 /* GetIPAddress.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
