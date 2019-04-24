@@ -25,6 +25,8 @@ class FinishViewController: UIViewController {
             HADSPost.hadsSubmit()
         }
         
+        print(QuizResult.shared().result)
+        
         resetGlobalValuables()
         // Go back to the home screen of the application
         // navigationController?.popToRootViewController(animated: true)
