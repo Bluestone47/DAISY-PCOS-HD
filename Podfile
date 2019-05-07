@@ -6,6 +6,7 @@ target 'DAISY PCOS HD' do
   use_frameworks!
 
   # Pods for DAISY PCOS HD
+    pod 'DLRadioButton', '~> 1.4'
     pod 'SwiftyJSON'
     pod 'Charts'
     pod 'M13Checkbox'

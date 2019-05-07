@@ -25,11 +25,13 @@ class QuizResult{
     private init() {
         hadsFinished = false
         result = [
+            "patientID": "GBBI-0001", // default patientID for test, should not be used by a real user
             "part_a": [
                 "ethnic": "",
                 "loss_hair": "",
                 "start_age": "",
                 "hair_type": "",
+                "patientID": ""
             ],
             "hads": [
                 "ensat_id": "",

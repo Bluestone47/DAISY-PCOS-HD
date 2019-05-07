@@ -140,6 +140,7 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
             hadsResult["qhads_\(n+1)"] = questionArray[n].answer[selectedAnswer[n]].replacingOccurrences(of:"\\", with: "")
         }
         QuizResult.shared().result["hads"] = hadsResult
+        QuizResult.shared().result["hadsScore"] = ["anxiety": depressionScore, "depression": anxietyScore]
         print(QuizResult.shared().result)
     }
     

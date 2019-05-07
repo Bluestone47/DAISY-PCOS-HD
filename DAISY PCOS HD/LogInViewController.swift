@@ -56,7 +56,7 @@ class LogInViewController: UIViewController {
     // Check if the email and password are valid
     func validateInput() -> Bool {
         
-        if emailTextField.text == nil || emailTextField.text != "Email" {
+        if emailTextField.text == nil || emailTextField.text == "Email" {
             errorLabel.text = "Please input email"
             return false
         }
@@ -64,7 +64,7 @@ class LogInViewController: UIViewController {
             errorLabel.text = "Invalid email address"
             return false
         }
-        else if passwordTextField.text == nil || passwordTextField.text != "Password" {
+        else if passwordTextField.text == nil || passwordTextField.text == "Password" {
             errorLabel.text = "Please input password"
             return false
         }

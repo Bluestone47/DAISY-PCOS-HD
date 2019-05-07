@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import DLRadioButton
+import M13Checkbox
 
 // Check if a string numbers
 extension String  {
@@ -34,6 +36,7 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var type3Button: UIButton!
     
     let defaults = UserDefaults.standard
+    let defaultsKey = "LastResult"
     
     // temp answers
     var temp = [String:String]()
@@ -50,6 +53,12 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
         
         hairOptionView.isHidden = true
         loadHairButtons()
+        
+        let lastResult = defaults.dictionary(forKey: defaultsKey)
+        
+        if (lastResult?["PatientID"]) != nil {
+            
+        }
         
     }
     
@@ -139,6 +148,8 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
             temp["loss_hair"] = "No"
         }
         
+        temp["patientID"] = UserInfoObject.shared().userInfo.patientID
+        
         QuizResult.shared().result["part_a"] = temp
         
         return true
@@ -147,14 +158,14 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func nextPressed(_ sender: Any) {
         
-//        if gatherAnswers() == true {
-//            print(QuizResult.shared().result["part_a"]!)
-            self.defaults.set(QuizResult.shared().result, forKey: UserInfoObject.shared().userInfo.patientID)
+        if gatherAnswers() == true {
+            print(QuizResult.shared().result["part_a"]!)
+            self.defaults.set(QuizResult.shared().result["part_a"], forKey: defaultsKey)
             performSegue(withIdentifier: "goToPartB", sender: self)
-//        }
-//        else {
-//            showAlert(title: "Incomplete", message: "Please complete all questions before proceed.")
-//        }
+        }
+        else {
+            showAlert(title: "Incomplete", message: "Please complete all questions before proceed.")
+        }
         
     }
     

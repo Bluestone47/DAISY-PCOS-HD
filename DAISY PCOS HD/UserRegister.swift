@@ -62,6 +62,8 @@ class UserRegister {
                         UserInfoObject.shared().userInfo = newUser
                         
                         UserInfoObject.auth = true
+                        
+                        QuizResult.shared().result["patientID"] = newUser.patientID
                     }
                     
                     //creating a string
