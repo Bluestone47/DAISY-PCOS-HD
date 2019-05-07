@@ -48,6 +48,10 @@ class QuizResult{
                 "qhads_12": "",
                 "qhads_13": "",
                 "qhads_14": ""
+            ],
+            "hadsScore": [
+                "depression": nil,
+                "anxiety": nil
             ]
         ]
     }

@@ -33,6 +33,8 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var type2Button: UIButton!
     @IBOutlet weak var type3Button: UIButton!
     
+    let defaults = UserDefaults.standard
+    
     // temp answers
     var temp = [String:String]()
     
@@ -145,13 +147,14 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func nextPressed(_ sender: Any) {
         
-        if gatherAnswers() == true {
-            print(QuizResult.shared().result["part_a"]!)
+//        if gatherAnswers() == true {
+//            print(QuizResult.shared().result["part_a"]!)
+            self.defaults.set(QuizResult.shared().result, forKey: UserInfoObject.shared().userInfo.patientID)
             performSegue(withIdentifier: "goToPartB", sender: self)
-        }
-        else {
-            showAlert(title: "Incomplete", message: "Please complete all questions before proceed.")
-        }
+//        }
+//        else {
+//            showAlert(title: "Incomplete", message: "Please complete all questions before proceed.")
+//        }
         
     }
     

@@ -12,7 +12,13 @@ class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Calming-Blurred-Background")!)
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "Calming-Blurred-Background")
+        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
+        
         // Do any additional setup after loading the view.
         print("\(GetIPAddress.getIPAddress())")
     }
