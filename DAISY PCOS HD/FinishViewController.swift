@@ -10,6 +10,7 @@ import UIKit
 import Charts
 import SwiftyJSON
 
+// Show UnderLine in label
 extension UIButton {
     func underline() {
         guard let text = self.titleLabel?.text else { return }
@@ -21,6 +22,7 @@ extension UIButton {
     }
 }
 
+// Show UnderLine in button
 extension UILabel {
     func underline() {
         if let textString = self.text {
@@ -32,30 +34,26 @@ extension UILabel {
 }
 
 class FinishViewController: UIViewController {
-   
+    
+    @IBOutlet weak var lineChartView: LineChartView!
+    
+    var depressionScoreEntry = [ChartDataEntry]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        // Load the line charts
+        loadLineChart()
+        lineChartView.lineData
         
     }
     
+    func loadHistoricalScore() {
+    }
     
-    static func readJSONFromFile(fileName: String) -> Any?
-    {
-        var json: Any?
-        if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
-            do {
-                let fileUrl = URL(fileURLWithPath: path)
-                // Getting data from JSON file using the file URL
-                let data = try Data(contentsOf: fileUrl, options: .mappedIfSafe)
-                json = try? JSONSerialization.jsonObject(with: data)
-            } catch {
-                // Handle error here
-            }
-        }
-        return json
+    func loadLineChart() {
+        
     }
     
     

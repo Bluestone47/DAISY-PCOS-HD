@@ -585,80 +585,88 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1D-dD-8Qn" customClass="DLRadioButton">
-                                                                <rect key="frame" x="8" y="96" width="150" height="34"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MpK-dC-aJL" userLabel="YN View">
+                                                                <rect key="frame" x="30" y="96" width="300" height="34"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="6ny-Q9-y7c" userLabel="YesCheckbox" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="34"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxe-Ut-R12">
+                                                                                <rect key="frame" x="54" y="6" width="29" height="22"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="boxLineWidth">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="hairYesPressed:" destination="is1-Zy-mNG" eventType="valueChanged" id="vtc-Xr-ZlI"/>
+                                                                        </connections>
+                                                                    </view>
+                                                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="1P6-fj-a7q" userLabel="NoCheckbox" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                                        <rect key="frame" x="150" y="0.0" width="150" height="34"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWQ-lv-6ju" userLabel="No">
+                                                                                <rect key="frame" x="54" y="6" width="24" height="22"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="34" id="0Ji-1q-rDk"/>
+                                                                            <constraint firstAttribute="width" constant="150" id="D0F-5J-DqH"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="boxLineWidth">
+                                                                                <real key="value" value="3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="hairNoPressed:" destination="is1-Zy-mNG" eventType="valueChanged" id="Qjr-9I-Vbg"/>
+                                                                        </connections>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="34" id="jF8-hF-Fpu"/>
-                                                                    <constraint firstAttribute="width" constant="150" id="vCI-hr-f6n"/>
+                                                                    <constraint firstAttribute="height" constant="34" id="1o2-mg-HFG"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="1P6-fj-a7q" secondAttribute="trailing" id="HAz-RN-z0g"/>
+                                                                    <constraint firstItem="6ny-Q9-y7c" firstAttribute="top" secondItem="MpK-dC-aJL" secondAttribute="top" id="HE3-dg-EjP"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="6ny-Q9-y7c" secondAttribute="bottom" id="KpI-jJ-WXx"/>
+                                                                    <constraint firstItem="1P6-fj-a7q" firstAttribute="leading" secondItem="6ny-Q9-y7c" secondAttribute="trailing" id="a6I-mb-MhD"/>
+                                                                    <constraint firstItem="1P6-fj-a7q" firstAttribute="leading" secondItem="6ny-Q9-y7c" secondAttribute="trailing" id="bAV-lD-LO3"/>
+                                                                    <constraint firstItem="6ny-Q9-y7c" firstAttribute="leading" secondItem="MpK-dC-aJL" secondAttribute="leading" id="gMX-J3-OWS"/>
+                                                                    <constraint firstItem="1P6-fj-a7q" firstAttribute="top" secondItem="MpK-dC-aJL" secondAttribute="top" id="ovr-V5-ZYd"/>
+                                                                    <constraint firstAttribute="width" constant="300" id="rfq-g3-xpI"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Yes">
-                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                </state>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                                        <real key="value" value="25"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                                        <real key="value" value="12"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                                        <real key="value" value="10"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
-                                                                        <color key="value" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
-                                                                        <color key="value" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="hairYesPressed:" destination="is1-Zy-mNG" eventType="touchUpInside" id="Mdj-HT-mke"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-uR-Cte" customClass="DLRadioButton">
-                                                                <rect key="frame" x="166" y="96" width="150" height="34"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="150" id="CZ6-D6-Rla"/>
-                                                                    <constraint firstAttribute="height" constant="34" id="WbJ-oQ-31J"/>
-                                                                </constraints>
-                                                                <state key="normal" title="No">
-                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                </state>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
-                                                                        <real key="value" value="25"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorSize">
-                                                                        <real key="value" value="12"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
-                                                                        <real key="value" value="10"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
-                                                                        <color key="value" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
-                                                                        <color key="value" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                                <connections>
-                                                                    <action selector="hairNoPressed:" destination="is1-Zy-mNG" eventType="touchUpInside" id="QdM-lQ-NZD"/>
-                                                                </connections>
-                                                            </button>
+                                                            </view>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstItem="W9H-aY-pZ6" firstAttribute="leading" secondItem="XWM-oL-3iy" secondAttribute="leading" id="4dw-7v-MbY"/>
-                                                            <constraint firstItem="kxe-uR-Cte" firstAttribute="leading" secondItem="c1D-dD-8Qn" secondAttribute="trailing" constant="8" id="562-Wz-qgK"/>
                                                             <constraint firstAttribute="width" constant="734" id="7KN-eP-Qvr"/>
-                                                            <constraint firstItem="kxe-uR-Cte" firstAttribute="top" secondItem="uua-Vr-dC4" secondAttribute="bottom" constant="12.5" id="Jp7-T8-U69"/>
+                                                            <constraint firstItem="MpK-dC-aJL" firstAttribute="leading" secondItem="XWM-oL-3iy" secondAttribute="leading" constant="30" id="ASK-Jb-V8N"/>
                                                             <constraint firstAttribute="trailing" secondItem="uua-Vr-dC4" secondAttribute="trailing" id="Mlv-aD-fk5"/>
-                                                            <constraint firstItem="c1D-dD-8Qn" firstAttribute="leading" secondItem="XWM-oL-3iy" secondAttribute="leading" constant="8" id="Npm-cx-ud5"/>
-                                                            <constraint firstAttribute="bottom" secondItem="c1D-dD-8Qn" secondAttribute="bottom" id="aS8-c6-idb"/>
+                                                            <constraint firstAttribute="bottom" secondItem="MpK-dC-aJL" secondAttribute="bottom" id="c1P-1X-411"/>
                                                             <constraint firstAttribute="trailing" secondItem="W9H-aY-pZ6" secondAttribute="trailing" id="ivI-mP-VBk"/>
                                                             <constraint firstItem="uua-Vr-dC4" firstAttribute="leading" secondItem="XWM-oL-3iy" secondAttribute="leading" id="jOy-DD-2nP"/>
-                                                            <constraint firstItem="c1D-dD-8Qn" firstAttribute="top" secondItem="uua-Vr-dC4" secondAttribute="bottom" constant="12.5" id="kmC-I3-gl1"/>
                                                             <constraint firstAttribute="height" constant="130" id="mTc-YP-Rdn"/>
-                                                            <constraint firstAttribute="bottom" secondItem="kxe-uR-Cte" secondAttribute="bottom" id="mVp-nx-HVV"/>
+                                                            <constraint firstItem="MpK-dC-aJL" firstAttribute="top" secondItem="uua-Vr-dC4" secondAttribute="bottom" constant="12.5" id="nDp-V3-ABB"/>
                                                             <constraint firstItem="uua-Vr-dC4" firstAttribute="top" secondItem="W9H-aY-pZ6" secondAttribute="bottom" constant="15" id="v84-WG-hJa"/>
                                                             <constraint firstItem="W9H-aY-pZ6" firstAttribute="top" secondItem="XWM-oL-3iy" secondAttribute="top" constant="8" id="xzh-ty-WEU"/>
                                                         </constraints>
@@ -770,11 +778,6 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ny-Q9-y7c" customClass="M13Checkbox" customModule="M13Checkbox">
-                                                <rect key="frame" x="457" y="929" width="150" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -814,10 +817,10 @@
                         <outlet property="ethnicButton" destination="CyL-6R-VZV" id="KHG-Z5-knj"/>
                         <outlet property="ethnicLabel" destination="p4c-Al-Li7" id="TKL-Te-8fy"/>
                         <outlet property="hairAge" destination="eua-d1-jDH" id="6za-R6-r5A"/>
-                        <outlet property="hairNoButton" destination="kxe-uR-Cte" id="yFw-bl-cPr"/>
+                        <outlet property="hairNoButton" destination="1P6-fj-a7q" id="icH-0d-9Bo"/>
                         <outlet property="hairOptionView" destination="iud-z6-RsS" id="Ksx-1w-VQd"/>
                         <outlet property="hairTypeView" destination="V7H-T2-xVh" id="UlY-nq-3tl"/>
-                        <outlet property="hairYesButton" destination="c1D-dD-8Qn" id="3w9-ab-h0H"/>
+                        <outlet property="hairYesButton" destination="6ny-Q9-y7c" id="Egy-gD-owy"/>
                         <outlet property="type1Button" destination="ybT-Kr-oo4" id="7He-Zg-3mu"/>
                         <outlet property="type2Button" destination="dhU-1d-dFa" id="0i4-dH-PNc"/>
                         <outlet property="type3Button" destination="GfL-6S-Ahx" id="PFY-Ec-8JE"/>

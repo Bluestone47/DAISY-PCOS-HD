@@ -441,28 +441,34 @@ Don’t take too long over you replies: your immediate is best.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for taking this questionarie." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8W-sv-t72">
-                                <rect key="frame" x="271" y="350" width="292" height="21"/>
+                                <rect key="frame" x="271" y="278" width="292" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xD1-C7-vpo">
-                                <rect key="frame" x="398" y="603" width="39" height="30"/>
+                                <rect key="frame" x="398" y="817" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Close"/>
                                 <connections>
                                     <action selector="closePressed:" destination="GGp-v5-nQR" eventType="touchUpInside" id="LtC-Nm-OMW"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bP0-gT-xJS" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="117" y="397" width="600" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vll-Q0-CXT"/>
                     </view>
                     <navigationItem key="navigationItem" title="Thank you" id="WuW-y8-qmb">
                         <barButtonItem key="backBarButtonItem" title="Part B" id="V5R-KV-3ug"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="lineChartView" destination="bP0-gT-xJS" id="M5D-SK-YpT"/>
                         <segue destination="bsq-Zp-X6U" kind="showDetail" identifier="goToMain" id="yTq-3A-tD6"/>
                     </connections>
                 </viewController>

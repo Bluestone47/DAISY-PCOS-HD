@@ -26,8 +26,8 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ethnicButton: DLRadioButton!
     
     @IBOutlet weak var bodyHairLabel: UILabel!
-    @IBOutlet weak var hairYesButton: DLRadioButton!
-    @IBOutlet weak var hairNoButton: DLRadioButton!
+    @IBOutlet weak var hairYesButton: M13Checkbox!
+    @IBOutlet weak var hairNoButton: M13Checkbox!
     @IBOutlet weak var hairOptionView: UIView!
     @IBOutlet weak var hairAge: UITextField!
     @IBOutlet weak var hairTypeView: UIView!
@@ -71,12 +71,14 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func hairYesPressed(_ sender: Any) {
-        hairNoButton.isSelected = false
+        hairNoButton.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
+        // hairNoButton.toggleCheckState()
         hairOptionView.isHidden = false
     }
     
     @IBAction func hairNoPressed(_ sender: Any) {
-        hairYesButton.isSelected = false
+        hairYesButton.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
+        // hairYesButton.toggleCheckState()
         hairOptionView.isHidden = true
     }
     
@@ -130,12 +132,12 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
             return false
         }
         // Check hair loss answer
-        if hairYesButton.isSelected == false && hairNoButton.isSelected == false {
+        if hairYesButton.checkState == M13Checkbox.CheckState.unchecked && hairNoButton.checkState == M13Checkbox.CheckState.checked {
             return false
         }
         
         // Get hair answer
-        if hairYesButton.isSelected == true {
+        if hairYesButton.checkState == M13Checkbox.CheckState.checked {
             temp["loss_hair"] = "Yes"
             temp["start_age"] = hairAge.text
             

@@ -70,7 +70,34 @@ class PartBViewController: UIViewController, CanReceiveHADS {
     
     @IBAction func nextPressed(_ sender: Any) {
         
+        getCurrentDate()
+        storeResultsLocally()
+        
         performSegue(withIdentifier: "goToFinish", sender: self)
+        
+    }
+    
+    // store the results in a local json file
+    func storeResultsLocally() {
+        
+    }
+    
+    // get Today's date
+    func getCurrentDate() {
+        
+        let date = Date()
+        let format = DateFormatter()
+//        format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        format.dateFormat = "dd-MM-yyyy"
+        let formattedDate = format.string(from: date)
+        print(formattedDate)
+        
+//        let calendar = Calendar.current
+//        calendar.component(.year, from: date)
+//        calendar.component(.month, from: date)
+//        calendar.component(.day, from: date)
+        
+        QuizResult.shared().result["date"] = formattedDate
         
     }
     
