@@ -31,8 +31,7 @@ class QuizResult{
                 "ethnic": "",
                 "loss_hair": "",
                 "start_age": "",
-                "hair_type": "",
-                "patientID": ""
+                "hair_type": ""
             ],
             "hads": [
                 "ensat_id": "",

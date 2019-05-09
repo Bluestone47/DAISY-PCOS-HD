@@ -468,7 +468,7 @@ Don’t take too long over you replies: your immediate is best.</string>
                         <barButtonItem key="backBarButtonItem" title="Part B" id="V5R-KV-3ug"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="lineChartView" destination="bP0-gT-xJS" id="M5D-SK-YpT"/>
+                        <outlet property="lineChart" destination="bP0-gT-xJS" id="Mc6-oF-8Zl"/>
                         <segue destination="bsq-Zp-X6U" kind="showDetail" identifier="goToMain" id="yTq-3A-tD6"/>
                     </connections>
                 </viewController>

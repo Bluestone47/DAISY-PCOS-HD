@@ -22,10 +22,11 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("\(GetIPAddress.getIPAddress())")
         
-        resultForFun()
+        // resultForFun()
         
-        let jsonData = JsonFileFactory.readJSONFromFile(fileName: "UserResults") as? [String: Any]
-        let records = (jsonData!["GBBI-0001"] as? [[String: Any]])!
+        LocalResults.localResults = JsonFileFactory.readJSONFromFile(fileName: "UserResults") as! [String : Array<[String : Any]>]
+        print(LocalResults.localResults)
+        let records = LocalResults.localResults["GBBI-0001"]!
         for record in records {
             print(record["date"]!)
             let score = record["hadsScore"] as? [String: Int]
@@ -49,8 +50,7 @@ class WelcomeViewController: UIViewController {
     func resultForFun() {
         
         let result = [
-            "patientID": "GBBI-0001",
-            "date": "01-01-2000",
+            "date": "09-05-2019",
             "hadsScore": [
                 "depression": 13,
                 "anxiety": 21
@@ -58,8 +58,7 @@ class WelcomeViewController: UIViewController {
             ] as [String : Any]
         
         let result2 = [
-            "patientID": "GBBI-0001",
-            "date": "01-01-2000",
+            "date": "10-04-2019",
             "hadsScore": [
                 "depression": 14,
                 "anxiety": 20
@@ -69,7 +68,7 @@ class WelcomeViewController: UIViewController {
         var tempJson = [String : Any]()
         var tempResult: Array<[String: Any]> = [result]
         tempResult.append(result2)
-        let patientID = result["patientID"] as! String
+        let patientID = QuizResult.shared().result["patientID"] as! String
         
         tempJson[patientID] = tempResult
         

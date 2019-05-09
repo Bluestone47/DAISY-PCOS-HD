@@ -10,6 +10,7 @@
 		1D2541026E72E6554159AB71 /* Pods_DAISY_PCOS_HD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482BA411F97CF0DAE6DD9ED3 /* Pods_DAISY_PCOS_HD.framework */; };
 		CF3933002232306000552A56 /* HADSQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3932FF2232306000552A56 /* HADSQuestion.swift */; };
 		CF3933022232307100552A56 /* HADSQuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3933012232307100552A56 /* HADSQuestionBank.swift */; };
+		CF3C87582283BBF8000158FC /* LocalResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3C87572283BBF8000158FC /* LocalResults.swift */; };
 		CF3DF8C1223A11AC00D4476A /* PartA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3DF8C0223A11AC00D4476A /* PartA.storyboard */; };
 		CF3DF8C3223A12C500D4476A /* PartB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3DF8C2223A12C500D4476A /* PartB.storyboard */; };
 		CF3DF8C6223A16CD00D4476A /* HADSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DF8C5223A16CD00D4476A /* HADSViewController.swift */; };
@@ -44,6 +45,7 @@
 		482BA411F97CF0DAE6DD9ED3 /* Pods_DAISY_PCOS_HD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DAISY_PCOS_HD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3932FF2232306000552A56 /* HADSQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADSQuestion.swift; sourceTree = "<group>"; };
 		CF3933012232307100552A56 /* HADSQuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADSQuestionBank.swift; sourceTree = "<group>"; };
+		CF3C87572283BBF8000158FC /* LocalResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalResults.swift; sourceTree = "<group>"; };
 		CF3DF8C0223A11AC00D4476A /* PartA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PartA.storyboard; sourceTree = "<group>"; };
 		CF3DF8C2223A12C500D4476A /* PartB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PartB.storyboard; sourceTree = "<group>"; };
 		CF3DF8C5223A16CD00D4476A /* HADSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HADSViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				CF9F922722506A7C00916E18 /* QuizResult.swift */,
+				CF3C87572283BBF8000158FC /* LocalResults.swift */,
 				CF9F9225225061A800916E18 /* UserInfo.swift */,
 				CFC814E62268580000915FAD /* UserInfoObject.swift */,
 			);
@@ -402,6 +405,7 @@
 				CF9985BA226717DD00D0CC87 /* GetIPAddress.swift in Sources */,
 				CF9F922822506A7C00916E18 /* QuizResult.swift in Sources */,
 				CF3DF8C6223A16CD00D4476A /* HADSViewController.swift in Sources */,
+				CF3C87582283BBF8000158FC /* LocalResults.swift in Sources */,
 				CFA31AF6225F62CE00B56373 /* UserLogin.swift in Sources */,
 				CFC6BB142283B4100040DE52 /* ChartFactory.swift in Sources */,
 				CFA31AF8225F62DB00B56373 /* UserRegister.swift in Sources */,

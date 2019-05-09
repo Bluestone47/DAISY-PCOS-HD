@@ -132,7 +132,7 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
             return false
         }
         // Check hair loss answer
-        if hairYesButton.checkState == M13Checkbox.CheckState.unchecked && hairNoButton.checkState == M13Checkbox.CheckState.checked {
+        if hairYesButton.checkState == M13Checkbox.CheckState.unchecked && hairNoButton.checkState == M13Checkbox.CheckState.unchecked {
             return false
         }
         
@@ -149,10 +149,6 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
         else {
             temp["loss_hair"] = "No"
         }
-        
-        temp["patientID"] = UserInfoObject.shared().userInfo.patientID
-        
-        QuizResult.shared().result["part_a"] = temp
         
         return true
         

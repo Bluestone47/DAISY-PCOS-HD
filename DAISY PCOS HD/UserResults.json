@@ -1,3 +1,18 @@
-{ 
-    "GBBI-0001": {"value": 001, "value": 002}
+{
+    "GBBI-0001" : [
+        {
+            "date" : "09-05-2019",
+            "hadsScore" : {
+                "depression" : 13,
+                "anxiety" : 21
+            }
+        },
+        {
+            "date" : "10-04-2019",
+            "hadsScore" : {
+                "anxiety" : 20,
+                "depression" : 14
+            }
+        }
+    ]
 }

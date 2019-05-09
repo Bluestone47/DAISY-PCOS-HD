@@ -46,6 +46,7 @@ class JsonFileFactory {
     static func writeJSONToFile(fileName: String, dictionary: Dictionary<String, Any>) {
         
         let json = JSON(dictionary)
+        print(json)
         let str = json.description
         let data = str.data(using: .utf8)!
         let path = Bundle.main.path(forResource: fileName, ofType: "json")

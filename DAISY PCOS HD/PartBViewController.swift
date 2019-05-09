@@ -70,15 +70,53 @@ class PartBViewController: UIViewController, CanReceiveHADS {
     
     @IBAction func nextPressed(_ sender: Any) {
         
+        // get the finish date
         getCurrentDate()
-        storeResultsLocally()
+        
+        readLocalResults()
+        
+        // if user finished HADS, update the local results
+        if QuizResult.shared().hadsFinished == true {
+            storeLocalResults()
+        }
         
         performSegue(withIdentifier: "goToFinish", sender: self)
         
     }
     
     // store the results in a local json file
-    func storeResultsLocally() {
+    func storeLocalResults() {
+        
+        let patientID = QuizResult.shared().result["patientID"] as! String
+        if LocalResults.localResults[patientID] != nil {
+            LocalResults.localResults[patientID]?.append(ChartFactory().formatResults())
+        }
+        else {
+            LocalResults.localResults[patientID] = [ChartFactory().formatResults()]
+        }
+        
+        // write results to json file
+        JsonFileFactory.writeJSONToFile(fileName: "UserResults", dictionary: LocalResults.localResults)
+        
+        print("New Data Stored in File!")
+        
+        // check the results
+//        let records: [[String: Any]] = LocalResults.localResults[patientID]!
+//        for record in records {
+//            print(record["date"]!)
+//            let score = record["hadsScore"] as? [String: Int]
+//            print(score!["depression"]!)
+//            print(score!["anxiety"]!)
+//        }
+        
+    }
+    
+    // read the stored result
+    func readLocalResults() {
+        
+        LocalResults.localResults = JsonFileFactory.readJSONFromFile(fileName: "UserResults") as! [String : Array<[String : Any]>]
+        
+        print("Data History Read!")
         
     }
     
@@ -87,15 +125,9 @@ class PartBViewController: UIViewController, CanReceiveHADS {
         
         let date = Date()
         let format = DateFormatter()
-//        format.dateFormat = "yyyy-MM-dd HH:mm:ss"
         format.dateFormat = "dd-MM-yyyy"
         let formattedDate = format.string(from: date)
         print(formattedDate)
-        
-//        let calendar = Calendar.current
-//        calendar.component(.year, from: date)
-//        calendar.component(.month, from: date)
-//        calendar.component(.day, from: date)
         
         QuizResult.shared().result["date"] = formattedDate
         

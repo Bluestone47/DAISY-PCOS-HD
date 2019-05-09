@@ -35,24 +35,24 @@ extension UILabel {
 
 class FinishViewController: UIViewController {
     
-    @IBOutlet weak var lineChartView: LineChartView!
-    
-    var depressionScoreEntry = [ChartDataEntry]()
-    
+    @IBOutlet weak var lineChart: LineChartView!    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        loadLineChart()
-        lineChartView.lineData
+        ChartFactory().loadChartEntry()
+        ChartFactory().loadChartData()
         
+        updateChart()
     }
     
-    func loadHistoricalScore() {
-    }
-    
-    func loadLineChart() {
+    func updateChart() {
+        
+        
+        lineChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: ChartFactory.dateArray)
+        lineChart.xAxis.granularity = 1
+        
+        lineChart.data = ChartFactory.depressionData
         
     }
     
