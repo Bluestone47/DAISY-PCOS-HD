@@ -52,7 +52,7 @@ class FinishViewController: UIViewController {
         lineChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: ChartFactory.dateArray)
         lineChart.xAxis.granularity = 1
         
-        lineChart.data = ChartFactory.depressionData
+        lineChart.data = ChartFactory.lineChartData
         
     }
     

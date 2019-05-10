@@ -19,7 +19,7 @@ class UserInfo{
         email = ""
         id = ""
         center = ""
-        patientID = ""
+        patientID = "GBBI-0001" // default for test, will be replaced once real user login
     }
     
     init(email: String, id: String, center: String) {

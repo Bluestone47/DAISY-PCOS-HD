@@ -1,7 +1,7 @@
 {
     "GBBI-0001" : [
         {
-            "date" : "09-05-2019",
+            "date" : "09-03-2019",
             "hadsScore" : {
                 "depression" : 13,
                 "anxiety" : 21
@@ -10,8 +10,29 @@
         {
             "date" : "10-04-2019",
             "hadsScore" : {
-                "anxiety" : 20,
+                "anxiety" : 8,
+                "depression" : 19
+            }
+        },
+        {
+            "date" : "15-04-2019",
+            "hadsScore" : {
+                "anxiety" : 12,
+                "depression" : 7
+            }
+        },
+        {
+            "date" : "01-05-2019",
+            "hadsScore" : {
+                "anxiety" : 12,
                 "depression" : 14
+            }
+        },
+        {
+            "date" : "06-05-2019",
+            "hadsScore" : {
+                "anxiety" : 5,
+                "depression" : 19
             }
         }
     ]

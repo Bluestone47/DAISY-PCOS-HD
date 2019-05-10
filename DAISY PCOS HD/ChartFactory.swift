@@ -22,22 +22,39 @@ class ChartFactory {
     static var depressionDataSet = LineChartDataSet()
     static var anxietyDataSet = LineChartDataSet()
     
-    static var depressionData = LineChartData()
-    static var anxietyData = LineChartData()
+    static var lineChartData = LineChartData()
     
     func loadChartData() {
         
         ChartFactory.depressionDataSet = LineChartDataSet(values: ChartFactory.depressionScoreEntry, label: "Depression")
-        ChartFactory.anxietyDataSet = LineChartDataSet(values: ChartFactory.anxietyScoreEntry, label: "Anxiety")
+        ChartFactory.depressionDataSet.axisDependency = .left // Line will correlate with left axis values
+        ChartFactory.depressionDataSet.setColor(UIColor.green.withAlphaComponent(0.5))
+        ChartFactory.depressionDataSet.setCircleColor(UIColor.green)
+        ChartFactory.depressionDataSet.lineWidth = 2.0
+        ChartFactory.depressionDataSet.circleRadius = 6.0
+        ChartFactory.depressionDataSet.fillAlpha = 65 / 255.0
+        ChartFactory.depressionDataSet.fillColor = UIColor.green
+        ChartFactory.depressionDataSet.highlightColor = UIColor.white
         
-        ChartFactory.depressionData.addDataSet(ChartFactory.depressionDataSet)
-        ChartFactory.anxietyData.addDataSet(ChartFactory.anxietyDataSet)
+        ChartFactory.anxietyDataSet = LineChartDataSet(values: ChartFactory.anxietyScoreEntry, label: "Anxiety")
+        ChartFactory.anxietyDataSet.axisDependency = .left // Line will correlate with left axis values
+        ChartFactory.anxietyDataSet.setColor(UIColor.blue.withAlphaComponent(0.5))
+        ChartFactory.anxietyDataSet.setCircleColor(UIColor.blue)
+        ChartFactory.anxietyDataSet.lineWidth = 2.0
+        ChartFactory.anxietyDataSet.circleRadius = 6.0
+        ChartFactory.anxietyDataSet.fillAlpha = 65 / 255.0
+        ChartFactory.anxietyDataSet.fillColor = UIColor.blue
+        ChartFactory.anxietyDataSet.highlightColor = UIColor.white
+        
+        ChartFactory.lineChartData.addDataSet(ChartFactory.depressionDataSet)
+        ChartFactory.lineChartData.addDataSet(ChartFactory.anxietyDataSet)
         
     }
     
     // get the chart entry from results
     func loadChartEntry() {
         // let records: [[String: Any]] = LocalResults.localResults["GBBI-0001"]!
+        print(LocalResults.localResults[patientID]!)
         let records: [[String: Any]] = LocalResults.localResults[patientID]!
         
         for i in 0..<records.count {
