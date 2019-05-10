@@ -67,6 +67,7 @@ class FinishViewController: UIViewController {
         print(QuizResult.shared().result)
         
         resetGlobalVariables()
+        resetUserDefaults()
         // Go back to the home screen of the application
         // navigationController?.popToRootViewController(animated: true)
         performSegue(withIdentifier: "goToMain", sender: self)
@@ -78,7 +79,12 @@ class FinishViewController: UIViewController {
         QuizResult.shared().hadsFinished = false
     }
     
-    
+    func resetUserDefaults() {
+        let defaults = UserDefaults.standard
+        let defaultsKey = "LastResult"
+        let reset = ["PatientID": ""]
+        defaults.set(reset, forKey: defaultsKey)
+    }
     
     
 }

@@ -37,6 +37,7 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
     
     let defaults = UserDefaults.standard
     let defaultsKey = "LastResult"
+    var lastResult = [String : String]()
     
     // temp answers
     var temp = [String:String]()
@@ -54,12 +55,48 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
         hairOptionView.isHidden = true
         loadHairButtons()
         
-        let lastResult = defaults.dictionary(forKey: defaultsKey)
+        print("PartA")
+        print(defaults.dictionary(forKey: defaultsKey) as Any)
         
-        if (lastResult?["PatientID"]) != nil {
-            
+        lastResult = defaults.dictionary(forKey: defaultsKey) as! [String : String]
+        if lastResult["PatientID"] == UserInfoObject.shared().userInfo.patientID {
+            print(lastResult)
+            loadUserDefaults()
         }
         
+    }
+    
+    // Load the data if user didn't finish last time
+    func loadUserDefaults() {
+        
+        for button in ethnicButton.otherButtons {
+            if button.titleLabel!.text == lastResult["ethnic"] {
+                button.isSelected = true
+            }
+        }
+        
+        if lastResult["loss_hair"] == "Yes"{
+            hairYesButton.setCheckState(M13Checkbox.CheckState.checked, animated: true)
+            hairOptionView.isHidden = false
+            hairAge.text = lastResult["start_age"]
+            if lastResult["hair_type"] == "Type1" {
+                type1Button.isSelected = true
+                changeImageButton(type1Button)
+            }
+            else if lastResult["hair_type"] == "Type2" {
+                type2Button.isSelected = true
+                changeImageButton(type2Button)
+            }
+            else if lastResult["hair_type"] == "Type3" {
+                type3Button.isSelected = true
+                changeImageButton(type3Button)
+            }
+        }
+        else if lastResult["loss_hair"] == "No"{
+            hairNoButton.setCheckState(M13Checkbox.CheckState.checked, animated: true)
+        }
+        
+        showAlert(title: "Unfinished Quiz", message: "You didn't finish this quiz last time, \nyour answers are restored.")
     }
     
     func loadLabels() {
@@ -150,6 +187,8 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
             temp["loss_hair"] = "No"
         }
         
+        QuizResult.shared().result["part_a"] = temp
+        
         return true
         
     }
@@ -157,8 +196,12 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
     @IBAction func nextPressed(_ sender: Any) {
         
         if gatherAnswers() == true {
-            print(QuizResult.shared().result["part_a"]!)
-            self.defaults.set(QuizResult.shared().result["part_a"], forKey: defaultsKey)
+//            print(QuizResult.shared().result["part_a"]!)
+            var tempUserDefaults = QuizResult.shared().result["part_a"] as! [String: String]
+            tempUserDefaults["PatientID"] = UserInfoObject.shared().userInfo.patientID
+            
+            self.defaults.set(tempUserDefaults, forKey: defaultsKey)
+            print(defaults.dictionary(forKey: defaultsKey)!)
             performSegue(withIdentifier: "goToPartB", sender: self)
         }
         else {

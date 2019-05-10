@@ -22,17 +22,17 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("\(GetIPAddress.getIPAddress())")
         
-        // resultForFun()
+//        resultForTest()
         
         LocalResults.localResults = JsonFileFactory.readJSONFromFile(fileName: "UserResults") as! [String : Array<[String : Any]>]
         print(LocalResults.localResults)
-        let records = LocalResults.localResults["GBBI-0001"]!
-        for record in records {
-            print(record["date"]!)
-            let score = record["hadsScore"] as? [String: Int]
-            print(score!["depression"]!)
-            print(score!["anxiety"]!)
-        }
+//        let records = LocalResults.localResults["GBBI-0001"]!
+//        for record in records {
+//            print(record["date"]!)
+//            let score = record["hadsScore"] as? [String: Int]
+//            print(score!["depression"]!)
+//            print(score!["anxiety"]!)
+//        }
         
         
     }
@@ -47,7 +47,7 @@ class WelcomeViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    func resultForFun() {
+    func resultForTest() {
         
         let result = [
             "date": "09-05-2019",
