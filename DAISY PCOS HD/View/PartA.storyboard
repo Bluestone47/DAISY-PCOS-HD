@@ -778,8 +778,11 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hospital_1" translatesAutoresizingMaskIntoConstraints="NO" id="asn-Mf-Nf7">
+                                                <rect key="frame" x="556" y="36" width="80" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="NEt-lU-Sm8" firstAttribute="top" secondItem="kEU-86-3In" secondAttribute="bottom" constant="50" id="1J9-1l-ZK0"/>
                                             <constraint firstItem="kEU-86-3In" firstAttribute="top" secondItem="WyA-QP-aNP" secondAttribute="bottom" constant="30" id="6Iy-ZA-RPk"/>
@@ -862,5 +865,6 @@
         <image name="Type1" width="70" height="87.5"/>
         <image name="Type2" width="70" height="87.5"/>
         <image name="Type3" width="70" height="87.5"/>
+        <image name="hospital_1" width="156" height="145"/>
     </resources>
 </document>

@@ -33,9 +33,10 @@ class ChartFactory {
         
         // set depressionDataSet
         ChartFactory.depressionDataSet = LineChartDataSet(entries: ChartFactory.depressionScoreEntry, label: "Depression")
+        ChartFactory.depressionDataSet.valueFont = UIFont(name: "HelveticaNeue-Light", size: 16.0)!
         ChartFactory.depressionDataSet.axisDependency = .left // Line will correlate with left axis values
-        ChartFactory.depressionDataSet.setColor(UIColor.green.withAlphaComponent(0.5))
-        ChartFactory.depressionDataSet.setCircleColor(UIColor.green)
+        ChartFactory.depressionDataSet.setColor(UIColor.orange.withAlphaComponent(0.5))
+        ChartFactory.depressionDataSet.setCircleColor(UIColor.orange)
         ChartFactory.depressionDataSet.lineWidth = 2.0
         ChartFactory.depressionDataSet.circleRadius = 6.0
         ChartFactory.depressionDataSet.fillAlpha = 65 / 255.0
@@ -48,6 +49,7 @@ class ChartFactory {
         
         // set anxietyDataSet
         ChartFactory.anxietyDataSet = LineChartDataSet(entries: ChartFactory.anxietyScoreEntry, label: "Anxiety")
+        ChartFactory.anxietyDataSet.valueFont = UIFont(name: "HelveticaNeue-Light", size: 16.0)!
         ChartFactory.anxietyDataSet.axisDependency = .left // Line will correlate with left axis values
         ChartFactory.anxietyDataSet.setColor(UIColor.blue.withAlphaComponent(0.5))
         ChartFactory.anxietyDataSet.setCircleColor(UIColor.blue)

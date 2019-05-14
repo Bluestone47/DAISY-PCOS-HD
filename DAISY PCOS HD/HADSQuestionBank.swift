@@ -27,10 +27,10 @@ class HADSQuestionBank {
                                  answer: ["Very Often", "Quite Often", "Occasionally", "Not at all"],
                                  whatFor: "A"))
         list.append(HADSQuestion(text: "I get a sort of frightened feeling as if something awful is about to happen:",
-                                 answer: ["Very definitely and quite badly", "Yes, but not too badly", "A little, but it doesn't worry me", "Not at all"],
+                                 answer: ["Very definitely and quite badly", "Yes, but not too badly", "A little, but it does not worry me", "Not at all"],
                                  whatFor: "A"))
         list.append(HADSQuestion(text: "I have lost interest in my appearance:",
-                                 answer: ["Definitely", "I don't take as much care as I should", "I may not take quite as much care", "I take just as much care as ever"],
+                                 answer: ["Definitely", "I do not take as much care as I should", "I may not take quite as much care", "I take just as much care as ever"],
                                  whatFor: "D"))
         list.append(HADSQuestion(text: "I can laugh and see the funny side of things:",
                                  answer: ["Not at all", "Definitely not so much now", "Not quite so much now", "As much as I always could"],

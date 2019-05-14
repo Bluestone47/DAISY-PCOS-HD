@@ -83,6 +83,10 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil_1" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-JR-Vyi">
+                                                                <rect key="frame" x="387" y="240" width="40" height="40"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -160,6 +164,10 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil_1" translatesAutoresizingMaskIntoConstraints="NO" id="L1k-cG-vj9">
+                                                                <rect key="frame" x="387" y="138" width="40" height="40"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -232,6 +240,10 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <state key="normal" title="Take the test"/>
                                                             </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil_1" translatesAutoresizingMaskIntoConstraints="NO" id="46u-BL-5QZ">
+                                                                <rect key="frame" x="387" y="198" width="40" height="40"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -285,6 +297,10 @@ The overall BQ score is determined from the responses to the three categories: s
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="note_2" translatesAutoresizingMaskIntoConstraints="NO" id="PSs-Vk-n3k">
+                                                <rect key="frame" x="584" y="0.0" width="80" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -384,7 +400,6 @@ Don’t take too long over you replies: your immediate is best.</string>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Yle-PT-E0C" firstAttribute="top" secondItem="V3i-dx-qLT" secondAttribute="bottom" id="5YH-8L-45a"/>
                                             <constraint firstAttribute="trailing" secondItem="Yle-PT-E0C" secondAttribute="trailing" id="KIl-J9-hBT"/>
@@ -409,7 +424,7 @@ Don’t take too long over you replies: your immediate is best.</string>
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.8901960784313725" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Gjn-gs-9cb" firstAttribute="trailing" secondItem="g8s-13-Fy8" secondAttribute="trailing" id="1uR-a8-lAw"/>
                             <constraint firstItem="P80-gO-43o" firstAttribute="top" secondItem="nLa-fB-Jep" secondAttribute="top" id="4Xq-hm-WyB"/>
@@ -441,9 +456,9 @@ Don’t take too long over you replies: your immediate is best.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for taking this questionarie." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8W-sv-t72">
-                                <rect key="frame" x="271" y="278" width="292" height="21"/>
+                                <rect key="frame" x="271" y="278" width="410" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -460,8 +475,12 @@ Don’t take too long over you replies: your immediate is best.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chart_2" translatesAutoresizingMaskIntoConstraints="NO" id="05v-1M-aJd">
+                                <rect key="frame" x="169" y="248" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.86191433994179256" green="0.97305089235305786" blue="0.89690044658813461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="vll-Q0-CXT"/>
                     </view>
                     <navigationItem key="navigationItem" title="Thank you" id="WuW-y8-qmb">
@@ -474,7 +493,7 @@ Don’t take too long over you replies: your immediate is best.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wws-ts-Fec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="635" y="-78"/>
+            <point key="canvasLocation" x="634.53237410071949" y="-78.391959798994975"/>
         </scene>
         <!--Main-->
         <scene sceneID="pMG-Mt-9KR">
@@ -485,4 +504,9 @@ Don’t take too long over you replies: your immediate is best.</string>
             <point key="canvasLocation" x="1242" y="-78"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chart_2" width="156" height="156"/>
+        <image name="note_2" width="146.5" height="195.5"/>
+        <image name="pencil_1" width="87.5" height="87.5"/>
+    </resources>
 </document>
