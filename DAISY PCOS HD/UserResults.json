@@ -4,14 +4,14 @@
             "date" : "09-03-2019",
             "hadsScore" : {
                 "depression" : 13,
-                "anxiety" : 21
+                "anxiety" : 19
             }
         },
         {
             "date" : "10-04-2019",
             "hadsScore" : {
                 "anxiety" : 8,
-                "depression" : 19
+                "depression" : 21
             }
         },
         {

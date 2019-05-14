@@ -101,13 +101,13 @@ class PartBViewController: UIViewController, CanReceiveHADS {
         print("New Data Stored in File!")
         
         // check the results
-//        let records: [[String: Any]] = LocalResults.localResults[patientID]!
-//        for record in records {
-//            print(record["date"]!)
-//            let score = record["hadsScore"] as? [String: Int]
-//            print(score!["depression"]!)
-//            print(score!["anxiety"]!)
-//        }
+        let records: [[String: Any]] = LocalResults.localResults[patientID]!
+        for record in records {
+            print(record["date"]!)
+            let score = record["hadsScore"] as? [String: Int]
+            print(score!["depression"]!)
+            print(score!["anxiety"]!)
+        }
         
     }
     

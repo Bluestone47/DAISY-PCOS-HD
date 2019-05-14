@@ -6,6 +6,9 @@
 //  Copyright © 2019 XIAN DONG. All rights reserved.
 //
 
+// BarLineScatterCandleBubbleRenderer.swift of Charts library was edited,
+// to solve the problem "circle for first value is missing" in the line chart.
+
 import UIKit
 import Charts
 import SwiftyJSON
@@ -60,9 +63,9 @@ class FinishViewController: UIViewController {
     @IBAction func closePressed(_ sender: Any) {
         
         // Only submit HADS if the user have finished it
-        if  QuizResult.shared().hadsFinished == true {
-            HADSPost.hadsSubmit()
-        }
+//        if  QuizResult.shared().hadsFinished == true {
+//            HADSPost.hadsSubmit()
+//        }
         
         print(QuizResult.shared().result)
         

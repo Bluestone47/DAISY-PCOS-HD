@@ -26,7 +26,13 @@ class ChartFactory {
     
     func loadChartData() {
         
-        ChartFactory.depressionDataSet = LineChartDataSet(values: ChartFactory.depressionScoreEntry, label: "Depression")
+        // parameters for gradient
+        let gradientColors = [UIColor.cyan.cgColor, UIColor.clear.cgColor] as CFArray // Colors of the gradient
+        let colorLocations:[CGFloat] = [1.0, 0.0] // Positioning of the gradient
+        let gradient = CGGradient.init(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: gradientColors, locations: colorLocations) // Gradient Object
+        
+        // set depressionDataSet
+        ChartFactory.depressionDataSet = LineChartDataSet(entries: ChartFactory.depressionScoreEntry, label: "Depression")
         ChartFactory.depressionDataSet.axisDependency = .left // Line will correlate with left axis values
         ChartFactory.depressionDataSet.setColor(UIColor.green.withAlphaComponent(0.5))
         ChartFactory.depressionDataSet.setCircleColor(UIColor.green)
@@ -35,8 +41,13 @@ class ChartFactory {
         ChartFactory.depressionDataSet.fillAlpha = 65 / 255.0
         ChartFactory.depressionDataSet.fillColor = UIColor.green
         ChartFactory.depressionDataSet.highlightColor = UIColor.white
+        ChartFactory.depressionDataSet.mode = .cubicBezier
+        // set the gradient
+        ChartFactory.depressionDataSet.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0) // Set the Gradient
+        ChartFactory.depressionDataSet.drawFilledEnabled = true // Draw the Gradient
         
-        ChartFactory.anxietyDataSet = LineChartDataSet(values: ChartFactory.anxietyScoreEntry, label: "Anxiety")
+        // set anxietyDataSet
+        ChartFactory.anxietyDataSet = LineChartDataSet(entries: ChartFactory.anxietyScoreEntry, label: "Anxiety")
         ChartFactory.anxietyDataSet.axisDependency = .left // Line will correlate with left axis values
         ChartFactory.anxietyDataSet.setColor(UIColor.blue.withAlphaComponent(0.5))
         ChartFactory.anxietyDataSet.setCircleColor(UIColor.blue)
@@ -45,9 +56,19 @@ class ChartFactory {
         ChartFactory.anxietyDataSet.fillAlpha = 65 / 255.0
         ChartFactory.anxietyDataSet.fillColor = UIColor.blue
         ChartFactory.anxietyDataSet.highlightColor = UIColor.white
+        ChartFactory.anxietyDataSet.mode = .cubicBezier
+        // set the gradient
+        ChartFactory.anxietyDataSet.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0) // Set the Gradient
+        ChartFactory.anxietyDataSet.drawFilledEnabled = true // Draw the Gradient
         
         ChartFactory.lineChartData.addDataSet(ChartFactory.depressionDataSet)
         ChartFactory.lineChartData.addDataSet(ChartFactory.anxietyDataSet)
+        
+        // convert dataset to Int
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 0
+        ChartFactory.lineChartData.setValueFormatter(DefaultValueFormatter(formatter:formatter))
+        
         
     }
     
