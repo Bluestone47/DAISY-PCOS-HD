@@ -57,16 +57,24 @@ class FinishViewController: UIViewController {
     
     func updateChart() {
         
+        lineChart.data = ChartFactory.lineChartData
         
         lineChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: ChartFactory.dateArray)
         lineChart.xAxis.granularity = 1
-        
-        lineChart.data = ChartFactory.lineChartData
-        
-        lineChart.legend.font = UIFont(name: "Verdana", size: 10.0)!
         lineChart.xAxis.labelFont = UIFont(name: "HelveticaNeue-Light", size: 12.0)!
+        lineChart.xAxis.avoidFirstLastClippingEnabled = true
         
-        lineChart.minOffset = 20
+        
+        lineChart.legend.font = UIFont(name: "Verdana", size: 16.0)!
+        lineChart.legend.horizontalAlignment = .left
+        lineChart.legend.verticalAlignment = .bottom
+//        lineChart.legend.orientation = .vertical
+        lineChart.legend.xEntrySpace = 20
+        lineChart.legend.yEntrySpace = 0
+        
+//        lineChart.extraTopOffset = 40
+//        lineChart.fitScreen()
+        lineChart.notifyDataSetChanged()
         
     }
     

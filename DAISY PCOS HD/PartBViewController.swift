@@ -19,6 +19,8 @@ class PartBViewController: UIViewController, CanReceiveHADS {
     @IBOutlet weak var hadsButton: UIButton!
     @IBOutlet weak var HADSScoreLabel: UILabel!
     
+    var saveLocalResult = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -76,8 +78,9 @@ class PartBViewController: UIViewController, CanReceiveHADS {
         readLocalResults()
         
         // if user finished HADS, update the local results
-        if QuizResult.shared().hadsFinished == true {
+        if saveLocalResult && QuizResult.shared().hadsFinished == true {
             storeLocalResults()
+            saveLocalResult = false
         }
         
         performSegue(withIdentifier: "goToFinish", sender: self)
