@@ -107,6 +107,9 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    //MARK: - Hair Loss Part
+    /***************************************************************/
+    
     @IBAction func hairYesPressed(_ sender: Any) {
         hairNoButton.setCheckState(M13Checkbox.CheckState.unchecked, animated: true)
         // hairNoButton.toggleCheckState()
@@ -158,10 +161,13 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    //MARK: - Finish PartA
+    /***************************************************************/
+    
     func gatherAnswers() -> Bool {
         
         // Get ethnic answer
-        // print(print(String(format: "%@ is selected.\n", ethnicButton.selected()!.titleLabel!.text!)))
+//        print(print(String(format: "%@ is selected.\n", ethnicButton.selected()!.titleLabel!.text!)))
         temp["ethnic"] = ethnicButton.selected()?.titleLabel!.text
         
         // Check ethnic answer

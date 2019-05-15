@@ -55,6 +55,9 @@ class FinishViewController: UIViewController {
         }
     }
     
+    //MARK: - Render the chart
+    /***************************************************************/
+    
     func updateChart() {
         
         lineChart.data = ChartFactory.lineChartData
@@ -78,6 +81,8 @@ class FinishViewController: UIViewController {
         
     }
     
+    //MARK: - Finish and Submit
+    /***************************************************************/
     
     @IBAction func closePressed(_ sender: Any) {
         

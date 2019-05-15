@@ -44,6 +44,9 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    //MARK: - Render table view
+    /***************************************************************/
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questionArray.count
     }
@@ -66,6 +69,9 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
         questionTable.rowHeight = UITableView.automaticDimension
         questionTable.estimatedRowHeight = 280.0
     }
+    
+    //MARK: - Finish HADS
+    /***************************************************************/
     
     @IBAction func submitPressed(_ sender: Any) {
         
@@ -118,6 +124,9 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.present(alert, animated: true, completion: nil)
         
     }
+    
+    //MARK: - Save results
+    /***************************************************************/
     
     func calculateScore() {
         

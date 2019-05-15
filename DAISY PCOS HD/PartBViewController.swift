@@ -39,18 +39,6 @@ class PartBViewController: UIViewController, CanReceiveHADS {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "goToHADS" {
-            
-            let hadsVC = segue.destination as! HADSViewController
-            
-            hadsVC.delegate = self
-            
-        }
-        
-    }
-    
     //MARK: - Taking HADS Test
     /***************************************************************/
     
@@ -67,25 +55,20 @@ class PartBViewController: UIViewController, CanReceiveHADS {
         HADSScoreLabel.text = "Your depression score is \(depressionScore).\nYour anxiety score is \(anxietyScore)."
     }
     
-    //MARK: - Finish PartB
-    /***************************************************************/
-    
-    @IBAction func nextPressed(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        // get the finish date
-        getCurrentDate()
-        
-        readLocalResults()
-        
-        // if user finished HADS, update the local results
-        if saveLocalResult && QuizResult.shared().hadsFinished == true {
-            storeLocalResults()
-            saveLocalResult = false
+        if segue.identifier == "goToHADS" {
+            
+            let hadsVC = segue.destination as! HADSViewController
+            
+            hadsVC.delegate = self
+            
         }
         
-        performSegue(withIdentifier: "goToFinish", sender: self)
-        
     }
+    
+    //MARK: - Store results locally
+    /***************************************************************/
     
     // store the results in a local json file
     func storeLocalResults() {
@@ -133,6 +116,26 @@ class PartBViewController: UIViewController, CanReceiveHADS {
         print(formattedDate)
         
         QuizResult.shared().result["date"] = formattedDate
+        
+    }
+    
+    //MARK: - Finish PartB
+    /***************************************************************/
+    
+    @IBAction func nextPressed(_ sender: Any) {
+        
+        // get the finish date
+        getCurrentDate()
+        
+        readLocalResults()
+        
+        // if user finished HADS, update the local results
+        if saveLocalResult && QuizResult.shared().hadsFinished == true {
+            storeLocalResults()
+            saveLocalResult = false
+        }
+        
+        performSegue(withIdentifier: "goToFinish", sender: self)
         
     }
     
