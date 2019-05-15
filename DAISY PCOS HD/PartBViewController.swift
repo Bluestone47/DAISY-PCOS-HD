@@ -85,6 +85,7 @@ class PartBViewController: UIViewController, CanReceiveHADS {
         JsonFileFactory.writeJSONToFile(fileName: "UserResults", dictionary: LocalResults.localResults)
         
         print("New Data Stored in File!")
+        print(JsonFileFactory.readJSONFromFile(fileName: "UserResults") as! [String : Array<[String : Any]>])
         
         // check the results
         let records: [[String: Any]] = LocalResults.localResults[patientID]!

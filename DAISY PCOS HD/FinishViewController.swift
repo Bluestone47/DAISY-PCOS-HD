@@ -92,6 +92,7 @@ class FinishViewController: UIViewController {
         //        }
         
         print(QuizResult.shared().result)
+        print(LocalResults.localResults)
         
         resetGlobalVariables()
         resetUserDefaults()

@@ -35,7 +35,9 @@ class JsonFileFactory {
                 let fileUrl = URL(fileURLWithPath: path)
                 // Getting data from JSON file using the file URL
                 let data = try Data(contentsOf: fileUrl, options: .mappedIfSafe)
+                print(data)
                 json = try? JSONSerialization.jsonObject(with: data)
+                print(json!)
             } catch let error {
                 print("parse error: \(error.localizedDescription)")
             }
@@ -45,6 +47,8 @@ class JsonFileFactory {
     
     static func writeJSONToFile(fileName: String, dictionary: Dictionary<String, Any>) {
         
+        cleanJsonFile(fileName: fileName)
+        
         let json = JSON(dictionary)
         print(json)
         let str = json.description
@@ -52,6 +56,30 @@ class JsonFileFactory {
         let path = Bundle.main.path(forResource: fileName, ofType: "json")
         if let file = FileHandle(forWritingAtPath: path!) {
             file.write(data)
+        }
+    }
+    
+    
+    // Delete the json file, and create an empty file for new data
+    // Otherwise the format may be damaged due to uncomplete overwrite
+    static func cleanJsonFile(fileName: String) {
+        
+//        let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+//        let path = dir!.appendingPathComponent("\(fileName).json")
+//        let text = ""
+//        do {
+//            try text.write(to: path, atomically: false, encoding: .utf8)
+//        } catch {
+//            print(error)
+//        }
+        
+        let path = Bundle.main.path(forResource: fileName, ofType: "json")!
+
+        do {
+            try FileManager().removeItem(atPath: path)
+            FileManager().createFile(atPath: path, contents: nil, attributes: nil)
+        } catch {
+            print(error)
         }
     }
     

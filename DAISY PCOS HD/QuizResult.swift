@@ -26,7 +26,7 @@ class QuizResult{
         hadsFinished = false
         result = [
             "patientID": "GBBI-0001", // default patientID for test, should not be used by a real user
-            "date": 01-01-2000,
+            "date": "01-01-2000",
             "part_a": [
                 "ethnic": "",
                 "loss_hair": "",
