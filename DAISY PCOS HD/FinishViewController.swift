@@ -40,8 +40,14 @@ class FinishViewController: UIViewController {
     
     @IBOutlet weak var lineChart: LineChartView!    
     
+    @IBOutlet weak var closeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ChartFactory().resetChartData()
+        
+        setButton()
         
         let patientID = UserInfoObject.shared().userInfo.patientID
         
@@ -54,6 +60,18 @@ class FinishViewController: UIViewController {
             
         }
     }
+    
+    func setButton() {
+        
+//        let buttonBorderColor = UIColor(rgb: 0xDCF8E5).cgColor
+        let buttonBorderColor = UIColor.blue
+        
+        closeButton.backgroundColor = .clear
+        closeButton.layer.cornerRadius = 10
+        closeButton.layer.borderWidth = 2
+        closeButton.layer.borderColor = buttonBorderColor.cgColor
+    }
+    
     
     //MARK: - Render the chart
     /***************************************************************/

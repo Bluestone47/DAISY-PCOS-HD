@@ -33,7 +33,6 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We would like you to complete a short questionnaire on your sleep:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="370-DO-goP" userLabel="Berlin Head Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="660" height="25"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -48,7 +47,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPc-xf-KKX" userLabel="Berlin View">
                                                         <rect key="frame" x="0.0" y="30" width="660" height="312.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berlin questionnaire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vn1-2i-wrS">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Berlin Questionnaire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vn1-2i-wrS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="660" height="24"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="660" id="chd-qJ-Ovb"/>
@@ -73,9 +72,9 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzG-BF-spl">
-                                                                <rect key="frame" x="280.5" y="244" width="99" height="33"/>
+                                                                <rect key="frame" x="279" y="244" width="102" height="33"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <state key="normal" title="Take the test"/>
+                                                                <state key="normal" title="Take the Test"/>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete Belrin to check your score." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az5-G9-Hkb">
                                                                 <rect key="frame" x="0.0" y="277" width="282" height="20.5"/>
@@ -83,14 +82,18 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil_1" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-JR-Vyi">
-                                                                <rect key="frame" x="387" y="240" width="40" height="40"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil_1" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-JR-Vyi">
+                                                                <rect key="frame" x="391" y="240" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="Xff-lc-dcE"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="y1R-kz-SNU"/>
+                                                                </constraints>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="Az5-G9-Hkb" firstAttribute="top" secondItem="ZzG-BF-spl" secondAttribute="bottom" id="Cd4-Ax-nme"/>
+                                                            <constraint firstItem="Hv3-JR-Vyi" firstAttribute="top" secondItem="lPc-xf-KKX" secondAttribute="top" constant="240" id="DGS-Ku-60X"/>
                                                             <constraint firstAttribute="width" constant="660" id="Iaw-IY-ONe"/>
                                                             <constraint firstAttribute="height" constant="312.5" id="Nl9-wb-VXK"/>
                                                             <constraint firstItem="ZzG-BF-spl" firstAttribute="top" secondItem="l1s-9o-Iu9" secondAttribute="bottom" constant="8" id="Sxe-yH-GuH"/>
@@ -101,6 +104,7 @@ The overall BQ score is determined from the responses to the three categories: s
                                                             <constraint firstAttribute="bottom" secondItem="Az5-G9-Hkb" secondAttribute="bottom" constant="15" id="cKy-BW-MH1"/>
                                                             <constraint firstItem="Az5-G9-Hkb" firstAttribute="top" secondItem="ZzG-BF-spl" secondAttribute="bottom" id="d7L-sw-ZGa"/>
                                                             <constraint firstAttribute="trailing" secondItem="l1s-9o-Iu9" secondAttribute="trailing" id="dmT-dc-pKL"/>
+                                                            <constraint firstItem="Hv3-JR-Vyi" firstAttribute="leading" secondItem="ZzG-BF-spl" secondAttribute="trailing" constant="10" id="exD-jL-Eas"/>
                                                             <constraint firstItem="l1s-9o-Iu9" firstAttribute="top" secondItem="vn1-2i-wrS" secondAttribute="bottom" constant="8" id="mgY-Do-3oU"/>
                                                             <constraint firstItem="vn1-2i-wrS" firstAttribute="top" secondItem="lPc-xf-KKX" secondAttribute="top" id="v7f-JG-1V1"/>
                                                         </constraints>
@@ -111,7 +115,6 @@ The overall BQ score is determined from the responses to the three categories: s
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We would like you to complete a short questionnaire on your mood:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9T-Ed-rEb" userLabel="Hads Head Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="660" height="25"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -126,7 +129,7 @@ The overall BQ score is determined from the responses to the three categories: s
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0XY-aQ-BjO" userLabel="HADS View">
                                                         <rect key="frame" x="0.0" y="372.5" width="660" height="240"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Hospital Anxiety and Depression Scale (HADS)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iL3-p7-LVN">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   The Hospital Anxiety and Depression Scale (HADS)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iL3-p7-LVN">
                                                                 <rect key="frame" x="0.0" y="0.0" width="660" height="24"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="660" id="IvW-31-ojQ"/>
@@ -147,9 +150,9 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-AP-KyL">
-                                                                <rect key="frame" x="280.5" y="141" width="99" height="33"/>
+                                                                <rect key="frame" x="279" y="141" width="102" height="33"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <state key="normal" title="Take the test"/>
+                                                                <state key="normal" title="Take the Test"/>
                                                                 <connections>
                                                                     <action selector="hadsPressed:" destination="hVe-1h-hpo" eventType="touchUpInside" id="UUQ-jo-bji"/>
                                                                 </connections>
@@ -164,16 +167,21 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil_1" translatesAutoresizingMaskIntoConstraints="NO" id="L1k-cG-vj9">
-                                                                <rect key="frame" x="387" y="138" width="40" height="40"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil_1" translatesAutoresizingMaskIntoConstraints="NO" id="L1k-cG-vj9">
+                                                                <rect key="frame" x="391" y="138" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="1lT-jY-WI5"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="COW-kK-e0J"/>
+                                                                </constraints>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="z5G-bj-L7o" secondAttribute="trailing" id="24T-0K-Dn3"/>
+                                                            <constraint firstItem="L1k-cG-vj9" firstAttribute="leading" secondItem="yN3-AP-KyL" secondAttribute="trailing" constant="10" id="5SD-T0-EWE"/>
                                                             <constraint firstAttribute="width" constant="660" id="9Ct-pM-9rm"/>
                                                             <constraint firstItem="iL3-p7-LVN" firstAttribute="top" secondItem="0XY-aQ-BjO" secondAttribute="top" id="DRM-0p-CLL"/>
+                                                            <constraint firstItem="L1k-cG-vj9" firstAttribute="top" secondItem="0XY-aQ-BjO" secondAttribute="top" constant="138" id="GVR-nW-tS2"/>
                                                             <constraint firstItem="z5G-bj-L7o" firstAttribute="leading" secondItem="0XY-aQ-BjO" secondAttribute="leading" id="L2b-uP-kI9"/>
                                                             <constraint firstItem="z5G-bj-L7o" firstAttribute="top" secondItem="iL3-p7-LVN" secondAttribute="bottom" constant="5" id="adJ-4c-AiH"/>
                                                             <constraint firstItem="Wqk-0t-UlN" firstAttribute="leading" secondItem="0XY-aQ-BjO" secondAttribute="leading" id="bXr-xb-cGM"/>
@@ -191,7 +199,6 @@ The overall BQ score is determined from the responses to the three categories: s
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We would like you to complete a short questionnaire on regarding sleepiness:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbw-If-hmA">
                                                                 <rect key="frame" x="0.0" y="0.0" width="660" height="25"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -206,7 +213,7 @@ The overall BQ score is determined from the responses to the three categories: s
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBj-EX-NHI" userLabel="ESS View">
                                                         <rect key="frame" x="0.0" y="642.5" width="660" height="269.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Epworth Sleepiness Scale (ESS)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ax-Id-TyJ">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Epworth Sleepiness Scale (ESS)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ax-Id-TyJ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="660" height="24"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="660" id="Aw1-PD-iu7"/>
@@ -236,13 +243,16 @@ The overall BQ score is determined from the responses to the three categories: s
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXS-J3-ljL">
-                                                                <rect key="frame" x="280.5" y="201" width="99" height="33"/>
+                                                                <rect key="frame" x="279" y="201" width="102" height="33"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <state key="normal" title="Take the test"/>
+                                                                <state key="normal" title="Take the Test"/>
                                                             </button>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil_1" translatesAutoresizingMaskIntoConstraints="NO" id="46u-BL-5QZ">
-                                                                <rect key="frame" x="387" y="198" width="40" height="40"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil_1" translatesAutoresizingMaskIntoConstraints="NO" id="46u-BL-5QZ">
+                                                                <rect key="frame" x="391" y="198" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="KaQ-u7-VBE"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="nzw-Vi-d7f"/>
+                                                                </constraints>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -250,9 +260,11 @@ The overall BQ score is determined from the responses to the three categories: s
                                                             <constraint firstItem="iej-e3-0K0" firstAttribute="leading" secondItem="XBj-EX-NHI" secondAttribute="leading" id="01b-kD-trS"/>
                                                             <constraint firstAttribute="bottom" secondItem="uaf-hg-cgN" secondAttribute="bottom" constant="15" id="3Su-Bx-olm"/>
                                                             <constraint firstItem="0ax-Id-TyJ" firstAttribute="leading" secondItem="XBj-EX-NHI" secondAttribute="leading" id="BeM-tz-m6W"/>
+                                                            <constraint firstItem="46u-BL-5QZ" firstAttribute="leading" secondItem="OXS-J3-ljL" secondAttribute="trailing" constant="10" id="MPb-Mz-eEr"/>
                                                             <constraint firstItem="0ax-Id-TyJ" firstAttribute="top" secondItem="XBj-EX-NHI" secondAttribute="top" id="QWN-rc-JBa"/>
                                                             <constraint firstItem="OXS-J3-ljL" firstAttribute="top" secondItem="iej-e3-0K0" secondAttribute="bottom" id="Qfs-kR-Fbm"/>
                                                             <constraint firstItem="uaf-hg-cgN" firstAttribute="top" secondItem="OXS-J3-ljL" secondAttribute="bottom" id="ZB5-zn-Wpx"/>
+                                                            <constraint firstItem="46u-BL-5QZ" firstAttribute="top" secondItem="XBj-EX-NHI" secondAttribute="top" constant="198" id="d4u-j5-maV"/>
                                                             <constraint firstItem="iej-e3-0K0" firstAttribute="leading" secondItem="XBj-EX-NHI" secondAttribute="leading" id="it5-iO-mKo"/>
                                                             <constraint firstAttribute="trailing" secondItem="iej-e3-0K0" secondAttribute="trailing" id="kF8-xW-V51"/>
                                                             <constraint firstItem="iej-e3-0K0" firstAttribute="top" secondItem="0ax-Id-TyJ" secondAttribute="bottom" constant="5" id="mgg-nQ-111"/>
@@ -297,18 +309,23 @@ The overall BQ score is determined from the responses to the three categories: s
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="note_2" translatesAutoresizingMaskIntoConstraints="NO" id="PSs-Vk-n3k">
-                                                <rect key="frame" x="584" y="0.0" width="80" height="80"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note_2" translatesAutoresizingMaskIntoConstraints="NO" id="PSs-Vk-n3k">
+                                                <rect key="frame" x="667" y="25" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="15f-wy-vix"/>
+                                                    <constraint firstAttribute="width" constant="80" id="wv1-9R-UJM"/>
+                                                </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="wrz-1K-f2s" firstAttribute="centerX" secondItem="pCE-JV-ma3" secondAttribute="centerX" id="8ct-C1-PlW"/>
+                                            <constraint firstItem="PSs-Vk-n3k" firstAttribute="leading" secondItem="wrz-1K-f2s" secondAttribute="trailing" constant="50" id="BC0-PA-sn5"/>
                                             <constraint firstAttribute="height" constant="1120" id="CfU-Sx-ClN"/>
                                             <constraint firstItem="kR5-on-OGT" firstAttribute="centerX" secondItem="pCE-JV-ma3" secondAttribute="centerX" id="KIE-lc-1wC"/>
                                             <constraint firstItem="wrz-1K-f2s" firstAttribute="top" secondItem="pCE-JV-ma3" secondAttribute="top" constant="25" id="ORe-4U-fZt"/>
                                             <constraint firstItem="uOu-28-KIB" firstAttribute="top" secondItem="kR5-on-OGT" secondAttribute="bottom" constant="20" id="Os3-46-aai"/>
+                                            <constraint firstItem="PSs-Vk-n3k" firstAttribute="top" secondItem="pCE-JV-ma3" secondAttribute="top" constant="25" id="QlD-hJ-IEh"/>
                                             <constraint firstItem="kR5-on-OGT" firstAttribute="top" secondItem="wrz-1K-f2s" secondAttribute="bottom" constant="30" id="Wko-lp-DZh"/>
                                             <constraint firstAttribute="bottom" secondItem="uOu-28-KIB" secondAttribute="bottom" constant="68" id="roa-kz-6cL"/>
                                             <constraint firstAttribute="width" constant="834" id="xv9-5U-go3"/>
@@ -424,7 +441,7 @@ Don’t take too long over you replies: your immediate is best.</string>
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.97647058823529409" green="0.8901960784313725" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.9882352941176471" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Gjn-gs-9cb" firstAttribute="trailing" secondItem="g8s-13-Fy8" secondAttribute="trailing" id="1uR-a8-lAw"/>
                             <constraint firstItem="P80-gO-43o" firstAttribute="top" secondItem="nLa-fB-Jep" secondAttribute="top" id="4Xq-hm-WyB"/>
@@ -455,38 +472,89 @@ Don’t take too long over you replies: your immediate is best.</string>
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for taking this questionarie." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8W-sv-t72">
-                                <rect key="frame" x="271" y="278" width="410" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xD1-C7-vpo">
-                                <rect key="frame" x="398" y="817" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Close"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xD1-C7-vpo">
+                                <rect key="frame" x="342" y="827" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="erl-47-qsx"/>
+                                    <constraint firstAttribute="width" constant="150" id="pFN-kV-kPA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="closePressed:" destination="GGp-v5-nQR" eventType="touchUpInside" id="LtC-Nm-OMW"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bP0-gT-xJS" customClass="LineChartView" customModule="Charts">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bP0-gT-xJS" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="117" y="397" width="600" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="MIa-WV-CIZ"/>
+                                    <constraint firstAttribute="width" constant="600" id="ZIg-o9-Jxm"/>
+                                </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chart_2" translatesAutoresizingMaskIntoConstraints="NO" id="05v-1M-aJd">
-                                <rect key="frame" x="169" y="248" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqX-s1-MDI">
+                                <rect key="frame" x="117" y="292" width="600" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for taking this questionarie." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8W-sv-t72">
+                                        <rect key="frame" x="160" y="8" width="400" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="HXb-tt-iau"/>
+                                            <constraint firstAttribute="height" constant="30" id="Ipf-G9-maj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart_2" translatesAutoresizingMaskIntoConstraints="NO" id="05v-1M-aJd">
+                                        <rect key="frame" x="50" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Ur3-vT-eqK"/>
+                                            <constraint firstAttribute="height" constant="80" id="fUn-zd-alf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your score." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tz-h5-Gaf">
+                                        <rect key="frame" x="160" y="42" width="400" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="1Mu-I8-2h4"/>
+                                            <constraint firstAttribute="width" constant="400" id="4V6-jP-Aku"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="M8W-sv-t72" firstAttribute="leading" secondItem="05v-1M-aJd" secondAttribute="trailing" constant="30" id="53x-aP-wOr"/>
+                                    <constraint firstItem="05v-1M-aJd" firstAttribute="leading" secondItem="aqX-s1-MDI" secondAttribute="leading" constant="50" id="Cv1-cc-Caz"/>
+                                    <constraint firstItem="5Tz-h5-Gaf" firstAttribute="top" secondItem="M8W-sv-t72" secondAttribute="bottom" constant="4" id="KHr-e0-gqN"/>
+                                    <constraint firstItem="5Tz-h5-Gaf" firstAttribute="leading" secondItem="05v-1M-aJd" secondAttribute="trailing" constant="30" id="Rgq-qJ-arL"/>
+                                    <constraint firstItem="05v-1M-aJd" firstAttribute="top" secondItem="aqX-s1-MDI" secondAttribute="top" id="U7S-ms-jco"/>
+                                    <constraint firstItem="M8W-sv-t72" firstAttribute="top" secondItem="aqX-s1-MDI" secondAttribute="top" constant="8" id="WYs-FD-a8K"/>
+                                    <constraint firstAttribute="width" constant="600" id="dRz-Wy-dY5"/>
+                                    <constraint firstItem="5Tz-h5-Gaf" firstAttribute="top" secondItem="M8W-sv-t72" secondAttribute="bottom" constant="4" id="doW-lF-gcN"/>
+                                    <constraint firstAttribute="bottom" secondItem="05v-1M-aJd" secondAttribute="bottom" id="gZZ-K0-VIk"/>
+                                    <constraint firstAttribute="height" constant="80" id="h2u-kD-Nyf"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.86191433994179256" green="0.97305089235305786" blue="0.89690044658813461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xD1-C7-vpo" firstAttribute="centerX" secondItem="rtp-WS-hSR" secondAttribute="centerX" id="4dK-DL-KzR"/>
+                            <constraint firstItem="bP0-gT-xJS" firstAttribute="centerX" secondItem="rtp-WS-hSR" secondAttribute="centerX" id="Afx-nO-D8V"/>
+                            <constraint firstItem="bP0-gT-xJS" firstAttribute="top" secondItem="aqX-s1-MDI" secondAttribute="bottom" constant="25" id="DjP-Tw-9zo"/>
+                            <constraint firstItem="bP0-gT-xJS" firstAttribute="centerY" secondItem="rtp-WS-hSR" secondAttribute="centerY" id="M7r-3F-hax"/>
+                            <constraint firstItem="xD1-C7-vpo" firstAttribute="top" secondItem="bP0-gT-xJS" secondAttribute="bottom" constant="30" id="hI8-W5-c5x"/>
+                            <constraint firstItem="aqX-s1-MDI" firstAttribute="centerX" secondItem="rtp-WS-hSR" secondAttribute="centerX" id="u3H-PM-Ly5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vll-Q0-CXT"/>
                     </view>
                     <navigationItem key="navigationItem" title="Thank you" id="WuW-y8-qmb">
                         <barButtonItem key="backBarButtonItem" title="Part B" id="V5R-KV-3ug"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="closeButton" destination="xD1-C7-vpo" id="e8H-yh-GCV"/>
                         <outlet property="lineChart" destination="bP0-gT-xJS" id="Mc6-oF-8Zl"/>
                         <segue destination="bsq-Zp-X6U" kind="showDetail" identifier="goToMain" id="yTq-3A-tD6"/>
                     </connections>

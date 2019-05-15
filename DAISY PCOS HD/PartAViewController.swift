@@ -101,9 +101,24 @@ class PartAViewController: UIViewController, UITextFieldDelegate {
     
     func loadLabels() {
         
+        let ethnicLabelColor = UIColor(rgb: 0x3F51B5)
+        let bodyHairLabelColor = UIColor(rgb: 0xE91E63)
+        
         centerIDLabel.text = "Welcome Patient \(UserInfoObject.shared().userInfo.patientID)"
+        
         ethnicLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        ethnicLabel.textColor = ethnicLabelColor
+        ethnicLabel.backgroundColor = .clear
+        ethnicLabel.layer.cornerRadius = 10
+        ethnicLabel.layer.borderWidth = 2
+        ethnicLabel.layer.borderColor = ethnicLabelColor.cgColor
+        
         bodyHairLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        bodyHairLabel.textColor = bodyHairLabelColor
+        bodyHairLabel.backgroundColor = .clear
+        bodyHairLabel.layer.cornerRadius = 10
+        bodyHairLabel.layer.borderWidth = 2
+        bodyHairLabel.layer.borderColor = bodyHairLabelColor.cgColor
         
     }
     

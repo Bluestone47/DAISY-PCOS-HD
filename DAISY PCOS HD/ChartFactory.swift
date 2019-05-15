@@ -100,8 +100,18 @@ class ChartFactory {
             ChartFactory.anxietyScoreEntry.append(anxietyValue)
         }
         
+    }
+    
+    func resetChartData() {
+        ChartFactory.dateArray = [String]()
         
+        ChartFactory.depressionScoreEntry = [ChartDataEntry]()
+        ChartFactory.anxietyScoreEntry = [ChartDataEntry]()
         
+        ChartFactory.depressionDataSet = LineChartDataSet()
+        ChartFactory.anxietyDataSet = LineChartDataSet()
+        
+        ChartFactory.lineChartData = LineChartData()
     }
     
     // format the result in the needed style

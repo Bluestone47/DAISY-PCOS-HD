@@ -29,11 +29,46 @@ extension UIColor {
 
 class WelcomeViewController: UIViewController {
     
+    @IBOutlet weak var longTitleLabel: UILabel!
+    
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        print("\(GetIPAddress.getIPAddress())")
+        
+        setButtons()
+//        resultForTest()
+        
+        readLocalResults()
+        
+        
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        if UIDevice.current.orientation.isLandscape {
+            longTitleLabel.isHidden = true
+        }
+        if UIDevice.current.orientation.isPortrait {
+            longTitleLabel.isHidden = false
+        }
+    }
+    
+    // read the stored result
+    func readLocalResults() {
+        
+        LocalResults.localResults = JsonFileFactory.readJSONFromFile(fileName: "UserResults") as! [String : Array<[String : Any]>]
+        
+        print("Data History Read!")
+        print(LocalResults.localResults)
+        
+    }
+    
+    func setButtons() {
         
         let buttonBorderColor = UIColor(rgb: 0xDCF8E5).cgColor
         
@@ -41,29 +76,22 @@ class WelcomeViewController: UIViewController {
         loginButton.layer.cornerRadius = 10
         loginButton.layer.borderWidth = 2
         loginButton.layer.borderColor = buttonBorderColor
-//        loginButton.layer.borderColor = UIColor.black.cgColor
+        //        loginButton.layer.borderColor = UIColor.black.cgColor
         
         registerButton.backgroundColor = .clear
         registerButton.layer.cornerRadius = 10
         registerButton.layer.borderWidth = 2
         registerButton.layer.borderColor = buttonBorderColor
         
+    }
+    
+    func setBackground() {
 //        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Calming-Blurred-Background")!)
-        
+//
 //        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
 //        backgroundImage.image = UIImage(named: "Calming-Blurred-Background")
 //        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
 //        self.view.insertSubview(backgroundImage, at: 0)
-        
-        // Do any additional setup after loading the view.
-        print("\(GetIPAddress.getIPAddress())")
-        
-//        resultForTest()
-        
-        LocalResults.localResults = JsonFileFactory.readJSONFromFile(fileName: "UserResults") as! [String : Array<[String : Any]>]
-        print(LocalResults.localResults)
-        
-        
     }
     
     //MARK: - Testing code
@@ -98,4 +126,5 @@ class WelcomeViewController: UIViewController {
         JsonFileFactory.writeJSONToFile(fileName: "UserResults", dictionary: tempJson)
         
     }
+    
 }

@@ -64,15 +64,6 @@ class JsonFileFactory {
     // Otherwise the format may be damaged due to uncomplete overwrite
     static func cleanJsonFile(fileName: String) {
         
-//        let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
-//        let path = dir!.appendingPathComponent("\(fileName).json")
-//        let text = ""
-//        do {
-//            try text.write(to: path, atomically: false, encoding: .utf8)
-//        } catch {
-//            print(error)
-//        }
-        
         let path = Bundle.main.path(forResource: fileName, ofType: "json")!
 
         do {
@@ -83,49 +74,5 @@ class JsonFileFactory {
         }
     }
     
-    static func saveUploadedFilesSet(fileName: String, dictionary: [String : Any]) {
-        
-        let path = Bundle.main.path(forResource: fileName, ofType: "json")
-        let file: FileHandle? = FileHandle(forWritingAtPath: path!)
-        
-        if file != nil {
-            // Set the data we want to write
-            do{
-                if let jsonData = try JSONSerialization.data(withJSONObject: dictionary, options: .init(rawValue: 0)) as? Data
-                {
-                    // Check if everything went well
-                    print(NSString(data: jsonData, encoding: 1)!)
-                    // Write it to the file
-                    file?.write(jsonData)
-                    
-                }
-            }
-            catch let error {
-                print("parse error: \(error.localizedDescription)")
-            }
-            
-            // Close the file
-            file?.closeFile()
-        }
-        else {
-            print("Ooops! Something went wrong!")
-        }
-    }
-    
-    static func getUploadedFileSet(filename:String) {
-        if let path = Bundle.main.path(forResource: "assets/\(filename)", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let person = jsonResult["person"] as? [Any] {
-                    // do stuff
-                }
-            } catch let error {
-                print("parse error: \(error.localizedDescription)")
-            }
-        } else {
-            print("Invalid filename/path.")
-        }
-    }
     
 }

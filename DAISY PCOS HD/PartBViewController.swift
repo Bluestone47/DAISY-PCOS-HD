@@ -19,11 +19,12 @@ class PartBViewController: UIViewController, CanReceiveHADS {
     @IBOutlet weak var hadsButton: UIButton!
     @IBOutlet weak var HADSScoreLabel: UILabel!
     
+    
     var saveLocalResult = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         loadLabels()
         
@@ -31,11 +32,32 @@ class PartBViewController: UIViewController, CanReceiveHADS {
     
     func loadLabels() {
         
+        let berlinLabelColor = UIColor(rgb: 0x3F51B5)
+        let hadsLabelColor = UIColor(rgb: 0xFF5722)
+        let essLabelColor = UIColor(rgb: 0x009688)
+        
         partBLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         
         berlinLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        berlinLabel.textColor = berlinLabelColor
+        berlinLabel.backgroundColor = .clear
+        berlinLabel.layer.cornerRadius = 10
+        berlinLabel.layer.borderWidth = 2
+        berlinLabel.layer.borderColor = berlinLabelColor.cgColor
+        
         hadsLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        hadsLabel.textColor = hadsLabelColor
+        hadsLabel.backgroundColor = .clear
+        hadsLabel.layer.cornerRadius = 10
+        hadsLabel.layer.borderWidth = 2
+        hadsLabel.layer.borderColor = hadsLabelColor.cgColor
+        
         essLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        essLabel.textColor = essLabelColor
+        essLabel.backgroundColor = .clear
+        essLabel.layer.cornerRadius = 10
+        essLabel.layer.borderWidth = 2
+        essLabel.layer.borderColor = essLabelColor.cgColor
         
     }
     
@@ -99,13 +121,13 @@ class PartBViewController: UIViewController, CanReceiveHADS {
     }
     
     // read the stored result
-    func readLocalResults() {
-        
-        LocalResults.localResults = JsonFileFactory.readJSONFromFile(fileName: "UserResults") as! [String : Array<[String : Any]>]
-        
-        print("Data History Read!")
-        
-    }
+//    func readLocalResults() {
+//        
+//        LocalResults.localResults = JsonFileFactory.readJSONFromFile(fileName: "UserResults") as! [String : Array<[String : Any]>]
+//        
+//        print("Data History Read!")
+//        
+//    }
     
     // get Today's date
     func getCurrentDate() {
@@ -128,7 +150,7 @@ class PartBViewController: UIViewController, CanReceiveHADS {
         // get the finish date
         getCurrentDate()
         
-        readLocalResults()
+//        readLocalResults()
         
         // if user finished HADS, update the local results
         if saveLocalResult && QuizResult.shared().hadsFinished == true {
