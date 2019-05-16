@@ -34,6 +34,8 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
+    @IBOutlet weak var titleDaisyConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,14 +50,32 @@ class WelcomeViewController: UIViewController {
         
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
+    //MARK: - Config UI after load
+    /***************************************************************/
+    func determineMyDeviceOrientation() {
+//        if UIDevice.current.orientation == UIInterfaceOrientation.landscapeLeft {
         if UIDevice.current.orientation.isLandscape {
-            longTitleLabel.isHidden = true
+            print("Device is in landscape mode")
+//            longTitleLabel.isHidden = true
+            titleDaisyConstraint.constant = -50
         }
         if UIDevice.current.orientation.isPortrait {
-            longTitleLabel.isHidden = false
+            print("Device is in portrait mode")
+//            longTitleLabel.isHidden = false
+            titleDaisyConstraint.constant = 8
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        determineMyDeviceOrientation()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        determineMyDeviceOrientation()
     }
     
     // read the stored result

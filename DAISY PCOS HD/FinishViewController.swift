@@ -63,9 +63,10 @@ class FinishViewController: UIViewController {
     
     func setButton() {
         
-//        let buttonBorderColor = UIColor(rgb: 0xDCF8E5).cgColor
-        let buttonBorderColor = UIColor.blue
+        let buttonBorderColor = UIColor(red: 64, green: 93, blue: 115)
+//        let buttonBorderColor = UIColor.blue
         
+        closeButton.setTitleColor(buttonBorderColor, for: .normal)
         closeButton.backgroundColor = .clear
         closeButton.layer.cornerRadius = 10
         closeButton.layer.borderWidth = 2

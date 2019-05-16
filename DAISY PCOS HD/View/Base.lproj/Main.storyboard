@@ -18,185 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbr-l1-JAH">
-                                <rect key="frame" x="185.5" y="121" width="463.5" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="oOL-is-RSf"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="D">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="issecting ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="A">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="ndrogen excess and metabolic dysfunction                           – an ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="I">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="ntegrated ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="SY">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="stems approach to ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="P">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="oly">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="C">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="ystic ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="O">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="vary ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="S">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="yndrome">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="26" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNZ-6m-37t">
-                                <rect key="frame" x="324.5" y="279" width="185.5" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="cT4-gL-GRG"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="DAISY-PCOS">
-                                        <attributes>
-                                            <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="30" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daisy_1" translatesAutoresizingMaskIntoConstraints="NO" id="Asw-Av-eG6">
                                 <rect key="frame" x="187" y="367" width="460" height="460"/>
                                 <constraints>
@@ -232,16 +53,208 @@
                                     <segue destination="JyL-hJ-EfL" kind="presentation" identifier="goToLogIn" id="Cle-L0-8jO"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOh-7A-0uE" userLabel="TitleView">
+                                <rect key="frame" x="185.5" y="121" width="463.5" height="238"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbr-l1-JAH">
+                                        <rect key="frame" x="0.0" y="0.0" width="463.5" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="oOL-is-RSf"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="D">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="issecting ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="A">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="ndrogen excess and metabolic dysfunction                           – an ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="I">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="ntegrated ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="SY">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="stems approach to ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="P">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="oly">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="C">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="ystic ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="O">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="vary ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="S">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="yndrome">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNZ-6m-37t">
+                                        <rect key="frame" x="139" y="158" width="185.5" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="cT4-gL-GRG"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="DAISY-PCOS">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.86274509803921573" green="0.97254901960784312" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="30" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="3" paragraphSpacingBefore="12" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LNZ-6m-37t" firstAttribute="centerX" secondItem="gOh-7A-0uE" secondAttribute="centerX" id="ED4-Kb-pJA"/>
+                                    <constraint firstItem="zbr-l1-JAH" firstAttribute="leading" secondItem="gOh-7A-0uE" secondAttribute="leading" id="IYM-d4-xl9"/>
+                                    <constraint firstAttribute="trailing" secondItem="zbr-l1-JAH" secondAttribute="trailing" id="VvO-vf-ilx"/>
+                                    <constraint firstAttribute="height" constant="238" id="Wgo-GY-gXm"/>
+                                    <constraint firstAttribute="bottom" secondItem="LNZ-6m-37t" secondAttribute="bottom" id="idh-EJ-ife"/>
+                                    <constraint firstAttribute="width" constant="463.5" id="nw1-jY-g03"/>
+                                    <constraint firstItem="zbr-l1-JAH" firstAttribute="top" secondItem="gOh-7A-0uE" secondAttribute="top" id="v2x-4C-9mf"/>
+                                    <constraint firstItem="LNZ-6m-37t" firstAttribute="top" secondItem="zbr-l1-JAH" secondAttribute="bottom" constant="8" id="v51-9g-90q"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.38039215686274508" green="0.57647058823529407" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="1St-gO-HdP" firstAttribute="top" secondItem="Asw-Av-eG6" secondAttribute="bottom" constant="8" id="4Nv-dF-Gs7"/>
                             <constraint firstItem="Eiw-VR-1dH" firstAttribute="top" secondItem="Asw-Av-eG6" secondAttribute="bottom" constant="8" id="5nY-Ph-Uhk"/>
-                            <constraint firstItem="Asw-Av-eG6" firstAttribute="top" secondItem="LNZ-6m-37t" secondAttribute="bottom" constant="8" id="75l-QR-Swk"/>
                             <constraint firstItem="Eiw-VR-1dH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="140" id="8gW-Rt-XU5"/>
-                            <constraint firstItem="LNZ-6m-37t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TWx-pU-Iec"/>
-                            <constraint firstItem="zbr-l1-JAH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e6S-qy-aSo"/>
-                            <constraint firstItem="LNZ-6m-37t" firstAttribute="top" secondItem="zbr-l1-JAH" secondAttribute="bottom" constant="8" id="nY7-gJ-CYZ"/>
+                            <constraint firstItem="Asw-Av-eG6" firstAttribute="top" secondItem="gOh-7A-0uE" secondAttribute="bottom" constant="8" id="IRJ-H3-ClD"/>
+                            <constraint firstItem="gOh-7A-0uE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQu-h7-Lnm"/>
                             <constraint firstItem="Asw-Av-eG6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oib-NQ-H8x"/>
                             <constraint firstItem="1St-gO-HdP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-140" id="ppb-NW-WIq"/>
                             <constraint firstItem="Asw-Av-eG6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tWJ-fu-fUi"/>
@@ -253,6 +266,7 @@
                         <outlet property="loginButton" destination="1St-gO-HdP" id="K2L-8M-Lmq"/>
                         <outlet property="longTitleLabel" destination="zbr-l1-JAH" id="dvI-wZ-DHv"/>
                         <outlet property="registerButton" destination="Eiw-VR-1dH" id="okX-Gz-swS"/>
+                        <outlet property="titleDaisyConstraint" destination="IRJ-H3-ClD" id="YRo-2l-UKc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

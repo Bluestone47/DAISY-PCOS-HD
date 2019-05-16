@@ -40,7 +40,7 @@ class ChartFactory {
         ChartFactory.depressionDataSet.lineWidth = 2.0
         ChartFactory.depressionDataSet.circleRadius = 6.0
         ChartFactory.depressionDataSet.fillAlpha = 65 / 255.0
-        ChartFactory.depressionDataSet.fillColor = UIColor.green
+        ChartFactory.depressionDataSet.fillColor = UIColor.orange
         ChartFactory.depressionDataSet.highlightColor = UIColor.white
         ChartFactory.depressionDataSet.mode = .cubicBezier
         // set the gradient
@@ -51,12 +51,12 @@ class ChartFactory {
         ChartFactory.anxietyDataSet = LineChartDataSet(entries: ChartFactory.anxietyScoreEntry, label: "Anxiety")
         ChartFactory.anxietyDataSet.valueFont = UIFont(name: "HelveticaNeue-Light", size: 16.0)!
         ChartFactory.anxietyDataSet.axisDependency = .left // Line will correlate with left axis values
-        ChartFactory.anxietyDataSet.setColor(UIColor.blue.withAlphaComponent(0.5))
-        ChartFactory.anxietyDataSet.setCircleColor(UIColor.blue)
+        ChartFactory.anxietyDataSet.setColor(UIColor.purple.withAlphaComponent(0.5))
+        ChartFactory.anxietyDataSet.setCircleColor(UIColor.purple)
         ChartFactory.anxietyDataSet.lineWidth = 2.0
         ChartFactory.anxietyDataSet.circleRadius = 6.0
         ChartFactory.anxietyDataSet.fillAlpha = 65 / 255.0
-        ChartFactory.anxietyDataSet.fillColor = UIColor.blue
+        ChartFactory.anxietyDataSet.fillColor = UIColor.purple
         ChartFactory.anxietyDataSet.highlightColor = UIColor.white
         ChartFactory.anxietyDataSet.mode = .cubicBezier
         // set the gradient

@@ -10,6 +10,8 @@ import Foundation
 
 class GetIPAddress {
     
+    static let localhost = "127.0.0.1"
+    
     // Return IP address according to the Run Environment
     static func getIPAddress() -> String {
         
@@ -17,7 +19,7 @@ class GetIPAddress {
         
         #if targetEnvironment(simulator)
         // Simulator
-        address = "127.0.0.1"
+        address = localhost
         #else
         // Real Device
         if let addr = self.getWiFiAddress() {
