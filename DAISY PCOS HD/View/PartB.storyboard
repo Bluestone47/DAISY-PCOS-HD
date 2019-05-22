@@ -309,23 +309,14 @@ The overall BQ score is determined from the responses to the three categories: s
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note_2" translatesAutoresizingMaskIntoConstraints="NO" id="PSs-Vk-n3k">
-                                                <rect key="frame" x="667" y="25" width="80" height="80"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="15f-wy-vix"/>
-                                                    <constraint firstAttribute="width" constant="80" id="wv1-9R-UJM"/>
-                                                </constraints>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="wrz-1K-f2s" firstAttribute="centerX" secondItem="pCE-JV-ma3" secondAttribute="centerX" id="8ct-C1-PlW"/>
-                                            <constraint firstItem="PSs-Vk-n3k" firstAttribute="leading" secondItem="wrz-1K-f2s" secondAttribute="trailing" constant="50" id="BC0-PA-sn5"/>
                                             <constraint firstAttribute="height" constant="1120" id="CfU-Sx-ClN"/>
                                             <constraint firstItem="kR5-on-OGT" firstAttribute="centerX" secondItem="pCE-JV-ma3" secondAttribute="centerX" id="KIE-lc-1wC"/>
                                             <constraint firstItem="wrz-1K-f2s" firstAttribute="top" secondItem="pCE-JV-ma3" secondAttribute="top" constant="25" id="ORe-4U-fZt"/>
                                             <constraint firstItem="uOu-28-KIB" firstAttribute="top" secondItem="kR5-on-OGT" secondAttribute="bottom" constant="20" id="Os3-46-aai"/>
-                                            <constraint firstItem="PSs-Vk-n3k" firstAttribute="top" secondItem="pCE-JV-ma3" secondAttribute="top" constant="25" id="QlD-hJ-IEh"/>
                                             <constraint firstItem="kR5-on-OGT" firstAttribute="top" secondItem="wrz-1K-f2s" secondAttribute="bottom" constant="30" id="Wko-lp-DZh"/>
                                             <constraint firstAttribute="bottom" secondItem="uOu-28-KIB" secondAttribute="bottom" constant="68" id="roa-kz-6cL"/>
                                             <constraint firstAttribute="width" constant="834" id="xv9-5U-go3"/>
@@ -574,7 +565,6 @@ Don’t take too long over you replies: your immediate is best.</string>
     </scenes>
     <resources>
         <image name="chart_2" width="156" height="156"/>
-        <image name="note_2" width="146.5" height="195.5"/>
         <image name="pencil_1" width="87.5" height="87.5"/>
     </resources>
 </document>

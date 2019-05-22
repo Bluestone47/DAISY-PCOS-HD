@@ -42,7 +42,7 @@ class ChartFactory {
         ChartFactory.depressionDataSet.fillAlpha = 65 / 255.0
         ChartFactory.depressionDataSet.fillColor = UIColor.orange
         ChartFactory.depressionDataSet.highlightColor = UIColor.white
-        ChartFactory.depressionDataSet.mode = .cubicBezier
+        // ChartFactory.depressionDataSet.mode = .cubicBezier
         // set the gradient
         ChartFactory.depressionDataSet.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0) // Set the Gradient
         ChartFactory.depressionDataSet.drawFilledEnabled = true // Draw the Gradient
@@ -58,7 +58,7 @@ class ChartFactory {
         ChartFactory.anxietyDataSet.fillAlpha = 65 / 255.0
         ChartFactory.anxietyDataSet.fillColor = UIColor.purple
         ChartFactory.anxietyDataSet.highlightColor = UIColor.white
-        ChartFactory.anxietyDataSet.mode = .cubicBezier
+        // ChartFactory.anxietyDataSet.mode = .cubicBezier
         // set the gradient
         ChartFactory.anxietyDataSet.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0) // Set the Gradient
         ChartFactory.anxietyDataSet.drawFilledEnabled = true // Draw the Gradient

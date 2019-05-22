@@ -73,8 +73,28 @@ class PartBViewController: UIViewController, CanReceiveHADS {
     // Receive results from HADS and show score in label
     func dataReceived(depressionScore: Int, anxietyScore: Int) {
         
+        let depressionScoreCase = scoreCase(score: depressionScore)
+        let anxietyScoreCase = scoreCase(score: anxietyScore)
+        
         hadsButton.isEnabled = false
-        HADSScoreLabel.text = "Your depression score is \(depressionScore).\nYour anxiety score is \(anxietyScore)."
+        HADSScoreLabel.text = "Your depression score is \(depressionScore) (\(depressionScoreCase)).\nYour anxiety score is \(anxietyScore) (\(anxietyScoreCase))."
+    }
+    
+    func scoreCase(score: Int) -> String {
+        var scoreCase = ""
+        
+        if score >= 0 && score <= 7 {
+            scoreCase = "Normal"
+        }
+        else if score >= 8 && score <= 10 {
+            scoreCase = "Borderline abnormal"
+        }
+        else if score >= 11 && score <= 21 {
+            scoreCase = "Abnormal"
+        }
+        
+        return scoreCase
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
