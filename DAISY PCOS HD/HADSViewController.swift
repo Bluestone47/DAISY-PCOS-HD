@@ -115,6 +115,33 @@ class HADSViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    func showScore() {
+        
+        let depressionScoreCase = scoreCase(score: depressionScore)
+        let anxietyScoreCase = scoreCase(score: anxietyScore)
+        
+        let alertText: String = "Depression: \(depressionScore) (\(depressionScoreCase))\nAnxiety: \(anxietyScore) (\(anxietyScoreCase))"
+        showAlert(title: "HADS Score", message: alertText)
+        
+    }
+    
+    func scoreCase(score: Int) -> String {
+        var scoreCase = ""
+        
+        if score >= 0 && score <= 7 {
+            scoreCase = "Normal"
+        }
+        else if score >= 8 && score <= 10 {
+            scoreCase = "Borderline abnormal"
+        }
+        else if score >= 11 && score <= 21 {
+            scoreCase = "Abnormal"
+        }
+        
+        return scoreCase
+        
+    }
+    
     func showAlert(title: String, message: String) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

@@ -106,9 +106,9 @@ class FinishViewController: UIViewController {
     @IBAction func closePressed(_ sender: Any) {
         
         // Only submit HADS if the user have finished it
-        //        if  QuizResult.shared().hadsFinished == true {
-        //            HADSPost.hadsSubmit()
-        //        }
+        if  QuizResult.shared().hadsFinished == true {
+            HADSPost.hadsSubmit()
+        }
         
         print(QuizResult.shared().result)
         print(LocalResults.localResults)
