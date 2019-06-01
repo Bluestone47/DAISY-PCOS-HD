@@ -19,6 +19,9 @@ class PartBViewController: UIViewController, CanReceiveHADS {
     @IBOutlet weak var hadsButton: UIButton!
     @IBOutlet weak var HADSScoreLabel: UILabel!
     
+    let berlinLabelColor = UIColor(rgb: 0x3F51B5)
+    let hadsLabelColor = UIColor(rgb: 0xFF5722)
+    let essLabelColor = UIColor(rgb: 0x009688)
     
     var saveLocalResult = true
     
@@ -31,10 +34,6 @@ class PartBViewController: UIViewController, CanReceiveHADS {
     }
     
     func loadLabels() {
-        
-        let berlinLabelColor = UIColor(rgb: 0x3F51B5)
-        let hadsLabelColor = UIColor(rgb: 0xFF5722)
-        let essLabelColor = UIColor(rgb: 0x009688)
         
         partBLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         
@@ -78,6 +77,11 @@ class PartBViewController: UIViewController, CanReceiveHADS {
         
         hadsButton.isEnabled = false
         HADSScoreLabel.text = "Your depression score is \(depressionScore) (\(depressionScoreCase)).\nYour anxiety score is \(anxietyScore) (\(anxietyScoreCase))."
+        
+        HADSScoreLabel.backgroundColor = .clear
+        HADSScoreLabel.layer.cornerRadius = 10
+        HADSScoreLabel.layer.borderWidth = 1
+        HADSScoreLabel.layer.borderColor = hadsLabelColor.cgColor
     }
     
     func scoreCase(score: Int) -> String {
