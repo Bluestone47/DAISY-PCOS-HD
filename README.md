@@ -1,6 +1,6 @@
 # About this System
 
-The project was developed by: Xian Dong (935666).  
+The project was developed by: Xian Dong.  
 
 ## Third-Party Library
 
@@ -9,7 +9,3 @@ This project used four 3rd part libraries.
 2. Charts 3.3.0  
 3. M13Checkbox 3.4.0  
 4. SwiftyJSON 5.0.0  
-
-## Videos
-I prepared a YouTube video to demonstrate the functions of the application.
-[Video: DAISY PCOS HD Demonstration](#)
