@@ -1,6 +1,6 @@
 # About this System
 
-The project was developed by: Xian Dong.  
+The project was developed by Xian Dong in 2019.  
 
 ## Third-Party Library
 
